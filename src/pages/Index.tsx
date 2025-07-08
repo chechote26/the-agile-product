@@ -16,8 +16,18 @@ const Index = () => {
             Con soluciones ágiles, prácticas y adaptadas a tu realidad
           </p>
           <Button size="lg" className="text-lg px-8 py-6">
-            <Calendar className="mr-2 h-5 w-5" />
-            Agendá una mentoría gratuita
+           import { Button } from "@/components/ui/button";
+
+<Button asChild>
+  <a
+    href="https://calendly.com/eze-tuero/30min"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Agendá una mentoría gratuita
+  </a>
+</Button>
+
           </Button>
         </div>
       </section>
