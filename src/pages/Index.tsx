@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Rocket, Package, GraduationCap, Brain, Search, Wrench, Compass, ExternalLink, Calendar, Linkedin, MessageCircle } from "lucide-react";
+import { CheckCircle, Rocket, Package, GraduationCap, Brain, Search, Wrench, Compass, ExternalLink, Calendar, Linkedin, Mail, Hash } from "lucide-react";
 
 const Index = () => {
   return (
@@ -15,9 +15,11 @@ const Index = () => {
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Con soluciones ágiles, prácticas y adaptadas a tu realidad
           </p>
-          <Button size="lg" className="text-lg px-8 py-6">
-            <Calendar className="mr-2 h-5 w-5" />
-            Agendá una mentoría gratuita
+          <Button size="lg" className="text-lg px-8 py-6" asChild>
+            <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
+              <Calendar className="mr-2 h-5 w-5" />
+              Agendá una mentoría gratuita
+            </a>
           </Button>
         </div>
       </section>
@@ -192,17 +194,29 @@ const Index = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8">
-              <Calendar className="mr-2 h-5 w-5" />
-              Agendá tu mentoría
+            <Button size="lg" className="px-8" asChild>
+              <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
+                <Calendar className="mr-2 h-5 w-5" />
+                Agendá tu mentoría
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="px-8">
-              <Linkedin className="mr-2 h-5 w-5" />
-              Contactame por LinkedIn
+            <Button variant="outline" size="lg" className="px-8" asChild>
+              <a href="https://www.linkedin.com/in/ezequiel-tuero/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="mr-2 h-5 w-5" />
+                Contactame por LinkedIn
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="px-8">
-              <MessageCircle className="mr-2 h-5 w-5" />
-              Escribime por WhatsApp
+            <Button variant="outline" size="lg" className="px-8" asChild>
+              <a href="mailto:tuero.eze@gmail.com">
+                <Mail className="mr-2 h-5 w-5" />
+                Escribime por email
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" className="px-8" asChild>
+              <a href="https://discord.gg/JawAkt6mDb" target="_blank" rel="noopener noreferrer">
+                <Hash className="mr-2 h-5 w-5" />
+                Unite al Discord
+              </a>
             </Button>
           </div>
         </div>
