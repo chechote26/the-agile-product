@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, Rocket, Package, GraduationCap, Brain, Search, Wrench, Compass, ExternalLink, Calendar, Linkedin, Mail, Hash } from "lucide-react";
-import logo from "@/assets/the-agile-product-logo.png";
+import logo from "@/assets/The Agile Product (5).png";
 
 const Index = () => {
   return (
@@ -14,7 +14,7 @@ const Index = () => {
             <img src={logo} alt="The Agile Product" className="w-20 h-20 md:w-24 md:h-24" />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-            Transformá tu equipo de producto
+            Transformá tu equipo de Producto y Tecnología
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Con soluciones ágiles, prácticas y adaptadas a tu realidad
