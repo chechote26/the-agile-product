@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, Rocket, Package, GraduationCap, Brain, Search, Wrench, Compass, ExternalLink, Calendar, Linkedin, Mail, Hash } from "lucide-react";
+import logo from "@/assets/the-agile-product-logo.png";
 
 const Index = () => {
   return (
@@ -9,6 +10,9 @@ const Index = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/5 to-secondary/10 py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
+          <div className="flex justify-center mb-6">
+            <img src={logo} alt="The Agile Product" className="w-20 h-20 md:w-24 md:h-24" />
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
             Transformá tu equipo de producto
           </h1>
@@ -133,19 +137,9 @@ const Index = () => {
             <div className="flex items-start gap-4">
               <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
               <div>
-                <h3 className="text-xl font-semibold mb-2">EdTech internacional</h3>
+                <h3 className="text-xl font-semibold mb-2">EdTech regional</h3>
                 <p className="text-muted-foreground">
                   Diseñé y dicté un curso avanzado de gestión de productos, con contenido práctico, desafíos reales y sesiones evaluadas.
-                </p>
-              </div>
-            </div>
-            
-            <div className="flex items-start gap-4">
-              <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Startups en crecimiento</h3>
-                <p className="text-muted-foreground">
-                  Mentorías para líderes de producto, acompañando decisiones clave de estructura, priorización y procesos ágiles.
                 </p>
               </div>
             </div>
@@ -178,7 +172,7 @@ const Index = () => {
           </div>
           
           <p className="text-center text-lg text-muted-foreground max-w-2xl mx-auto">
-            La mentoría es una conversación directa y personalizada, no una clase teórica. En 45 minutos, vamos al grano sobre los desafíos de tu equipo.
+            La mentoría es una conversación directa y personalizada, no una clase teórica. En 30 minutos, vamos al grano sobre los desafíos de tu equipo.
           </p>
         </div>
       </section>
