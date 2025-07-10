@@ -14,7 +14,7 @@ const Index = () => {
             <img src={logo} alt="The Agile Product" className="w-20 h-20 md:w-24 md:h-24" />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-            Transformá tu equipo de Producto y Tecnología
+            Transformá tus equipo de Producto y Tecnología
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Con soluciones ágiles, prácticas y adaptadas a tu realidad
@@ -36,10 +36,10 @@ const Index = () => {
           </h2>
           <div className="prose prose-lg mx-auto text-center">
             <p className="text-lg leading-relaxed mb-6">
-              Soy <strong>Eze Tuero</strong>. Ayudo a empresas en LATAM a mejorar la forma en que trabajan sus equipos de producto.
+              Soy Eze Tuero, ayudo a empresas en LatAm a mejorar la forma en que trabajan sus equipos de Producto & Tech.
             </p>
             <p className="text-lg leading-relaxed mb-6">
-              Con más de 13 años de experiencia en gestión de producto —y 6 en el mundo tech— combino agilidad práctica, foco en resultados y conocimiento del negocio para impulsar equipos más autónomos y eficientes.
+              Con más de 14 años de experiencia en gestión de producto - y 6 en el mundo tech - combino agilidad práctica, foco en resultados y conocimiento del negocio para impulsar equipos más autónomos y eficientes.
             </p>
             <p className="text-lg leading-relaxed mb-6">
               Trabajo 1:1 con líderes y equipos que necesitan claridad para organizar su trabajo, priorizar mejor y entregar valor de forma continua.
