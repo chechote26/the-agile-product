@@ -14,7 +14,7 @@ const Index = () => {
             <img src={logo} alt="The Agile Product" className="w-20 h-20 md:w-24 md:h-24" />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-            Transformá tus equipo de Producto y Tecnología
+            Transforma tus equipo de Producto y Tecnología
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Con soluciones ágiles, prácticas y adaptadas a tu realidad
@@ -22,7 +22,7 @@ const Index = () => {
           <Button size="lg" className="text-lg px-8 py-6" asChild>
             <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
               <Calendar className="mr-2 h-5 w-5" />
-              Agendá una mentoría gratuita
+              Agenda una mentoría gratuita
             </a>
           </Button>
         </div>
@@ -36,16 +36,16 @@ const Index = () => {
           </h2>
           <div className="prose prose-lg mx-auto text-center">
             <p className="text-lg leading-relaxed mb-6">
-              Soy Eze Tuero, ayudo a empresas en LatAm a mejorar la forma en que trabajan sus equipos de Producto & Tech.
+              Soy Eze Tuero, ayudo a startups y scaleups a mejorar la forma en que trabajan sus equipos de Producto & Tech.
             </p>
             <p className="text-lg leading-relaxed mb-6">
-              Con más de 14 años de experiencia en gestión de producto - y 6 en el mundo tech - combino agilidad práctica, foco en resultados y conocimiento del negocio para impulsar equipos más autónomos y eficientes.
+              Con más de 14 años de experiencia en gestión de producto - y 6 en el mundo tech - combino agilidad práctica, foco en resultados y conocimiento de producto para impulsar equipos más autónomos y eficientes.
             </p>
             <p className="text-lg leading-relaxed mb-6">
               Trabajo 1:1 con líderes y equipos que necesitan claridad para organizar su trabajo, priorizar mejor y entregar valor de forma continua.
             </p>
             <p className="text-lg leading-relaxed text-primary font-semibold">
-              No vendo fórmulas mágicas. Te acompaño a construir una forma de trabajo que funcione <em>para vos</em> y tu contexto.
+              No vendo fórmulas mágicas. Te acompaño a construir una forma de trabajo que funcione para vos y tu contexto.
             </p>
           </div>
         </div>
@@ -151,7 +151,7 @@ const Index = () => {
       <section className="py-20 px-4 bg-primary/5">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            ¿Qué te llevás de una mentoría?
+            ¿Qué te llevas de una mentoría?
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -181,17 +181,17 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            ¿Querés conversar sobre tu equipo?
+            ¿Conversamos sobre tu equipo?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Agendá una mentoría gratuita para identificar oportunidades de mejora reales y empezar a transformar tu forma de trabajar.
+            Agenda una mentoría gratuita para identificar oportunidades de mejora reales y empezar a transformar tu forma de trabajar.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="px-8" asChild>
               <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
-                Agendá tu mentoría
+                Agenda tu mentoría
               </a>
             </Button>
             <Button variant="outline" size="lg" className="px-8" asChild>
