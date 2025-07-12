@@ -149,7 +149,7 @@ const Index = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Startup de IA en etapa inicial</h3>
                 <p className="text-muted-foreground">
-                  Co-diseñamos el MVP, V1 y V2 mediante story mapping, con release plan y backlog inicial para alinear visión y ejecución.
+                  Co-diseñamos junto a founder el MVP, V1 y V2 mediante story mapping, con release plan y backlog inicial para alinear visión y ejecución.
                 </p>
               </div>
             </div>
