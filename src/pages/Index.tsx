@@ -159,7 +159,7 @@ const Index = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-2">EdTech regional</h3>
                 <p className="text-muted-foreground">
-                  Diseñé y dicté un curso avanzado de gestión de productos, con contenido práctico, desafíos reales y sesiones evaluadas.
+                  Diseñé un curso avanzado de gestión de productos, con contenido práctico, desafíos reales y evaluaciones asincrónicas.
                 </p>
               </div>
             </div>
@@ -241,7 +241,7 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl text-center">
           <div className="mb-4">
             <h3 className="text-lg font-semibold">The Agile Product · Eze Tuero</h3>
-            <p className="text-muted-foreground">Consultoría en Agilidad y Producto · LATAM</p>
+            <p className="text-muted-foreground">Consultoría en Agilidad y Producto</p>
           </div>
           <p className="text-sm text-muted-foreground">© 2025</p>
         </div>
