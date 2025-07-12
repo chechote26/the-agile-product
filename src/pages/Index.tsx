@@ -137,6 +137,26 @@ const Index = () => {
             <div className="flex items-start gap-4">
               <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
               <div>
+                <h3 className="text-xl font-semibold mb-2">Mentoría a profesional tech</h3>
+                <p className="text-muted-foreground">
+                  Brindé acompañamiento 1:1 con consejos prácticos para su transición a Producto: mindset, herramientas y preparación para entrevistas.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-start gap-4">
+              <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Startup de IA en etapa inicial</h3>
+                <p className="text-muted-foreground">
+                  Co-diseñamos el MVP, V1 y V2 mediante story mapping, con release plan y backlog inicial para alinear visión y ejecución.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-start gap-4">
+              <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
+              <div>
                 <h3 className="text-xl font-semibold mb-2">EdTech regional</h3>
                 <p className="text-muted-foreground">
                   Diseñé y dicté un curso avanzado de gestión de productos, con contenido práctico, desafíos reales y sesiones evaluadas.
