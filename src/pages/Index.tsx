@@ -5,7 +5,7 @@ import { CheckCircle, Rocket, Package, GraduationCap, Brain, Search, Wrench, Com
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { translations } from "@/utils/translations";
-import logo from "@/assets/The Agile Product (5).png";
+import logo from "@/assets/the-agile-product-logo.png";
 
 const Index = () => {
   const { language } = useLanguage();
