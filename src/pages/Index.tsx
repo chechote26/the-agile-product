@@ -243,6 +243,14 @@ const Index = () => {
               </a>
             </Button>
           </div>
+          
+          <div className="mt-8">
+            <Button variant="ghost" size="lg" className="px-8" asChild>
+              <a href="/blog">
+                📝 {language === 'es' ? 'Visitar Blog' : 'Visit Blog'}
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
