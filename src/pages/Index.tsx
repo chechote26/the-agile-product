@@ -5,6 +5,7 @@ import { CheckCircle, Rocket, Package, GraduationCap, Brain, Search, Wrench, Com
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { translations } from "@/utils/translations";
+import { Link } from "react-router-dom";
 import logo from "@/assets/The Agile Product (5).png";
 
 const Index = () => {
@@ -246,9 +247,9 @@ const Index = () => {
           
           <div className="mt-8">
             <Button variant="ghost" size="lg" className="px-8" asChild>
-              <a href="/blog">
+              <Link to="/blog">
                 📝 {language === 'es' ? 'Visitar Blog' : 'Visit Blog'}
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
