@@ -14,7 +14,18 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Language Switcher */}
+      {/* Top Navigation */}
+      <div className="fixed top-4 left-4 z-50">
+        <Button 
+          size="sm" 
+          className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
+          asChild
+        >
+          <Link to="/blog">
+            📝 {language === 'es' ? 'Blog' : 'Blog'}
+          </Link>
+        </Button>
+      </div>
       <div className="fixed top-4 right-4 z-50">
         <LanguageSwitcher />
       </div>
@@ -36,28 +47,6 @@ const Index = () => {
               {t.hero.cta}
             </a>
           </Button>
-        </div>
-      </section>
-
-      {/* Blog CTA Section */}
-      <section className="py-12 px-4 bg-secondary/5">
-        <div className="container mx-auto max-w-4xl text-center">
-          <div className="bg-card border rounded-lg p-6 shadow-sm">
-            <h3 className="text-xl font-semibold mb-2 text-foreground">
-              {language === 'es' ? '📖 Explora nuestro Blog' : '📖 Explore our Blog'}
-            </h3>
-            <p className="text-muted-foreground mb-4">
-              {language === 'es' 
-                ? 'Descubre insights sobre agilidad, liderazgo y transformación digital'
-                : 'Discover insights on agility, leadership and digital transformation'
-              }
-            </p>
-            <Button variant="outline" size="lg" className="px-8" asChild>
-              <Link to="/blog">
-                📝 {language === 'es' ? 'Visitar Blog' : 'Visit Blog'}
-              </Link>
-            </Button>
-          </div>
         </div>
       </section>
 
