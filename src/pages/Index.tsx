@@ -39,6 +39,28 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Blog CTA Section */}
+      <section className="py-12 px-4 bg-secondary/5">
+        <div className="container mx-auto max-w-4xl text-center">
+          <div className="bg-card border rounded-lg p-6 shadow-sm">
+            <h3 className="text-xl font-semibold mb-2 text-foreground">
+              {language === 'es' ? '📖 Explora nuestro Blog' : '📖 Explore our Blog'}
+            </h3>
+            <p className="text-muted-foreground mb-4">
+              {language === 'es' 
+                ? 'Descubre insights sobre agilidad, liderazgo y transformación digital'
+                : 'Discover insights on agility, leadership and digital transformation'
+              }
+            </p>
+            <Button variant="outline" size="lg" className="px-8" asChild>
+              <Link to="/blog">
+                📝 {language === 'es' ? 'Visitar Blog' : 'Visit Blog'}
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
@@ -242,14 +264,6 @@ const Index = () => {
                 <Hash className="mr-2 h-5 w-5" />
                 {t.finalCta.joinDiscord}
               </a>
-            </Button>
-          </div>
-          
-          <div className="mt-8">
-            <Button variant="ghost" size="lg" className="px-8" asChild>
-              <Link to="/blog">
-                📝 {language === 'es' ? 'Visitar Blog' : 'Visit Blog'}
-              </Link>
             </Button>
           </div>
         </div>
