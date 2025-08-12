@@ -14,27 +14,32 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Top Navigation */}
-      <div className="fixed top-4 left-4 z-50">
-        <Button 
-          size="sm" 
-          className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
-          asChild
-        >
-          <Link to="/blog">
-            📝 {language === 'es' ? 'Blog' : 'Blog'}
-          </Link>
-        </Button>
-      </div>
-      <div className="fixed top-4 right-4 z-50">
-        <LanguageSwitcher />
-      </div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/5 to-secondary/10 py-20 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
-          <div className="flex justify-center mb-6">
-            <img src={logo} alt="The Agile Product" className="w-20 h-20 md:w-24 md:h-24" />
+      {/* Header Navigation */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border/20">
+        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <img src={logo} alt="The Agile Product" className="w-8 h-8 md:w-10 md:h-10" />
+            <span className="font-bold text-lg text-foreground">The Agile Product</span>
           </div>
+          <div className="flex items-center gap-3">
+            <Button 
+              size="sm" 
+              variant="ghost"
+              className="font-medium"
+              asChild
+            >
+              <Link to="/blog">
+                📝 {language === 'es' ? 'Blog' : 'Blog'}
+              </Link>
+            </Button>
+            <LanguageSwitcher />
+          </div>
+        </div>
+      </header>
+      
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-primary/5 to-secondary/10 py-20 px-4 pt-32">
+        <div className="container mx-auto max-w-4xl text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
             {t.hero.title}
           </h1>
