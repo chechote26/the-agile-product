@@ -22,9 +22,9 @@ interface BlogPost {
 interface Comment {
   id: string;
   commenter_name: string;
-  commenter_email: string | null;
   content: string;
   created_at: string;
+  post_id: string;
 }
 
 const BlogPost = () => {
@@ -80,7 +80,7 @@ const BlogPost = () => {
       if (!postData) return;
 
       const { data, error } = await supabase
-        .from('comments')
+        .from('comments_public')
         .select('*')
         .eq('post_id', postData.id)
         .order('created_at', { ascending: true });
