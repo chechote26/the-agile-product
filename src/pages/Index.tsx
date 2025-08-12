@@ -17,15 +17,13 @@ const Index = () => {
       {/* Header Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border/20">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             <img src={logo} alt="The Agile Product" className="w-8 h-8 md:w-10 md:h-10" />
-            <span className="font-bold text-lg text-foreground">The Agile Product</span>
           </div>
           <div className="flex items-center gap-3">
             <Button 
               size="sm" 
-              variant="ghost"
-              className="font-medium"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
               asChild
             >
               <Link to="/blog">
