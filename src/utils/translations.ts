@@ -1,7 +1,7 @@
 export const translations = {
   es: {
     hero: {
-      title: "Transforma tus equipo de Producto y Tecnología",
+      title: "Transforma tus equipos de Producto y Tecnología",
       subtitle: "Con soluciones ágiles, prácticas y adaptadas a tu realidad",
       cta: "Agenda una mentoría gratuita"
     },
