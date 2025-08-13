@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Rocket, Package, GraduationCap, Brain, Search, Wrench, Compass, ExternalLink, Calendar, Linkedin, Mail, Hash } from "lucide-react";
+import { CheckCircle, Rocket, Package, GraduationCap, Brain, Search, Wrench, Compass, ExternalLink, Calendar, Linkedin, Mail, Hash, FileText } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { translations } from "@/utils/translations";
@@ -27,7 +27,8 @@ const Index = () => {
               asChild
             >
               <Link to="/blog">
-                📝 {language === 'es' ? 'Blog' : 'Blog'}
+                <FileText className="w-4 h-4 mr-1" />
+                {language === 'es' ? 'Blog' : 'Blog'}
               </Link>
             </Button>
             <Button 
@@ -36,7 +37,8 @@ const Index = () => {
               asChild
             >
               <Link to="/mentoria">
-                📝 {language === 'es' ? 'Mentoría' : 'Mentorship'}
+                <Calendar className="w-4 h-4 mr-1" />
+                {language === 'es' ? 'Mentoría' : 'Mentorship'}
               </Link>
             </Button>
             <Button 
