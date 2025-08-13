@@ -30,6 +30,25 @@ const Index = () => {
                 📝 {language === 'es' ? 'Blog' : 'Blog'}
               </Link>
             </Button>
+            <Button 
+              size="sm" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
+              asChild
+            >
+              <Link to="/mentoria">
+                📝 {language === 'es' ? 'Mentoría' : 'Mentorship'}
+              </Link>
+            </Button>
+            <Button 
+              size="sm" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
+              asChild
+            >
+              <Link to="/cursos">
+                <GraduationCap className="w-4 h-4 mr-1" />
+                {language === 'es' ? 'Cursos' : 'Courses'}
+              </Link>
+            </Button>
             <LanguageSwitcher />
           </div>
         </div>
