@@ -36,10 +36,10 @@ const Index = () => {
               className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
               asChild
             >
-              <Link to="/mentoria">
+              <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
                 <Calendar className="w-4 h-4 mr-1" />
                 {language === 'es' ? 'Mentoría' : 'Mentorship'}
-              </Link>
+              </a>
             </Button>
             <Button 
               size="sm" 
