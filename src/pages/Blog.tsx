@@ -75,8 +75,8 @@ const Blog = () => {
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {language === 'es' 
-              ? 'Descubre insights sobre agilidad, liderazgo y transformación digital'
-              : 'Discover insights on agility, leadership and digital transformation'
+              ? 'Descubre insights sobre agilidad, product management y gestión de proyectos'
+              : 'Discover insights on agility, product management and project management'
             }
           </p>
         </div>
