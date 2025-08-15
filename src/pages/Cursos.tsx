@@ -273,7 +273,7 @@ const Cursos = () => {
             
             <p className="text-lg text-muted-foreground mb-4">
               {language === 'es' 
-                ? 'Serás el primero en enterarte de fechas, precios y promociones de lanzamiento.'
+                ? 'Vas a ser el primero en enterarte de fechas, precios y promociones de lanzamiento.'
                 : 'Be the first to know about dates, prices and launch promotions.'
               }
             </p>
