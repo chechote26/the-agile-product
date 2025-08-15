@@ -137,7 +137,7 @@ const Cursos = () => {
               {/* Course 2 */}
               <div className="bg-card rounded-lg border p-6 h-full">
                 <h3 className="text-xl font-bold text-primary mb-4">
-                  {language === 'es' ? 'Curso 2 – Product Inception' : 'Course 2 – Product Inception'}
+                  {language === 'es' ? 'Curso 2 – Incepción ágil de producto' : 'Course 2 – Product Inception'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   {language === 'es' ? '(Estructurando el qué)' : '(Structuring the what)'}
@@ -169,7 +169,7 @@ const Cursos = () => {
               {/* Course 3 */}
               <div className="bg-card rounded-lg border p-6 h-full">
                 <h3 className="text-xl font-bold text-primary mb-4">
-                  {language === 'es' ? 'Curso 3 – Agile Delivery en la Práctica' : 'Course 3 – Agile Delivery in Practice'}
+                  {language === 'es' ? 'Curso 3 – Delivery ágil en la práctica' : 'Course 3 – Agile Delivery in Practice'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   {language === 'es' ? '(Producción y ejecución)' : '(Production and execution)'}
