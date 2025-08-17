@@ -18,7 +18,7 @@ const Index = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border/20">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center">
-            <img src={logo} alt="The Agile Product" className="hidden sm:block w-12 h-12 md:w-14 md:h-14" />
+            <img src={logo} alt="The Agile Product" className="w-auto h-8 min-h-8 md:h-10 md:min-h-10 object-contain" />
           </div>
           <div className="flex items-center gap-3">
             <Button 
