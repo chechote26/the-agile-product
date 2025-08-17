@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/utils/translations";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { Calendar, GraduationCap, FileText, Home } from "lucide-react";
+import logo from "@/assets/The Agile Product (5).png";
 
 interface BlogPost {
   id: string;
@@ -68,7 +72,51 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-8">
+      {/* Header Navigation */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border/20">
+        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center">
+            <img src={logo} alt="The Agile Product" className="w-auto h-8 min-h-8 md:h-10 md:min-h-10 object-contain" />
+          </div>
+          <div className="flex items-center gap-3">
+            <Button 
+              variant="ghost"
+              size="sm" 
+              className="text-muted-foreground hover:text-foreground font-medium"
+              asChild
+            >
+              <Link to="/">
+                <Home className="w-4 h-4 mr-1" />
+                {language === 'es' ? 'Inicio' : 'Home'}
+              </Link>
+            </Button>
+            <Button 
+              variant="ghost"
+              size="sm" 
+              className="text-muted-foreground hover:text-foreground font-medium"
+              asChild
+            >
+              <Link to="/cursos">
+                <GraduationCap className="w-4 h-4 mr-1" />
+                {language === 'es' ? 'Cursos' : 'Courses'}
+              </Link>
+            </Button>
+            <Button 
+              size="sm" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
+              asChild
+            >
+              <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
+                <Calendar className="w-4 h-4 mr-1" />
+                {language === 'es' ? 'Mentoría' : 'Mentorship'}
+              </a>
+            </Button>
+            <LanguageSwitcher />
+          </div>
+        </div>
+      </header>
+
+      <div className="container mx-auto px-4 py-8 pt-32">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-foreground mb-4">
             {language === 'es' ? 'Blog' : 'Blog'}
