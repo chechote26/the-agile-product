@@ -314,7 +314,7 @@ const Cursos = () => {
             
             <div className="flex justify-center">
               <Button size="lg" className="text-lg px-8 py-6" asChild>
-                <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
+                <a href="https://forms.gle/9RNDTanEZEMBxR2r9" target="_blank" rel="noopener noreferrer">
                   <Calendar className="mr-2 h-5 w-5" />
                   {language === 'es' ? 'Inscribirme a la lista de espera' : 'Join the waitlist'}
                 </a>
