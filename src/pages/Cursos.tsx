@@ -188,6 +188,10 @@ const Cursos = () => {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">{language === 'es' ? 'IA definir el producto' : 'AI to define the product'}</span>
+                  </li>                  
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">{language === 'es' ? 'Tips prácticos aprendidos en una software factory' : 'Practical tips learned in a software factory'}</span>
                   </li>
                 </ul>
@@ -216,11 +220,11 @@ const Cursos = () => {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Estimación y priorización (Planning Poker, MoSCoW, RICE)' : 'Estimation and prioritization (Planning Poker, MoSCoW, RICE)'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Estimación y priorización (Planning Poker, Esfuerzo-Impacto, MoSCoW, RICE)' : 'Estimation and prioritization (Planning Poker, MoSCoW, RICE)'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Métricas y dashboards' : 'Metrics and dashboards'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Métricas y dashboards en Sheets & Jira' : 'Metrics and dashboards'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
