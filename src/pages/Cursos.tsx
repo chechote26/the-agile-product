@@ -74,7 +74,7 @@ const Cursos = () => {
             <div className="flex items-center justify-center gap-3 mb-8">
               <Rocket className="h-8 w-8 text-primary" />
               <h2 className="text-3xl md:text-4xl font-bold text-center">
-                {language === 'es' ? '¿Por qué este programa?' : 'Why this program?'}
+                {language === 'es' ? '¿Para qué son estos cursos?' : 'Why this program?'}
               </h2>
             </div>
             
@@ -120,7 +120,7 @@ const Cursos = () => {
             <div className="flex items-center justify-center gap-3 mb-12">
               <GraduationCap className="h-8 w-8 text-primary" />
               <h2 className="text-3xl md:text-4xl font-bold text-center">
-                {language === 'es' ? 'Los 3 cursos que componen el programa' : 'The 3 courses that make up the program'}
+                {language === 'es' ? 'Los 3 cursos que podés hacer' : 'The 3 courses that make up the program'}
               </h2>
             </div>
             
@@ -304,15 +304,15 @@ const Cursos = () => {
             
             <p className="text-lg text-muted-foreground mb-4">
               {language === 'es' 
-                ? 'Vas a ser el primero en enterarte de fechas, precios y promociones de lanzamiento.'
-                : 'Be the first to know about dates, prices and launch promotions.'
+                ? 'Vas a ser el primero en enterarte de la próxima fecha disponible.'
+                : 'Be the first to know the next date available.'
               }
             </p>
             
             <p className="text-muted-foreground mb-8">
               {language === 'es' 
-                ? 'Plazas limitadas para garantizar interacción real.'
-                : 'Limited spots to ensure real interaction.'
+                ? 'Plazas limitadas (máx 20) para garantizar interacción real.'
+                : 'Limited spots (max 20) to ensure real interaction.'
               }
             </p>
             
