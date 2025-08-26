@@ -311,8 +311,8 @@ const Cursos = () => {
             
             <p className="text-muted-foreground mb-8">
               {language === 'es' 
-                ? 'Plazas limitadas (máx 20) para garantizar interacción real.'
-                : 'Limited spots (max 20) to ensure real interaction.'
+                ? 'Plazas limitadas (máx 10) para garantizar interacción real.'
+                : 'Limited spots (max 10) to ensure real interaction.'
               }
             </p>
             
