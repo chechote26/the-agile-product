@@ -13,58 +13,6 @@ const Index = () => {
   const t = translations[language];
 
   return (
-    <>
-      {/* META TAGS PARA PREVIEW EN CHATS */}
-      <Head>
-        <title>The Agile Product</title>
-        <meta
-          name="description"
-          content="Transforma tus equipos de Producto y Tecnología"
-        />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="The Agile Product" />
-        <meta
-          property="og:description"
-          content="Transforma tus equipos de Producto y Tecnología"
-        />
-        <meta
-          property="og:image"
-          content="https://the-agile-product.vercel.app/TAP thumbnail.png"
-        />
-        <meta
-          property="og:url"
-          content="https://the-agile-product.vercel.app/"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="The Agile Product" />
-        <meta
-          name="twitter:description"
-          content="Transforma tus equipos de Producto y Tecnología"
-        />
-        <meta
-          name="twitter:image"
-          content="https://the-agile-product.vercel.app/TAP thumbnail.png"
-        />
-      </Head>
-
-      {/* CONTENIDO VISIBLE DE LA PÁGINA */}
-      <div className="min-h-screen bg-background">
-        {/* Header Navigation */}
-        <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border/20">
-          <div className="container mx-auto px-4 py-3 fl">
-            {/* resto de tu header */}
-          </div>
-        </header>
-
-        {/* resto de tu página */}
-      </div>
-    </>
-  );
-};
 
     <div className="min-h-screen bg-background">
       {/* Header Navigation */}
