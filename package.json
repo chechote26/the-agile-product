@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "echo 'no build script'",
-    "build:dev": "vite build --mode development",
+    "build:dev": "vite build --mode development"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
