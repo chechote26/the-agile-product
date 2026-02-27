@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import Index from "./pages/Index";
 import Cursos from "./pages/Cursos";
 import NotFound from "./pages/NotFound";
+import Blog from "./pages/Blog";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/cursos" element={<Cursos />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
