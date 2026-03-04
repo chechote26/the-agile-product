@@ -40,8 +40,8 @@ const translations = {
         problem: "Los costos reales de comprar un auto usado en Argentina (patentes, transferencia, sellados) son difíciles de calcular y están dispersos. Este simulador los centraliza con datos oficiales de DNRPA.",
         hypothesis: "Hipótesis: tener claridad sobre los costos totales reduce la fricción en la decisión de compra.",
         learning: "Estado: iterando sobre los cálculos base con tablas de DNRPA. Próximamente disponible.",
-        url: null,
-        cta: "Próximamente",
+        url: "https://simuladorvaluaciones.vercel.app/",
+        cta: "Ver simulador",
       },
     ],
     footer: {
