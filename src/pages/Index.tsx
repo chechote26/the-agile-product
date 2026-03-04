@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Rocket, Package, GraduationCap, Brain, Search, Wrench, Compass, ExternalLink, Calendar, Linkedin, Mail, Hash, FileText } from "lucide-react";
+import { CheckCircle, Rocket, Package, GraduationCap, Brain, Search, Wrench, Compass, ExternalLink, Calendar, Linkedin, Mail, Hash, FileText, FlaskConical } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { translations } from "@/utils/translations";
@@ -53,6 +53,17 @@ const Index = () => {
                 {language === 'es' ? 'Mentoría' : 'Mentorship'}
               </a>
             </Button>
+            <Button 
+  variant="ghost"
+  size="sm" 
+  className="text-muted-foreground hover:text-foreground font-medium"
+  asChild
+>
+  <Link to="/laboratorio">
+    <FlaskConical className="w-4 h-4 mr-1" />
+    {language === 'es' ? 'Laboratorio' : 'Lab'}
+  </Link>
+</Button>
             <LanguageSwitcher />
           </div>
         </div>
