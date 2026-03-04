@@ -1,6 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { GraduationCap, Calendar, Rocket, CheckCircle, Target, Package, User, Home, FileText } from "lucide-react";
+import { GraduationCap, Calendar, Rocket, CheckCircle, Target, Package, User, Home, FileText, FlaskConical } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import logo from "@/assets/The Agile Product (5).png";
