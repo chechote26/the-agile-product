@@ -124,6 +124,11 @@ const Laboratorio = () => {
           </Link>
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
+        <Link to="/">
+        {language === 'es' ? 'Inicio' : 'Home'}
+        </Link>
+      </Button>
+            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
               <Link to="/blog"><FileText className="w-4 h-4 mr-1" />{t.nav.blog}</Link>
             </Button>
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
