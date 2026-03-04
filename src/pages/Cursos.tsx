@@ -49,6 +49,12 @@ const Cursos = () => {
                 {language === 'es' ? 'Mentoría' : 'Mentorship'}
               </a>
             </Button>
+            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
+  <Link to="/laboratorio">
+    <FlaskConical className="w-4 h-4 mr-1" />
+    {language === 'es' ? 'Laboratorio' : 'Lab'}
+  </Link>
+</Button>
             <LanguageSwitcher />
           </div>
         </div>
