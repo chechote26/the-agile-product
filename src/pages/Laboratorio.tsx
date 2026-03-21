@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLink, FlaskConical, Car, Calculator, Calendar, FileText, GraduationCap, Construction } from "lucide-react";
+import { ExternalLink, FlaskConical, Car, Calculator, Calendar, FileText, GraduationCap, Construction, CheckCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
@@ -34,14 +34,14 @@ const translations = {
       {
         name: "Simulador de Costos",
         icon: "calculator",
-        status: "wip",
-        statusLabel: "Próximamente",
+        status: "validado",
+        statusLabel: "Experimento validado",
         tagline: "Calculá patentes y transferencias de autos usados",
-        problem: "Los costos reales de comprar un auto usado en Argentina (patentes, transferencia, sellados) son difíciles de calcular y están dispersos. Este simulador los centraliza con datos oficiales de DNRPA.",
-        hypothesis: "Hipótesis: tener claridad sobre los costos totales reduce la fricción en la decisión de compra.",
-        learning: "Estado: iterando sobre los cálculos base con tablas de DNRPA y el GCBA. Próximamente disponible.",
+        problem: "Los costos reales de comprar un auto usado en Argentina (patentes, transferencia, sellados) son difíciles de calcular y están dispersos. Construí este simulador con datos de DNRPA para resolver mi propio problema primero.",
+        hypothesis: "Hipótesis validada: centralizar los costos en una sola herramienta reduce significativamente el tiempo de cálculo. La uso, funciona, pero el mercado no justifica escalarla.",
+        learning: "Aprendizaje: no todo problema que vale la pena resolver vale la pena convertir en producto. A veces una herramienta es suficiente.",
         url: "https://simuladorvaluaciones.vercel.app/",
-        cta: "Ver simulador",
+        cta: "Ver herramienta",
       },
     ],
     footer: {
@@ -76,14 +76,14 @@ const translations = {
       {
         name: "Cost Simulator",
         icon: "calculator",
-        status: "wip",
-        statusLabel: "Work in progress",
+        status: "validado",
+        statusLabel: "Validated experiment",
         tagline: "Calculate taxes and transfer costs for used cars",
-        problem: "The real costs of buying a used car in Argentina (annual taxes, transfer fees, stamps) are hard to calculate and scattered. This simulator centralizes them using official DNRPA data.",
-        hypothesis: "Hypothesis: clarity on total costs reduces friction in the purchase decision.",
-        learning: "Status: iterating on base calculations with DNRPA tables. Coming soon.",
-        url: null,
-        cta: "Coming soon",
+        problem: "The real costs of buying a used car in Argentina (annual taxes, transfer fees, stamps) are hard to calculate and scattered. I built this simulator using DNRPA data to solve my own problem first.",
+        hypothesis: "Validated hypothesis: centralizing costs in one tool significantly reduces calculation time. I use it, it works — but the market doesn't justify scaling it.",
+        learning: "Learning: not every problem worth solving is worth turning into a product. Sometimes a tool is enough.",
+        url: "https://simuladorvaluaciones.vercel.app/",
+        cta: "View tool",
       },
     ],
     footer: {
@@ -98,6 +98,14 @@ const StatusBadge = ({ status, label }: { status: string; label: string }) => {
     return (
       <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">
         <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+        {label}
+      </span>
+    );
+  }
+  if (status === "validado") {
+    return (
+      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
+        <CheckCircle className="w-3 h-3" />
         {label}
       </span>
     );
@@ -124,10 +132,10 @@ const Laboratorio = () => {
           </Link>
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
-        <Link to="/">
-        {language === 'es' ? 'Inicio' : 'Home'}
-        </Link>
-      </Button>
+              <Link to="/">
+                {language === 'es' ? 'Inicio' : 'Home'}
+              </Link>
+            </Button>
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
               <Link to="/blog"><FileText className="w-4 h-4 mr-1" />{t.nav.blog}</Link>
             </Button>
