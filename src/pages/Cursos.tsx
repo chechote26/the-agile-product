@@ -50,11 +50,11 @@ const Cursos = () => {
               </a>
             </Button>
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
-  <Link to="/laboratorio">
-    <FlaskConical className="w-4 h-4 mr-1" />
-    {language === 'es' ? 'Laboratorio' : 'Lab'}
-  </Link>
-</Button>
+              <Link to="/laboratorio">
+                <FlaskConical className="w-4 h-4 mr-1" />
+                {language === 'es' ? 'Laboratorio' : 'Lab'}
+              </Link>
+            </Button>
             <LanguageSwitcher />
           </div>
         </div>
@@ -69,8 +69,15 @@ const Cursos = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              {language === 'es' ? 'Formación en vivo para equipos de tecnología y producto' : 'Live Training for Technology and Product Teams'}
+              {language === 'es'
+                ? 'Formación en vivo para equipos de tecnología y producto — con IA donde acelera de verdad'
+                : 'Live Training for Technology and Product Teams — with AI where it actually makes a difference'}
             </h1>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              {language === 'es'
+                ? 'Marcos ágiles probados, integrados con IA aplicada donde reduce fricción real en tu ciclo de delivery.'
+                : 'Proven agile frameworks, integrated with AI applied where it genuinely reduces friction in your delivery cycle.'}
+            </p>
           </div>
         </section>
 
@@ -113,8 +120,8 @@ const Cursos = () => {
             
             <p className="text-lg text-center text-muted-foreground">
               {language === 'es' 
-                ? 'Este programa reúne prácticas, herramientas y frameworks probados para que tu equipo pase a una entrega ágil y efectiva.'
-                : 'This program brings together proven practices, tools and frameworks so your team can move to agile and effective delivery.'
+                ? 'Este programa reúne prácticas, herramientas y frameworks probados para que tu equipo pase a una entrega ágil y efectiva — actualizado al contexto donde la IA redefine qué hace un PM, un tech lead y los equipos de diseño y desarrollo.'
+                : 'This program brings together proven practices, tools and frameworks so your team can move to agile and effective delivery — updated to the current context where AI is redefining what a PM, tech lead and design and development teams actually do.'
               }
             </p>
           </div>
@@ -137,7 +144,7 @@ const Cursos = () => {
                   {language === 'es' ? 'Curso 1 – Set up del equipo de delivery' : 'Course 1 – Delivery Team Setup'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  {language === 'es' ? '(Preparación del terreno: el cómo)' : '(ground preparation: the how)'}
+                  {language === 'es' ? '(Preparación del terreno: el cómo)' : '(Ground preparation: the how)'}
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
@@ -163,6 +170,10 @@ const Cursos = () => {
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">{language === 'es' ? 'Comunicación interna y con stakeholders' : 'Internal and stakeholder communication'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">{language === 'es' ? 'IA para automatizar reportes y seguimiento de métricas' : 'AI to automate reports and metrics tracking'}</span>
                   </li>
                 </ul>
               </div>
@@ -194,8 +205,8 @@ const Cursos = () => {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'IA para definir el producto' : 'AI to define the product'}</span>
-                  </li>                  
+                    <span className="text-sm">{language === 'es' ? 'IA para definir el producto: prototipado rápido y captura de feedback a escala' : 'AI to define the product: rapid prototyping and feedback capture at scale'}</span>
+                  </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">{language === 'es' ? 'Tips prácticos aprendidos en una software factory' : 'Practical tips learned in a software factory'}</span>
@@ -227,6 +238,10 @@ const Cursos = () => {
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">{language === 'es' ? 'Estimación y priorización (Planning Poker, Esfuerzo-Impacto, MoSCoW, RICE)' : 'Estimation and prioritization (Planning Poker, Effort-Impact, MoSCoW, RICE)'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">{language === 'es' ? 'IA para acelerar feedback loops y tomar decisiones con más contexto y menos reuniones' : 'AI to accelerate feedback loops and make decisions with more context and fewer meetings'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
