@@ -2,7 +2,7 @@ export const translations = {
   es: {
     hero: {
       title: "Product Management pragmático, con IA donde importa",
-      subtitle: "Ayudo a equipos de Producto y Tech a trabajar mejor, con métodos ágiles probados y herramientas de IA aplicadas donde realmente aceleran.",
+      subtitle: "Ayudo a equipos de Producto y Tech a trabajar mejor, con marcos ágiles probados y herramientas de IA aplicadas donde realmente aceleran.",
       cta: "Agenda una mentoría gratuita"
     },
     about: {
@@ -43,7 +43,7 @@ export const translations = {
       },
       aiStartup: {
         title: "Startup de IA en etapa inicial",
-        description: "Co-diseñamos con el founder el MVP, V1 y V2 mediante story mapping, con release plan y backlog inicial — alineando visión, ejecución y velocidad de iteración desde el día uno."
+        description: "Co-diseñamos con el founder el MVP, V1 y V2 mediante story mapping, con release plan y backlog inicial alineando visión, ejecución y velocidad de iteración desde el día uno."
       },
       edtech: {
         title: "EdTech regional",
