@@ -9,7 +9,7 @@ export const translations = {
       title: "Quién soy y cómo puedo ayudarte",
       intro: "Soy Eze Tuero, ayudo a startups y scaleups a mejorar la forma en que trabajan sus equipos de Producto & Tech.",
       experience: "Con más de 15 años en gestión de producto — y 7 en el mundo tech — combino agilidad práctica con el uso real de IA: integración de herramientas, prototipado rápido, captura de feedback a escala y redefinición del ciclo de discovery y delivery.",
-      approach: "Trabajo 1:1 con líderes y equipos que necesitan claridad para organizar su trabajo, priorizar mejor y entregar valor de forma continua — en un contexto donde los roles y los procesos están cambiando.",
+      approach: "Trabajo 1:1 con líderes y equipos que necesitan claridad para organizar su trabajo, priorizar mejor y entregar valor de forma continua en un contexto donde los roles y los procesos están cambiando.",
       philosophy: "No vendo fórmulas mágicas ni prometo transformaciones con IA. Te acompaño a construir una forma de trabajo que funcione para vos, tu equipo y tu momento."
     },
     services: {
@@ -24,7 +24,7 @@ export const translations = {
       },
       training: {
         title: "Formación en Gestión de Producto",
-        description: "Capacitación práctica sobre discovery, backlog, Jira, roles y flujos de trabajo — actualizada al contexto actual donde la IA redefine qué hace un PM, un tech lead y los equipos de diseño y desarrollo."
+        description: "Capacitación práctica sobre discovery, backlog, Jira, roles y flujos de trabajo actualizada al contexto actual donde la IA redefine qué hace un PM, un tech lead y los equipos de diseño y desarrollo."
       },
       mentorship: {
         title: "Mentorías 1:1",
@@ -47,7 +47,7 @@ export const translations = {
       },
       edtech: {
         title: "EdTech regional",
-        description: "Diseñé un curso avanzado de gestión de productos con contenido práctico, desafíos reales y evaluaciones asincrónicas — incluyendo módulos sobre cómo la IA está cambiando el rol del PM."
+        description: "Diseñé un curso avanzado de gestión de productos con contenido práctico, desafíos reales y evaluaciones asincrónicas incluyendo módulos sobre cómo la IA está cambiando el rol del PM."
       }
     },
     mentorshipBenefits: {
@@ -55,7 +55,7 @@ export const translations = {
       diagnosis: "Diagnóstico express de tu contexto actual",
       recommendations: "Recomendaciones claras y aplicables desde el día 1",
       guidance: "Guía práctica para implementar mejoras reales",
-      description: "La mentoría es una conversación directa y personalizada, no una clase teórica. En 30 minutos, vamos al grano sobre los desafíos de tu equipo — y cómo empezar a resolverlos."
+      description: "La mentoría es una conversación directa y personalizada, no una clase teórica. En 30 minutos, vamos al grano sobre los desafíos de tu equipo y cómo empezar a resolverlos."
     },
     finalCta: {
       title: "¿Conversamos sobre tu equipo?",
@@ -80,7 +80,7 @@ export const translations = {
       title: "Who I am and how I can help you",
       intro: "I'm Eze Tuero, I help startups and scaleups improve how their Product & Tech teams work.",
       experience: "With over 15 years in product management — and 7 in the tech world — I combine practical agility with real AI usage: tool integration, rapid prototyping, feedback capture at scale and rethinking how discovery and delivery cycles work today.",
-      approach: "I work 1:1 with leaders and teams who need clarity to organize their work, prioritize better, and deliver value continuously — in a context where roles and processes are shifting.",
+      approach: "I work 1:1 with leaders and teams who need clarity to organize their work, prioritize better, and deliver value continuously in a context where roles and processes are shifting.",
       philosophy: "I don't sell magic formulas or promise AI transformations. I help you build a way of working that fits you, your team, and your moment."
     },
     services: {
@@ -114,11 +114,11 @@ export const translations = {
       },
       aiStartup: {
         title: "Early-stage AI Startup",
-        description: "Co-designed with the founder the MVP, V1, and V2 through story mapping, with a release plan and initial backlog — aligning vision, execution, and iteration speed from day one."
+        description: "Co-designed with the founder the MVP, V1, and V2 through story mapping, with a release plan and initial backlog aligning vision, execution, and iteration speed from day one."
       },
       edtech: {
         title: "Regional EdTech",
-        description: "I designed an advanced product management course with practical content, real challenges, and asynchronous evaluations — including modules on how AI is changing the PM role."
+        description: "I designed an advanced product management course with practical content, real challenges, and asynchronous evaluations including modules on how AI is changing the PM role."
       }
     },
     mentorshipBenefits: {
@@ -126,7 +126,7 @@ export const translations = {
       diagnosis: "Express diagnosis of your current context",
       recommendations: "Clear and applicable recommendations from day 1",
       guidance: "Practical guide to implement real improvements",
-      description: "Mentorship is a direct and personalized conversation, not a theoretical class. In 30 minutes, we get to the point about your team's challenges — and how to start solving them."
+      description: "Mentorship is a direct and personalized conversation, not a theoretical class. In 30 minutes, we get to the point about your team's challenges and how to start solving them."
     },
     finalCta: {
       title: "Shall we talk about your team?",
