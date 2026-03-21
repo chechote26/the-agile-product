@@ -70,8 +70,8 @@ const Cursos = () => {
             
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               {language === 'es'
-                ? 'Formación en vivo para equipos de tecnología y producto — con IA donde acelera de verdad'
-                : 'Live Training for Technology and Product Teams — with AI where it actually makes a difference'}
+                ? 'Formación en vivo para equipos de tecnología y producto, con IA donde acelera de verdad'
+                : 'Live Training for Technology and Product Teams, with AI where it actually makes a difference'}
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               {language === 'es'
@@ -120,8 +120,8 @@ const Cursos = () => {
             
             <p className="text-lg text-center text-muted-foreground">
               {language === 'es' 
-                ? 'Este programa reúne prácticas, herramientas y frameworks probados para que tu equipo pase a una entrega ágil y efectiva — actualizado al contexto donde la IA redefine qué hace un PM, un tech lead y los equipos de diseño y desarrollo.'
-                : 'This program brings together proven practices, tools and frameworks so your team can move to agile and effective delivery — updated to the current context where AI is redefining what a PM, tech lead and design and development teams actually do.'
+                ? 'Este programa reúne prácticas, herramientas y frameworks probados para que tu equipo pase a una entrega ágil y efectiva, actualizado al contexto donde la IA redefine qué hace un PM, un tech lead y los equipos de diseño y desarrollo.'
+                : 'This program brings together proven practices, tools and frameworks so your team can move to agile and effective delivery, updated to the current context where AI is redefining what a PM, tech lead and design and development teams actually do.'
               }
             </p>
           </div>
@@ -157,7 +157,7 @@ const Cursos = () => {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Workflows, pipelines e integraciones (Jira, GitHub, CI/CD)' : 'Workflows, pipelines and integrations (Jira, GitHub, CI/CD)'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Workflows y pipelines (Jira, GitHub)' : 'Workflows, pipelines (Jira, GitHub)'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
