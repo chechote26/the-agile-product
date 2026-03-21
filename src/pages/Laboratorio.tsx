@@ -12,7 +12,7 @@ const translations = {
     hero: {
       badge: "Laboratorio de Producto",
       title: "Productos reales, aprendizajes reales",
-      subtitle: "No solo hablo de producto y agilidad — los practico. Acá encontrás los proyectos que estoy construyendo e iterando, con el mismo enfoque que aplico con mis clientes.",
+      subtitle: "No solo hablo de producto y agilidad, los practico. Acá encontrás los proyectos que estoy construyendo e iterando, con el mismo enfoque que aplico con mis clientes.",
     },
     intro: {
       title: "¿Por qué un laboratorio?",
