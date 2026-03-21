@@ -1,8 +1,8 @@
 export const translations = {
   es: {
     hero: {
-      title: "Product management pragmático, con IA donde importa",
-      subtitle: "Ayudo a equipos de Producto y Tech a trabajar mejor — con métodos ágiles probados y herramientas de IA aplicadas donde realmente aceleran.",
+      title: "Product Management pragmático, con IA donde importa",
+      subtitle: "Ayudo a equipos de Producto y Tech a trabajar mejor, con métodos ágiles probados y herramientas de IA aplicadas donde realmente aceleran.",
       cta: "Agenda una mentoría gratuita"
     },
     about: {
@@ -20,11 +20,11 @@ export const translations = {
       },
       delivery: {
         title: "Product Delivery",
-        description: "Acompaño el ciclo completo de entrega: priorización, planificación, releases y mejoras continuas. Integrando herramientas de IA para acelerar feedback loops y tomar decisiones con más contexto y menos reuniones."
+        description: "Acompaño el ciclo completo de entrega: priorización, planificación, releases y mejoras continuas. Integrando herramientas de IA para acelerar feedbacks y tomar decisiones con más contexto y menos reuniones."
       },
       training: {
         title: "Formación en Gestión de Producto",
-        description: "Capacitación práctica sobre discovery, backlog, Jira, roles y flujos de trabajo — actualizada al contexto actual donde la IA redefine qué hace un PM, un tech lead y un equipo de diseño."
+        description: "Capacitación práctica sobre discovery, backlog, Jira, roles y flujos de trabajo — actualizada al contexto actual donde la IA redefine qué hace un PM, un tech lead y los equipos de diseño y desarrollo."
       },
       mentorship: {
         title: "Mentorías 1:1",
@@ -72,14 +72,14 @@ export const translations = {
   },
   en: {
     hero: {
-      title: "Pragmatic product management, with AI where it matters",
-      subtitle: "I help Product and Tech teams work better — with proven agile methods and AI tools applied where they actually make a difference.",
+      title: "Pragmatic Product Management, with AI where it matters",
+      subtitle: "I help Product and Tech teams work better, with proven agile methods and AI tools applied where they actually make a difference.",
       cta: "Schedule a free mentorship"
     },
     about: {
       title: "Who I am and how I can help you",
       intro: "I'm Eze Tuero, I help startups and scaleups improve how their Product & Tech teams work.",
-      experience: "With over 15 years in product management — and 7 in the tech world — I combine practical agility with real AI usage: tool integration, rapid prototyping, feedback capture at scale, and rethinking how discovery and delivery cycles work today.",
+      experience: "With over 15 years in product management — and 7 in the tech world — I combine practical agility with real AI usage: tool integration, rapid prototyping, feedback capture at scale and rethinking how discovery and delivery cycles work today.",
       approach: "I work 1:1 with leaders and teams who need clarity to organize their work, prioritize better, and deliver value continuously — in a context where roles and processes are shifting.",
       philosophy: "I don't sell magic formulas or promise AI transformations. I help you build a way of working that fits you, your team, and your moment."
     },
@@ -95,11 +95,11 @@ export const translations = {
       },
       training: {
         title: "Product Management Training",
-        description: "Practical training on discovery, backlog, Jira, roles, and workflows — updated to the current context where AI is redefining what a PM, tech lead, and design team actually do."
+        description: "Practical training on discovery, backlog, Jira, roles, and workflows; updated to the current context where AI is redefining what a PM, tech lead and design and development teams actually do."
       },
       mentorship: {
         title: "1:1 Mentorships",
-        description: "Personalized sessions to solve concrete challenges in agility, delivery, or product leadership. Includes how to start using AI pragmatically in your day-to-day without overengineering."
+        description: "Personalized sessions to solve concrete challenges in agility, delivery or product leadership. Includes how to start using AI pragmatically in your day-to-day without overengineering."
       }
     },
     cases: {
