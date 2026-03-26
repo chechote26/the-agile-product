@@ -1,7 +1,7 @@
 export const translations = {
   es: {
     hero: {
-      title: "Product Management práctico, con IA donde importa",
+      title: "Product Management práctico, con IA donde más importa",
       subtitle: "Ayudo a equipos de Producto y Tech a trabajar mejor, con marcos ágiles probados y herramientas de IA aplicadas donde realmente aceleran.",
       cta: "Agenda una mentoría gratuita"
     },
