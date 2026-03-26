@@ -2,8 +2,8 @@ export const translations = {
   es: {
     hero: {
       title: "Tu equipo trabaja mucho, pero no avanza?",
-      subtitle: "Ayudo a PMs, founders y equipos de Producto a dejar de correr en círculos: priorizar lo que importa, organizar cómo trabajan y entregar valor real — con IA aplicada donde realmente acelera.",
-      cta: "Hablemos 30 minutos, gratis, sin compromiso"
+      subtitle: "Ayudo a PMs, founders y equipos de Producto a dejar de correr en círculos: priorizar lo que importa, organizar cómo trabajan y entregar valor real con IA aplicada donde realmente acelera.",
+      cta: "Hablemos 30 minutos gratis, sin compromiso"
     },
     painPoints: {
       title: "¿Te suena alguna de estas situaciones?",
