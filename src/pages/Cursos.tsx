@@ -70,7 +70,7 @@ const Cursos = () => {
             
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               {language === 'es'
-                ? 'Dejá de apagar incendios y empezá a entregar valor real'
+                ? 'De la ejecución reactiva a la creación de productos con propósito'
                 : 'Stop firefighting and start delivering real value'}
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -134,7 +134,7 @@ const Cursos = () => {
               {/* Course 1 */}
               <div className="bg-card rounded-lg border p-6 h-full border-t-4 border-t-primary">
                 <h3 className="text-xl font-bold text-primary mb-4">
-                  {language === 'es' ? '1. Orden Operativo y Estructura' : '1. Operational Order and Structure'}
+                  {language === 'es' ? '1. Organización Táctica y Estructura del Equipo' : '1. Operational Order and Structure'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   {language === 'es' ? 'Eliminá la confusión: quién hace qué y cómo se mide el éxito.' : 'Eliminate confusion: who does what and how success is measured.'}
@@ -147,6 +147,10 @@ const Cursos = () => {
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">{language === 'es' ? 'Frameworks que se adaptan a vos, no al revés' : 'Frameworks that adapt to you, not vice versa'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">{language === 'es' ? 'Definition of Ready: Acuerdos para trabajar' : 'Definition of Ready: Agreements to work'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
@@ -202,7 +206,7 @@ const Cursos = () => {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Métricas que importan (Cycle Time, Lead Time)' : 'Metrics that matter (Cycle Time, Lead Time)'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Métricas que importan (Throughput, Velocity, Cycle Time, Lead Time)' : 'Metrics that matter (Throughput, Velocity, Cycle Time, Lead Time)'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
@@ -231,9 +235,9 @@ const Cursos = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center p-6 bg-card rounded-lg border">
                 <h3 className="font-semibold text-foreground mb-2">
-                  PMs, POs y Scrum Masters
+                  PMs y POs
                 </h3>
-                <p className="text-xs text-muted-foreground">{language === 'es' ? 'Que buscan liderar con datos y menos estrés' : 'Looking to lead with data and less stress'}</p>
+                <p className="text-xs text-muted-foreground">{language === 'es' ? 'Que buscan liderar con evidencia y menos estrés' : 'Looking to lead with evidence and less stress'}</p>
               </div>
               <div className="text-center p-6 bg-card rounded-lg border">
                 <h3 className="font-semibold text-foreground mb-2">
