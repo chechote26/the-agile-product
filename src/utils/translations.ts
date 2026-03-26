@@ -1,144 +1,248 @@
 export const translations = {
   es: {
     hero: {
-      title: "Product Management práctico, con IA donde más importa",
-      subtitle: "Ayudo a equipos de Producto y Tech a trabajar mejor, con marcos ágiles probados y herramientas de IA aplicadas donde realmente aceleran.",
-      cta: "Agenda una mentoría gratuita"
+      title: "Tu equipo trabaja mucho. ¿Por qué no avanza?",
+      subtitle: "Ayudo a PMs, founders y equipos de Producto a dejar de correr en círculos: priorizar lo que importa, organizar cómo trabajan y entregar valor real — con IA aplicada donde realmente acelera.",
+      cta: "Hablemos 30 minutos, gratis"
     },
-    about: {
-      title: "Quién soy y cómo puedo ayudarte",
-      intro: "Soy Eze Tuero, ayudo a startups y scaleups a mejorar la forma en que trabajan sus equipos de Producto & Tech.",
-      experience: "Con más de 15 años en gestión de producto — y 7 en el mundo tech — combino agilidad práctica con el uso real de IA: integración de herramientas, prototipado rápido, captura de feedback a escala y redefinición del ciclo de discovery y delivery.",
-      approach: "Trabajo 1:1 con líderes y equipos que necesitan claridad para organizar su trabajo, priorizar mejor y entregar valor de forma continua en un contexto donde los roles y los procesos están cambiando.",
-      philosophy: "No vendo fórmulas mágicas ni prometo transformaciones con IA. Te acompaño a construir una forma de trabajo que funcione para vos, tu equipo y tu momento."
+    painPoints: {
+      title: "¿Te suena alguna de estas situaciones?",
+      items: [
+        {
+          icon: "chaos",
+          text: "El equipo tiene sprints llenos pero los releases nunca llegan a tiempo — o llegan, pero nadie sabe bien qué se entregó ni por qué."
+        },
+        {
+          icon: "priority",
+          text: "Hay 47 cosas en el backlog, todas urgentes según alguien. No sabés qué construir primero y cada semana cambia la prioridad."
+        },
+        {
+          icon: "effort",
+          text: "Se trabaja mucho, se hace mucho, pero el producto no avanza. La tracción no llega y el equipo empieza a perder el hilo."
+        },
+        {
+          icon: "career",
+          text: "Querés crecer como PM, conseguir un mejor rol o construir tu perfil — pero no sabés cómo diferenciarte ni qué mueve el amperímetro en el mercado actual."
+        }
+      ],
+      cta: "Sí, me pasa esto →"
     },
-    services: {
-      title: "Servicios principales",
+    solutions: {
+      title: "Cómo puedo ayudarte",
       agile: {
-        title: "Agile Project Management",
-        description: "Diseño marcos ágiles personalizados (Scrum, Kanban, híbridos) para que tu equipo se organice mejor y entregue con foco. Con IA donde reduce fricción real: automatización de reportes, seguimiento de métricas y gestión del backlog."
+        title: "Tu equipo no entrega con foco",
+        problem: "Sprints caóticos, backlog sin dueño, reuniones que no resuelven nada.",
+        solution: "Diseño un sistema de trabajo adaptado a tu contexto: Scrum, Kanban o híbrido. Con IA donde reduce fricción real: reportes automáticos, métricas sin burocracia, backlog que se gestiona solo."
       },
       delivery: {
-        title: "Product Delivery",
-        description: "Acompaño el ciclo completo de entrega: priorización, planificación, releases y mejoras continuas. Integrando herramientas de IA para acelerar feedbacks y tomar decisiones con más contexto y menos reuniones."
+        title: "Construís, pero no validás",
+        problem: "Se lanza, pero no se sabe si funcionó. El ciclo discovery-delivery está roto o directamente no existe.",
+        solution: "Acompaño el ciclo completo: desde priorizar qué construir hasta medir si funcionó. Integrando herramientas de IA para capturar feedback más rápido y tomar decisiones con más contexto y menos reuniones."
       },
       training: {
-        title: "Formación en Gestión de Producto",
-        description: "Capacitación práctica sobre discovery, backlog, Jira, roles y flujos de trabajo actualizada al contexto actual donde la IA redefine qué hace un PM, un tech lead y los equipos de diseño y desarrollo."
+        title: "El equipo no tiene lenguaje común",
+        problem: "PMs, devs y stakeholders hablan idiomas distintos. Cada uno entiende 'prioridad' o 'listo' de forma diferente.",
+        solution: "Formación práctica sobre discovery, backlog, Jira y roles — actualizada al contexto actual donde la IA redefine qué hace un PM y cómo trabaja el equipo."
       },
       mentorship: {
-        title: "Mentorías 1:1",
-        description: "Sesiones personalizadas para resolver desafíos concretos en agilidad, delivery o liderazgo de producto. Incluye cómo empezar a usar IA de forma pragmática en tu día a día sin sobreingeniería."
+        title: "Mentoría 1:1 para tu desafío concreto",
+        problem: "Tenés un problema específico que necesita una cabeza externa: agilidad, delivery, liderazgo o cómo empezar a usar IA en tu día a día.",
+        solution: "Sesiones personalizadas para resolver desafíos concretos. Sin fórmulas genéricas: vamos a tu contexto, tu equipo, tu momento."
       }
     },
+    careerMentorship: {
+      title: "¿Querés crecer como PM o conseguir el rol que buscás?",
+      subtitle: "El mercado de Producto cambió. Las entrevistas son más exigentes, los perfiles más híbridos y la IA redefinió qué se espera de un PM. Si estás buscando crecer, hacer una transición o construir tu marca profesional, te acompaño con foco y sin rodeos.",
+      items: [
+        {
+          icon: "job",
+          title: "Conseguir trabajo como PM",
+          description: "Revisamos tu CV, tu perfil de LinkedIn y cómo estás contando tu historia. Preparamos entrevistas con foco en lo que el mercado busca hoy: criterio de priorización, métricas, manejo de stakeholders y cómo trabajás con IA."
+        },
+        {
+          icon: "grow",
+          title: "Crecer dentro de tu empresa actual",
+          description: "Si sentís que estás estancado o que no te ven como referente, trabajamos en cómo generar visibilidad interna, asumir proyectos estratégicos y posicionarte para el próximo nivel."
+        },
+        {
+          icon: "brand",
+          title: "Construir tu marca personal como PM",
+          description: "LinkedIn es el nuevo CV. Te ayudo a definir tu voz, qué contenido tiene sentido para tu perfil y cómo construir presencia en el ecosistema de Producto sin que se sienta forzado."
+        }
+      ],
+      cta: "Agendá una sesión de carrera"
+    },
     cases: {
-      title: "Casos reales, resultados concretos",
+      title: "Resultados reales, no promesas",
       healthtech: {
         title: "HealthTech en expansión",
-        description: "Implementamos Scrum y Kanban, unificamos backlogs en Jira y redefinimos roles para escalar equipos y procesos."
+        before: "El equipo crecía pero los procesos no escalaban. Sprints que se cortaban, backlog sin claridad, roles superpuestos.",
+        after: "Implementamos Scrum + Kanban según el tipo de trabajo, unificamos el backlog en Jira y redefinimos roles. El equipo empezó a cerrar sprints y a tener visibilidad real del progreso."
       },
       mentorshipCase: {
-        title: "Mentoría a profesional tech",
-        description: "Acompañamiento 1:1 para transición a Producto: mindset, herramientas y preparación para entrevistas con foco en el perfil de PM que el mercado busca hoy."
+        title: "Dev que quería pasarse a Producto",
+        before: "Años de experiencia técnica, cero claridad sobre cómo traducirla en un perfil de PM atractivo para el mercado.",
+        after: "En pocas sesiones: CV reescrito, LinkedIn actualizado, pitch personal afinado. Preparación para entrevistas con foco en el perfil de PM que se busca hoy. Consiguió el rol."
       },
       aiStartup: {
         title: "Startup de IA en etapa inicial",
-        description: "Co-diseñamos con el founder el MVP, V1 y V2 mediante story mapping, con release plan y backlog inicial alineando visión, ejecución y velocidad de iteración desde el día uno."
+        before: "El founder tenía visión pero no sabía cómo pasar de idea a producto sin construir de más desde el día uno.",
+        after: "Co-diseñamos el MVP, V1 y V2 con story mapping. Release plan y backlog inicial alineados entre visión, velocidad de iteración y lo que realmente necesitaba validar primero."
       },
       edtech: {
         title: "EdTech regional",
-        description: "Diseñé un curso avanzado de gestión de productos con contenido práctico, desafíos reales y evaluaciones asincrónicas incluyendo módulos sobre cómo la IA está cambiando el rol del PM."
+        before: "Necesitaban formar a su equipo en gestión de producto pero los cursos disponibles no reflejaban cómo trabajan los equipos hoy.",
+        after: "Diseñé un curso avanzado con desafíos reales, evaluaciones prácticas y un módulo entero sobre cómo la IA está cambiando el rol del PM."
       }
     },
     mentorshipBenefits: {
-      title: "¿Qué te llevas de una mentoría?",
-      diagnosis: "Diagnóstico express de tu contexto actual",
-      recommendations: "Recomendaciones claras y aplicables desde el día 1",
-      guidance: "Guía práctica para implementar mejoras reales",
-      description: "La mentoría es una conversación directa y personalizada, no una clase teórica. En 30 minutos, vamos al grano sobre los desafíos de tu equipo y cómo empezar a resolverlos."
+      title: "¿Qué pasa en una sesión?",
+      diagnosis: "Diagnóstico directo de tu situación",
+      recommendations: "Acciones concretas desde el día 1",
+      guidance: "Un camino claro para seguir solo",
+      description: "No es una clase, es una conversación. En 30 minutos vamos al grano: entiendo tu contexto, identifico qué está trabando y te doy pasos concretos para desbloquearlo. Sin teoría innecesaria, sin vueltas."
+    },
+    about: {
+      title: "¿Quién está del otro lado?",
+      intro: "Soy Eze Tuero. Llevo más de 15 años en gestión de producto — 7 en el mundo tech — trabajando con startups y scaleups en latinoamérica y Europa.",
+      experience: "Combiné agilidad práctica con uso real de IA antes de que fuera tendencia: integración de herramientas, prototipado rápido, captura de feedback a escala y redefinición del ciclo de discovery y delivery.",
+      approach: "Trabajo con PMs, founders y líderes de equipo que necesitan claridad para organizarse mejor, priorizar con criterio y entregar valor de forma continua — en un contexto donde los roles y los procesos cambian todo el tiempo.",
+      philosophy: "No vendo metodologías ni transformaciones mágicas. Te acompaño a construir una forma de trabajo que funcione para vos, tu equipo y tu momento."
     },
     finalCta: {
-      title: "¿Conversamos sobre tu equipo?",
-      description: "Agenda una mentoría gratuita para identificar oportunidades de mejora reales y empezar a transformar tu forma de trabajar.",
-      scheduleMentorship: "Agenda tu mentoría",
-      contactLinkedIn: "Contactame por LinkedIn",
-      writeEmail: "Escribime por email",
+      title: "30 minutos pueden cambiar cómo trabajás",
+      description: "Una sesión gratuita para entender tu contexto, identificar qué está frenando tu equipo o tu carrera, y ver si puedo ayudarte.",
+      scheduleMentorship: "Agendá tu sesión gratuita",
+      contactLinkedIn: "Escribime en LinkedIn",
+      writeEmail: "Mandame un email",
       joinDiscord: "Unite al Discord"
     },
     footer: {
       title: "The Agile Product · Eze Tuero",
-      subtitle: "Consultoría en Agilidad y Producto"
+      subtitle: "Consultoría en Producto y Agilidad"
     }
   },
   en: {
     hero: {
-      title: "Pragmatic Product Management, with AI where it matters",
-      subtitle: "I help Product and Tech teams work better, with proven agile methods and AI tools applied where they actually make a difference.",
-      cta: "Schedule a free mentorship"
+      title: "Your team works hard. Why isn't it moving forward?",
+      subtitle: "I help PMs, founders, and Product teams stop running in circles: prioritize what matters, organize how they work, and deliver real value — with AI applied where it actually makes a difference.",
+      cta: "Let's talk for 30 minutes, free"
     },
-    about: {
-      title: "Who I am and how I can help you",
-      intro: "I'm Eze Tuero, I help startups and scaleups improve how their Product & Tech teams work.",
-      experience: "With over 15 years in product management — and 7 in the tech world — I combine practical agility with real AI usage: tool integration, rapid prototyping, feedback capture at scale and rethinking how discovery and delivery cycles work today.",
-      approach: "I work 1:1 with leaders and teams who need clarity to organize their work, prioritize better, and deliver value continuously in a context where roles and processes are shifting.",
-      philosophy: "I don't sell magic formulas or promise AI transformations. I help you build a way of working that fits you, your team, and your moment."
+    painPoints: {
+      title: "Does any of this sound familiar?",
+      items: [
+        {
+          icon: "chaos",
+          text: "The team has packed sprints but releases never arrive on time — or they do, but nobody really knows what was shipped or why."
+        },
+        {
+          icon: "priority",
+          text: "There are 47 things in the backlog, all urgent according to someone. You don't know what to build first and priorities shift every week."
+        },
+        {
+          icon: "effort",
+          text: "Everyone's working hard, shipping a lot, but the product isn't moving. Traction isn't coming and the team is starting to lose the thread."
+        },
+        {
+          icon: "career",
+          text: "You want to grow as a PM, land a better role, or build your professional profile — but you don't know how to stand out or what actually moves the needle in today's market."
+        }
+      ],
+      cta: "Yes, this is me →"
     },
-    services: {
-      title: "Main Services",
+    solutions: {
+      title: "How I can help",
       agile: {
-        title: "Agile Project Management",
-        description: "I design customized agile frameworks (Scrum, Kanban, hybrids) so your team can organize better and deliver with focus. With AI where it reduces real friction: report automation, metrics tracking, and backlog management."
+        title: "Your team doesn't deliver with focus",
+        problem: "Chaotic sprints, ownerless backlog, meetings that solve nothing.",
+        solution: "I design a working system tailored to your context: Scrum, Kanban, or hybrid. With AI where it reduces real friction: automated reports, metrics without bureaucracy, a backlog that practically manages itself."
       },
       delivery: {
-        title: "Product Delivery",
-        description: "I accompany the complete delivery cycle: prioritization, planning, releases, and continuous improvements. Integrating AI tools to accelerate feedback loops and make decisions with more context and fewer meetings."
+        title: "You're building, but not validating",
+        problem: "Things get shipped but nobody knows if they worked. The discovery-delivery cycle is broken — or simply doesn't exist.",
+        solution: "I accompany the full cycle: from deciding what to build to measuring if it worked. Integrating AI tools to capture feedback faster and make decisions with more context and fewer meetings."
       },
       training: {
-        title: "Product Management Training",
-        description: "Practical training on discovery, backlog, Jira, roles, and workflows; updated to the current context where AI is redefining what a PM, tech lead and design and development teams actually do."
+        title: "Your team doesn't share a common language",
+        problem: "PMs, devs, and stakeholders speak different languages. Everyone has a different understanding of 'priority' or 'done'.",
+        solution: "Practical training on discovery, backlog, Jira, and roles — updated to the current context where AI is redefining what a PM does and how teams work."
       },
       mentorship: {
-        title: "1:1 Mentorships",
-        description: "Personalized sessions to solve concrete challenges in agility, delivery or product leadership. Includes how to start using AI pragmatically in your day-to-day without overengineering."
+        title: "1:1 mentorship for your specific challenge",
+        problem: "You have a specific problem that needs an outside perspective: agility, delivery, leadership, or how to start using AI in your day-to-day.",
+        solution: "Personalized sessions to solve concrete challenges. No generic formulas: we go to your context, your team, your moment."
       }
     },
+    careerMentorship: {
+      title: "Want to grow as a PM or land the role you're looking for?",
+      subtitle: "The Product market has changed. Interviews are more demanding, profiles more hybrid, and AI has redefined what's expected from a PM. If you're looking to grow, make a transition, or build your professional brand, I'll guide you with focus and no fluff.",
+      items: [
+        {
+          icon: "job",
+          title: "Land a PM job",
+          description: "We review your CV, LinkedIn profile, and how you're telling your story. We prep for interviews focused on what the market wants today: prioritization thinking, metrics, stakeholder management, and how you work with AI."
+        },
+        {
+          icon: "grow",
+          title: "Grow within your current company",
+          description: "If you feel stuck or invisible, we work on how to build internal visibility, take on strategic projects, and position yourself for the next level."
+        },
+        {
+          icon: "brand",
+          title: "Build your personal brand as a PM",
+          description: "LinkedIn is the new CV. I help you define your voice, what content makes sense for your profile, and how to build presence in the Product ecosystem without it feeling forced."
+        }
+      ],
+      cta: "Schedule a career session"
+    },
     cases: {
-      title: "Real Cases, Concrete Results",
+      title: "Real results, not promises",
       healthtech: {
         title: "Expanding HealthTech",
-        description: "We implemented Scrum and Kanban, unified backlogs in Jira, and redefined roles to scale teams and processes."
+        before: "The team was growing but processes weren't scaling. Sprints getting cut short, no clarity in the backlog, overlapping roles.",
+        after: "We implemented Scrum + Kanban based on work type, unified the backlog in Jira, and redefined roles. The team started closing sprints and having real visibility into progress."
       },
       mentorshipCase: {
-        title: "Tech Professional Mentorship",
-        description: "1:1 guidance for a transition to Product: mindset, tools, and interview preparation focused on the PM profile the market is looking for today."
+        title: "Dev who wanted to move into Product",
+        before: "Years of technical experience, zero clarity on how to translate it into an attractive PM profile for the market.",
+        after: "In a few sessions: rewritten CV, updated LinkedIn, refined personal pitch. Interview prep focused on the PM profile the market is looking for today. They got the role."
       },
       aiStartup: {
         title: "Early-stage AI Startup",
-        description: "Co-designed with the founder the MVP, V1, and V2 through story mapping, with a release plan and initial backlog aligning vision, execution, and iteration speed from day one."
+        before: "The founder had vision but didn't know how to go from idea to product without over-building from day one.",
+        after: "We co-designed the MVP, V1, and V2 using story mapping. Release plan and initial backlog aligned between vision, iteration speed, and what actually needed to be validated first."
       },
       edtech: {
         title: "Regional EdTech",
-        description: "I designed an advanced product management course with practical content, real challenges, and asynchronous evaluations including modules on how AI is changing the PM role."
+        before: "They needed to train their team in product management, but available courses didn't reflect how teams actually work today.",
+        after: "I designed an advanced course with real challenges, practical assessments, and an entire module on how AI is changing the PM role."
       }
     },
     mentorshipBenefits: {
-      title: "What do you get from a mentorship?",
-      diagnosis: "Express diagnosis of your current context",
-      recommendations: "Clear and applicable recommendations from day 1",
-      guidance: "Practical guide to implement real improvements",
-      description: "Mentorship is a direct and personalized conversation, not a theoretical class. In 30 minutes, we get to the point about your team's challenges and how to start solving them."
+      title: "What happens in a session?",
+      diagnosis: "Direct diagnosis of your situation",
+      recommendations: "Concrete actions from day 1",
+      guidance: "A clear path you can follow on your own",
+      description: "It's not a class, it's a conversation. In 30 minutes we get to the point: I understand your context, identify what's blocking you, and give you concrete steps to unblock it. No unnecessary theory, no fluff."
+    },
+    about: {
+      title: "Who's on the other side?",
+      intro: "I'm Eze Tuero. I've spent over 15 years in product management — 7 in the tech world — working with startups and scaleups across Latin America and Europe.",
+      experience: "I combined practical agility with real AI usage before it was trendy: tool integration, rapid prototyping, feedback capture at scale, and rethinking how discovery and delivery cycles actually work.",
+      approach: "I work with PMs, founders, and team leaders who need clarity to organize better, prioritize with judgment, and deliver value continuously — in a context where roles and processes are always shifting.",
+      philosophy: "I don't sell methodologies or magic transformations. I help you build a way of working that fits you, your team, and your moment."
     },
     finalCta: {
-      title: "Shall we talk about your team?",
-      description: "Schedule a free mentorship to identify real improvement opportunities and start transforming how you work.",
-      scheduleMentorship: "Schedule your mentorship",
-      contactLinkedIn: "Contact me on LinkedIn",
-      writeEmail: "Write me an email",
+      title: "30 minutes can change how you work",
+      description: "A free session to understand your context, identify what's holding back your team or your career, and see if I can help.",
+      scheduleMentorship: "Schedule your free session",
+      contactLinkedIn: "Message me on LinkedIn",
+      writeEmail: "Send me an email",
       joinDiscord: "Join the Discord"
     },
     footer: {
       title: "The Agile Product · Eze Tuero",
-      subtitle: "Agility and Product Consulting"
+      subtitle: "Product & Agility Consulting"
     }
   }
 };
