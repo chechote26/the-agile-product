@@ -1,16 +1,16 @@
 export const translations = {
   es: {
     hero: {
-      title: "Tu equipo trabaja mucho. ¿Por qué no avanza?",
+      title: "Tu equipo trabaja mucho, pero no avanza?",
       subtitle: "Ayudo a PMs, founders y equipos de Producto a dejar de correr en círculos: priorizar lo que importa, organizar cómo trabajan y entregar valor real — con IA aplicada donde realmente acelera.",
-      cta: "Hablemos 30 minutos, gratis"
+      cta: "Hablemos 30 minutos, gratis, sin compromiso"
     },
     painPoints: {
       title: "¿Te suena alguna de estas situaciones?",
       items: [
         {
           icon: "chaos",
-          text: "El equipo tiene sprints llenos pero los releases nunca llegan a tiempo — o llegan, pero nadie sabe bien qué se entregó ni por qué."
+          text: "El equipo tiene sprints llenos pero los releases nunca llegan a tiempo o llegan, pero nadie sabe bien qué se entregó ni por qué."
         },
         {
           icon: "priority",
@@ -18,11 +18,11 @@ export const translations = {
         },
         {
           icon: "effort",
-          text: "Se trabaja mucho, se hace mucho, pero el producto no avanza. La tracción no llega y el equipo empieza a perder el hilo."
+          text: "Se trabaja mucho, se hace mucho, pero el producto no avanza. La tracción no llega y el equipo empieza a perder el foco."
         },
         {
           icon: "career",
-          text: "Querés crecer como PM, conseguir un mejor rol o construir tu perfil — pero no sabés cómo diferenciarte ni qué mueve el amperímetro en el mercado actual."
+          text: "Querés crecer como PM, conseguir un mejor rol o construir tu perfil, pero no sabés cómo diferenciarte ni qué mueve el amperímetro en el mercado actual."
         }
       ],
       cta: "Sí, me pasa esto →"
@@ -42,7 +42,7 @@ export const translations = {
       training: {
         title: "El equipo no tiene lenguaje común",
         problem: "PMs, devs y stakeholders hablan idiomas distintos. Cada uno entiende 'prioridad' o 'listo' de forma diferente.",
-        solution: "Formación práctica sobre discovery, backlog, Jira y roles — actualizada al contexto actual donde la IA redefine qué hace un PM y cómo trabaja el equipo."
+        solution: "Formación práctica sobre discovery, backlog, Jira y roles, actualizada al contexto actual donde la IA redefine qué hace un PM y cómo trabaja el equipo."
       },
       mentorship: {
         title: "Mentoría 1:1 para tu desafío concreto",
@@ -52,7 +52,7 @@ export const translations = {
     },
     careerMentorship: {
       title: "¿Querés crecer como PM o conseguir el rol que buscás?",
-      subtitle: "El mercado de Producto cambió. Las entrevistas son más exigentes, los perfiles más híbridos y la IA redefinió qué se espera de un PM. Si estás buscando crecer, hacer una transición o construir tu marca profesional, te acompaño con foco y sin rodeos.",
+      subtitle: "El mercado de Producto cambió. Las entrevistas son más exigentes, los perfiles más híbridos y la IA redefinió qué se espera de un PM. Si estás buscando crecer, hacer una transición o construir tu marca profesional, te acompaño con foco y sin vueltas.",
       items: [
         {
           icon: "job",
@@ -67,7 +67,7 @@ export const translations = {
         {
           icon: "brand",
           title: "Construir tu marca personal como PM",
-          description: "LinkedIn es el nuevo CV. Te ayudo a definir tu voz, qué contenido tiene sentido para tu perfil y cómo construir presencia en el ecosistema de Producto sin que se sienta forzado."
+          description: "LinkedIn es parte del nuevo CV. Te ayudo a definir tu voz, qué contenido tiene sentido para tu perfil y cómo construir presencia en el ecosistema de Producto sin que se sienta forzado."
         }
       ],
       cta: "Agendá una sesión de carrera"
@@ -80,8 +80,8 @@ export const translations = {
         after: "Implementamos Scrum + Kanban según el tipo de trabajo, unificamos el backlog en Jira y redefinimos roles. El equipo empezó a cerrar sprints y a tener visibilidad real del progreso."
       },
       mentorshipCase: {
-        title: "Dev que quería pasarse a Producto",
-        before: "Años de experiencia técnica, cero claridad sobre cómo traducirla en un perfil de PM atractivo para el mercado.",
+        title: "Scrum Master que quería pasarse a Producto",
+        before: "Años de experiencia metodológica, cero claridad sobre cómo traducirla en un perfil de PM atractivo para el mercado.",
         after: "En pocas sesiones: CV reescrito, LinkedIn actualizado, pitch personal afinado. Preparación para entrevistas con foco en el perfil de PM que se busca hoy. Consiguió el rol."
       },
       aiStartup: {
@@ -91,7 +91,7 @@ export const translations = {
       },
       edtech: {
         title: "EdTech regional",
-        before: "Necesitaban formar a su equipo en gestión de producto pero los cursos disponibles no reflejaban cómo trabajan los equipos hoy.",
+        before: "Necesitaban formar a sus estudiantes en gestión de producto pero los cursos disponibles no reflejaban cómo trabajan los equipos hoy.",
         after: "Diseñé un curso avanzado con desafíos reales, evaluaciones prácticas y un módulo entero sobre cómo la IA está cambiando el rol del PM."
       }
     },
@@ -104,9 +104,9 @@ export const translations = {
     },
     about: {
       title: "¿Quién está del otro lado?",
-      intro: "Soy Eze Tuero. Llevo más de 15 años en gestión de producto — 7 en el mundo tech — trabajando con startups y scaleups en latinoamérica y Europa.",
-      experience: "Combiné agilidad práctica con uso real de IA antes de que fuera tendencia: integración de herramientas, prototipado rápido, captura de feedback a escala y redefinición del ciclo de discovery y delivery.",
-      approach: "Trabajo con PMs, founders y líderes de equipo que necesitan claridad para organizarse mejor, priorizar con criterio y entregar valor de forma continua — en un contexto donde los roles y los procesos cambian todo el tiempo.",
+      intro: "Soy Eze Tuero. Llevo más de 15 años en gestión de producto — 7 en el mundo tech — trabajando con startups y scaleups en Latam.",
+      experience: "Combiné agilidad práctica con gestión de productos reales integrando herramientas, acelerando el prototipado, capturando feedback a escala y redefiniendo del ciclo de discovery y delivery.",
+      approach: "Trabajo con PMs, POs, founders y líderes de equipo que necesitan claridad para organizarse mejor, priorizar con criterio y entregar valor de forma continua, en un contexto donde los roles y los procesos cambian todo el tiempo.",
       philosophy: "No vendo metodologías ni transformaciones mágicas. Te acompaño a construir una forma de trabajo que funcione para vos, tu equipo y tu momento."
     },
     finalCta: {
