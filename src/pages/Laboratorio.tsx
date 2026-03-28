@@ -25,9 +25,9 @@ const translations = {
         status: "productivo",
         statusLabel: "En producción",
         tagline: "Seguimiento diario de Meta Ads sin abrir el Ads Manager",
-        problem: "Gestionar campañas en Meta implica entrar al Ads Manager todos los días, interpretar métricas dispersas y decidir sin contexto acumulado. Construí un tracker que genera reportes diarios automáticos usando Claude vía MCP, publicados en GitHub Pages — con métricas clave, evolución en el tiempo y señales para ajustar tanto las campañas como el funnel del producto.",
+        problem: "Gestionar campañas en Meta implica entrar al Ads Manager todos los días, interpretar métricas dispersas y decidir sin contexto acumulado. Construí un tracker que genera reportes diarios automáticos usando Claude vía MCP, publicados en GitHub Pages con métricas clave, evolución en el tiempo y señales para ajustar tanto las campañas como el funnel del producto.",
         hypothesis: "Hipótesis: tener un reporte diario estructurado y acumulativo permite tomar mejores decisiones de optimización que revisar el dashboard nativo, porque fuerza a leer tendencias en lugar de números sueltos.",
-        learning: "Aprendizaje en curso: el valor no está solo en automatizar el reporte, sino en el formato — cómo presentás la métrica determina qué decisión tomás. Próximo paso: comparativas semana a semana y alertas por variaciones significativas.",
+        learning: "Aprendizaje en curso: el valor no está solo en automatizar el reporte, sino en el formato, cómo presentás la métrica determina qué decisión tomás. Próximo paso: comparativas semana a semana y alertas por variaciones significativas.",
         url: null,
         cta: "Demo a pedido",
         ctaDemo: true,
@@ -209,9 +209,9 @@ const Laboratorio = () => {
       {/* Projects */}
       <section className="py-8 px-4 pb-24">
         <div className="container mx-auto max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 items-start">
             {t.projects.map((project) => (
-              <Card key={project.name} className="h-full flex flex-col">
+              <Card key={project.name} className="flex flex-col">
                 <CardHeader>
                   <div className="flex items-start justify-between gap-3 mb-2">
                     <div className="flex items-center gap-3">
@@ -237,7 +237,7 @@ const Laboratorio = () => {
 
                   <div className="mt-auto pt-2">
                     {project.ctaDemo ? (
-                      <Button className="w-full" variant="outline" asChild>
+                      <Button className="w-full" asChild>
                         <a href="mailto:tuero.eze@gmail.com">
                           <Mail className="w-4 h-4 mr-2" />
                           {project.cta}
