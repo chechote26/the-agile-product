@@ -33,13 +33,13 @@ const Index = () => {
             <img src={logo} alt="The Agile Product" className="w-auto h-8 min-h-8 md:h-10 md:min-h-10 object-contain" />
           </div>
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
+            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" data-id="cta-blog"asChild>
               <Link to="/blog">
                 <FileText className="w-4 h-4 mr-1" />
                 {language === 'es' ? 'Blog' : 'Blog'}
               </Link>
             </Button>
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
+            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" data-id="cta-cursos" asChild>
               <Link to="/cursos">
                 <GraduationCap className="w-4 h-4 mr-1" />
                 {language === 'es' ? 'Cursos' : 'Courses'}

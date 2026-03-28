@@ -32,7 +32,7 @@ const Cursos = () => {
               variant="ghost"
               size="sm" 
               className="text-muted-foreground hover:text-foreground font-medium"
-              asChild
+              data-id="cta-blog" asChild
             >
               <Link to="/blog">
                 <FileText className="w-4 h-4 mr-1" />
@@ -42,7 +42,7 @@ const Cursos = () => {
             <Button 
               size="sm" 
               className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
-              asChild
+              data-id="cta-reunion-gratuita"asChild
             >
               <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
                 <Calendar className="w-4 h-4 mr-1" />
@@ -273,7 +273,7 @@ const Cursos = () => {
             </p>
             
             <div className="flex justify-center">
-              <Button size="lg" className="text-lg px-8 py-6" asChild>
+              <Button size="lg" className="text-lg px-8 py-6" data-id="cta-inscripcion-cursos" asChild>
                 <a href="https://forms.gle/9RNDTanEZEMBxR2r9" target="_blank" rel="noopener noreferrer">
                   <Calendar className="mr-2 h-5 w-5" />
                   {language === 'es' ? 'Inscribirme ahora' : 'Join now'}

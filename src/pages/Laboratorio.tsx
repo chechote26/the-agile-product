@@ -136,13 +136,13 @@ const Laboratorio = () => {
                 {language === 'es' ? 'Inicio' : 'Home'}
               </Link>
             </Button>
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
+            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" data-id="cta-blog" asChild>
               <Link to="/blog"><FileText className="w-4 h-4 mr-1" />{t.nav.blog}</Link>
             </Button>
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
               <Link to="/cursos"><GraduationCap className="w-4 h-4 mr-1" />{t.nav.cursos}</Link>
             </Button>
-            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium" asChild>
+            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium" data-id="cta-reunion-gratuita" asChild>
               <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
                 <Calendar className="w-4 h-4 mr-1" />{t.nav.mentoria}
               </a>
