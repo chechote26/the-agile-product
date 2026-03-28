@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLink, FlaskConical, Car, Calculator, Calendar, FileText, GraduationCap, Construction, CheckCircle } from "lucide-react";
+import { ExternalLink, FlaskConical, Car, Calculator, Calendar, FileText, GraduationCap, Construction, CheckCircle, BarChart2, Mail } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
@@ -20,6 +20,19 @@ const translations = {
     },
     projects: [
       {
+        name: "Tracker de Campañas con IA",
+        icon: "chart",
+        status: "productivo",
+        statusLabel: "En producción",
+        tagline: "Seguimiento diario de Meta Ads sin abrir el Ads Manager",
+        problem: "Gestionar campañas en Meta implica entrar al Ads Manager todos los días, interpretar métricas dispersas y decidir sin contexto acumulado. Construí un tracker que genera reportes diarios automáticos usando Claude vía MCP, publicados en GitHub Pages — con métricas clave, evolución en el tiempo y señales para ajustar tanto las campañas como el funnel del producto.",
+        hypothesis: "Hipótesis: tener un reporte diario estructurado y acumulativo permite tomar mejores decisiones de optimización que revisar el dashboard nativo, porque fuerza a leer tendencias en lugar de números sueltos.",
+        learning: "Aprendizaje en curso: el valor no está solo en automatizar el reporte, sino en el formato — cómo presentás la métrica determina qué decisión tomás. Próximo paso: comparativas semana a semana y alertas por variaciones significativas.",
+        url: null,
+        cta: "Demo a pedido",
+        ctaDemo: true,
+      },
+      {
         name: "AutoGuía",
         icon: "car",
         status: "wip",
@@ -30,6 +43,7 @@ const translations = {
         learning: "Estado: construyendo la base de datos y validando la demanda con lista de espera. 1.7M autos usados se venden por año en Argentina.",
         url: "https://autoguia-landing.vercel.app/",
         cta: "Ver landing",
+        ctaDemo: false,
       },
       {
         name: "Simulador de Costos",
@@ -42,6 +56,7 @@ const translations = {
         learning: "Aprendizaje: construir para uno mismo es una forma válida de validar que el problema existe.",
         url: "https://simuladorvaluaciones.vercel.app/",
         cta: "Ver herramienta",
+        ctaDemo: false,
       },
     ],
     footer: {
@@ -62,6 +77,19 @@ const translations = {
     },
     projects: [
       {
+        name: "AI Campaign Tracker",
+        icon: "chart",
+        status: "productivo",
+        statusLabel: "In production",
+        tagline: "Daily Meta Ads tracking without opening Ads Manager",
+        problem: "Managing Meta campaigns means opening Ads Manager every day, interpreting scattered metrics and making decisions without accumulated context. I built a tracker that generates automatic daily reports using Claude via MCP, published on GitHub Pages — with key metrics, trends over time and signals to optimize both campaigns and the product funnel.",
+        hypothesis: "Hypothesis: having a structured, cumulative daily report leads to better optimization decisions than reviewing the native dashboard, because it forces you to read trends instead of isolated numbers.",
+        learning: "Ongoing learning: the value isn't just in automating the report, but in the format — how you present a metric determines what decision you make. Next step: week-over-week comparisons and alerts for significant variations.",
+        url: null,
+        cta: "Demo on request",
+        ctaDemo: true,
+      },
+      {
         name: "AutoGuía",
         icon: "car",
         status: "wip",
@@ -72,6 +100,7 @@ const translations = {
         learning: "Status: building the database and validating demand with a waitlist. 1.7M used cars are sold per year in Argentina.",
         url: "https://autoguia-landing.vercel.app/",
         cta: "View landing",
+        ctaDemo: false,
       },
       {
         name: "Cost Simulator",
@@ -84,6 +113,7 @@ const translations = {
         learning: "Learning: building for yourself is a valid way to validate that the problem exists.",
         url: "https://simuladorvaluaciones.vercel.app/",
         cta: "View tool",
+        ctaDemo: false,
       },
     ],
     footer: {
@@ -185,10 +215,9 @@ const Laboratorio = () => {
                 <CardHeader>
                   <div className="flex items-start justify-between gap-3 mb-2">
                     <div className="flex items-center gap-3">
-                      {project.icon === "car"
-                        ? <Car className="h-8 w-8 text-primary flex-shrink-0" />
-                        : <Calculator className="h-8 w-8 text-primary flex-shrink-0" />
-                      }
+                      {project.icon === "car" && <Car className="h-8 w-8 text-primary flex-shrink-0" />}
+                      {project.icon === "calculator" && <Calculator className="h-8 w-8 text-primary flex-shrink-0" />}
+                      {project.icon === "chart" && <BarChart2 className="h-8 w-8 text-primary flex-shrink-0" />}
                       <CardTitle className="text-xl">{project.name}</CardTitle>
                     </div>
                     <StatusBadge status={project.status} label={project.statusLabel} />
@@ -207,7 +236,14 @@ const Laboratorio = () => {
                   <p className="text-xs text-muted-foreground">{project.learning}</p>
 
                   <div className="mt-auto pt-2">
-                    {project.url ? (
+                    {project.ctaDemo ? (
+                      <Button className="w-full" variant="outline" asChild>
+                        <a href="mailto:tuero.eze@gmail.com">
+                          <Mail className="w-4 h-4 mr-2" />
+                          {project.cta}
+                        </a>
+                      </Button>
+                    ) : project.url ? (
                       <Button className="w-full" asChild>
                         <a href={project.url} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-4 h-4 mr-2" />
