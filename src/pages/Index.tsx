@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, Rocket, Package, GraduationCap, Brain, Search, Wrench, Compass, ExternalLink, Calendar, Linkedin, Mail, Hash, FileText, FlaskConical, AlertCircle, TrendingUp, Briefcase, User, ArrowRight, Zap, Target, Users } from "lucide-react";
@@ -24,6 +25,27 @@ const Index = () => {
   const { language } = useLanguage();
   const t = translations[language];
 
+  // SENSOR DE TRACKING (React Standard)
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      const target = (e.target as HTMLElement).closest('[data-id]');
+      if (target) {
+        const id = target.getAttribute('data-id');
+        // @ts-ignore
+        if (typeof window.gtag === 'function') {
+          // @ts-ignore
+          window.gtag('event', 'button_interaction', {
+            'button_name': id
+          });
+          console.log('✅ Tracking enviado a GA4:', id);
+        }
+      }
+    };
+
+    document.addEventListener('click', handleClick, true);
+    return () => document.removeEventListener('click', handleClick, true);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header Navigation */}
@@ -33,7 +55,7 @@ const Index = () => {
             <img src={logo} alt="The Agile Product" className="w-auto h-8 min-h-8 md:h-10 md:min-h-10 object-contain" />
           </div>
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" data-id="cta-blog"asChild>
+            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" data-id="cta-blog" asChild>
               <Link to="/blog">
                 <FileText className="w-4 h-4 mr-1" />
                 {language === 'es' ? 'Blog' : 'Blog'}
