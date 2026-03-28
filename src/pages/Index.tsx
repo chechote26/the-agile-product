@@ -45,7 +45,7 @@ const Index = () => {
                 {language === 'es' ? 'Cursos' : 'Courses'}
               </Link>
             </Button>
-            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium" asChild>
+            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium" data-id="cta-reunion-gratuita" asChild>
               <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
                 <Calendar className="w-4 h-4 mr-1" />
                 {language === 'es' ? 'Mentoría' : 'Mentorship'}
@@ -72,7 +72,7 @@ const Index = () => {
             {t.hero.subtitle}
           </p>
           <div className="flex justify-center">
-            <Button size="lg" className="text-lg px-8 py-6" asChild>
+            <Button size="lg" className="text-lg px-8 py-6" data-id="cta-reunion-gratuita" asChild>
               <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
                 {t.hero.cta}
@@ -97,7 +97,7 @@ const Index = () => {
             ))}
           </div>
           <div className="flex justify-center">
-            <Button size="lg" variant="outline" className="text-base px-8" asChild>
+            <Button size="lg" variant="outline" className="text-base px-8" data-id="cta-reunion-gratuita" asChild>
               <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
                 {t.painPoints.cta}
               </a>
@@ -191,7 +191,7 @@ const Index = () => {
             ))}
           </div>
           <div className="flex justify-center">
-            <Button size="lg" className="text-base px-8" asChild>
+            <Button size="lg" className="text-base px-8" data-id="cta-reunion-gratuita" asChild>
               <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
                 {t.careerMentorship.cta}
@@ -285,25 +285,25 @@ const Index = () => {
             {t.finalCta.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="px-8" asChild>
+            <Button size="lg" className="px-8" data-id="cta-reunion-gratuita" asChild>
               <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
                 {t.finalCta.scheduleMentorship}
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="px-8" asChild>
+            <Button variant="outline" size="lg" className="px-8" data-id="cta-linkedin" asChild>
               <a href="https://www.linkedin.com/in/ezequiel-tuero/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="mr-2 h-5 w-5" />
                 {t.finalCta.contactLinkedIn}
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="px-8" asChild>
+            <Button variant="outline" size="lg" className="px-8" data-id="cta-email" asChild>
               <a href="mailto:tuero.eze@gmail.com">
                 <Mail className="mr-2 h-5 w-5" />
                 {t.finalCta.writeEmail}
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="px-8" asChild>
+            <Button variant="outline" size="lg" className="px-8" data-id="cta-discord" asChild>
               <a href="https://discord.gg/JawAkt6mDb" target="_blank" rel="noopener noreferrer">
                 <Hash className="mr-2 h-5 w-5" />
                 {t.finalCta.joinDiscord}
