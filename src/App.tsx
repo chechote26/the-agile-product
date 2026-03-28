@@ -1,3 +1,26 @@
+import { useEffect } from "react";
+
+// ... dentro de tu función App()
+useEffect(() => {
+  const handleClick = (e: MouseEvent) => {
+    // Esto busca el data-id en cualquier página donde esté el usuario
+    const target = (e.target as HTMLElement).closest('[data-id]');
+    if (target) {
+      const id = target.getAttribute('data-id');
+      // @ts-ignore
+      if (typeof window.gtag === 'function') {
+        // @ts-ignore
+        window.gtag('event', 'button_interaction', {
+          'button_name': id
+        });
+        console.log('✅ Global Tracking:', id);
+      }
+    }
+  };
+
+  document.addEventListener('click', handleClick, true);
+  return () => document.removeEventListener('click', handleClick, true);
+}, []);
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
