@@ -1,22 +1,24 @@
 ---
-title: "Cómo [Resolver un problema específico] en equipos [Tu Nicho]"
-date: "2026-03-30"
-description: "Resolvé [Dolor del cliente] usando [Tu Metodología]. Guía práctica para PMs y líderes de producto."
-tags: ["Agilidad", "Product Management", "Frameworks"]
+title: "¿Qué es la Agilidad y por qué importa en tu empresa?"
+date: "2025-09-30"
+description: "La agilidad no es una metodología que puedas “instalar” y listo. Es una forma de pensar y trabajar que pone al usuario y al valor entregado en el centro de todo."
+tags: ["Agilidad", "Product Management", "Agile", "Scrum", "Lean"]
 ---
 
-### El Problema
-Breve descripción del caos que vive el cliente hoy (ej: "Los sprints terminan y el 40% de las tareas pasan al siguiente..."). Esto genera empatía inmediata.
+En un entorno de negocios cada vez más cambiante, predominantemete complejo, las empresas que siguen planes rígidos, no adaptativos y tardan meses en entregar resultados (time to market) corren el riesgo de quedarse atrás. La agilidad propone - entre otras cosas - ciclos cortos, retroalimentación constante y mejora continua.
 
-### La Solución: [Nombre de tu enfoque]
-Aquí volcás tu expertise. Usá listas para que sea escaneable:
-* Paso 1: Diagnóstico.
-* Paso 2: Re-priorización.
-* Paso 3: Definición de 'Done'.
+Adoptar agilidad entonces significa:
 
-### Resultado Esperado
-Qué gana la empresa si aplica esto (ej: "Reducción del 20% en el carry-over"). Esto es lo que le vende tu perfil al que toma decisiones.
+- priorizar lo más importante primero: enfocarte en lo que realmente impacta al negocio y a tus clientes;
+- entregar valor de forma continua: no esperar al gran lanzamiento, sino ir liberando mejoras y funcionalidades a medida que están listas;
+- aprender de la experiencia: usar métricas y feedback para ajustar rumbo constantemente;
+- empoderar al equipo: permitir que quienes hacen el trabajo tengan voz y capacidad de decisión.
+
+Ejemplo real: una startup que implementa agilidad puede detectar en 2 semanas que una funcionalidad no es usada, y redirigir sus esfuerzos a otra que sí genera valor, en lugar de pasar meses desarrollando algo que no se necesita.
+
+La clave no está en “copiar” un marco de trabajo, sino en encontrar el equilibrio entre estructura y flexibilidad que mejor funcione para tu contexto. Pragmatismo y sentido práctico.
 
 ---
-> **¿Necesitás ayuda personalizada?**
-> Si este problema te está frenando, escribime a tuero.ezequiel@gmail.com o agendá una a mi [[Substack](https://calendly.com/eze-tuero/30min)] para recibir estas soluciones cada 15 días.
+> **¿Necesitás ayuda?**
+
+> Escribime a [tuero.ezequiel@gmail.com] o agendá una reunión gratuita [(https://calendly.com/eze-tuero/30min)].
