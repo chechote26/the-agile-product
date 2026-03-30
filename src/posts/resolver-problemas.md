@@ -3,7 +3,7 @@ title: "¿Qué es la Agilidad y por qué importa en tu empresa?"
 date: "2025-09-30"
 description: "La agilidad no es una metodología que puedas “instalar” y listo. Es una forma de pensar y trabajar que pone al usuario y al valor entregado en el centro de todo."
 tags: ["Agilidad", "Product Management", "Agile", "Scrum", "Lean"]
----
+
 
 En un entorno de negocios cada vez más cambiante, predominantemete complejo, las empresas que siguen planes rígidos, no adaptativos y tardan meses en entregar resultados (time to market) corren el riesgo de quedarse atrás. La agilidad propone - entre otras cosas - ciclos cortos, retroalimentación constante y mejora continua.
 
@@ -18,7 +18,7 @@ Ejemplo real: una startup que implementa agilidad puede detectar en 2 semanas qu
 
 La clave no está en “copiar” un marco de trabajo, sino en encontrar el equilibrio entre estructura y flexibilidad que mejor funcione para tu contexto. Pragmatismo y sentido práctico.
 
----
+
 > **¿Necesitás ayuda?**
 
 > Escribime a [tuero.ezequiel@gmail.com] o agendá una reunión gratuita [(https://calendly.com/eze-tuero/30min)].
