@@ -6,16 +6,17 @@ description: "La agilidad no es una metodología que puedas “instalar” y lis
 
 En un entorno de negocios cada vez más cambiante, predominantemete complejo, las empresas que siguen planes rígidos, no adaptativos y tardan meses en entregar resultados (time to market) corren el riesgo de quedarse atrás. La agilidad propone - entre otras cosas - ciclos cortos, retroalimentación constante y mejora continua.
 
+
 ---
 
-### Adoptar agilidad entonces significa:
+### Adoptar agilidad significa:
 
-1. priorizar lo más importante primero: enfocarte en lo que realmente impacta al negocio y a tus clientes;
-2. entregar valor de forma continua: no esperar al gran lanzamiento, sino ir liberando mejoras y funcionalidades a medida que están listas;
-3. aprender de la experiencia: usar métricas y feedback para ajustar rumbo constantemente;
-4. empoderar al equipo: permitir que quienes hacen el trabajo tengan voz y capacidad de decisión.
+* **priorizar lo más importante primero:** enfocarte en lo que realmente impacta al negocio y a tus clientes;
+* **entregar valor de forma continua:** no esperar al gran lanzamiento, sino ir liberando mejoras y funcionalidades a medida que están listas;
+* **aprender de la experiencia:** usar métricas y feedback para ajustar rumbo constantemente;
+* **empoderar al equipo:** permitir que quienes hacen el trabajo tengan voz y capacidad de decisión.
 
-> **Ejemplo real:** Una startup que implementa agilidad puede detectar en 2 semanas que una funcionalidad no es usada, y redirigir sus esfuerzos a otra que sí genera valor, en lugar de pasar meses desarrollando algo que no se necesita.
+> **Ejemplo real:** una startup que implementa agilidad puede detectar en 2 semanas que una funcionalidad no es usada, y redirigir sus esfuerzos a otra que sí genera valor, en lugar de pasar meses desarrollando algo que no se necesita.
 
 ---
 
@@ -27,7 +28,7 @@ La clave no está en “copiar” un marco de trabajo, sino en encontrar el equi
 
 ### 📩 ¿Necesitás ayuda?
 
-Si buscás implementar estos cambios, podemos conversar:
+Si buscás implementar estos cambios en tu equipo o empresa, podemos conversar:
 
 * **Email:** [tuero.ezequiel@gmail.com](mailto:tuero.ezequiel@gmail.com)
-* **Agenda una reunión gratuita:** [Calendly - 30 min de consulta](https://calendly.com/eze-tuero/30min)
+* **Reunión gratuita:** [Agendar 30 min en Calendly](https://calendly.com/eze-tuero/30min)
