@@ -1,6 +1,6 @@
 ---
 title: "Scrum vs Kanban: cómo elegir el marco ideal para tu equipo"
-date: "2026-03-30"
+date: "2025-10-21"
 ---
 
 Scrum y Kanban son dos de los marcos ágiles más usados, pero su enfoque y aplicación pueden variar mucho según el tipo de equipo y proyecto.
