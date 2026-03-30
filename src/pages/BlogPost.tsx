@@ -1,180 +1,59 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { supabase } from "@/integrations/supabase/client";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import ReactMarkdown from "react-markdown";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
+import { Calendar, ArrowLeft, FileText, FlaskConical, GraduationCap } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useToast } from "@/hooks/use-toast";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import logo from "@/assets/The Agile Product (5).png";
 
-interface BlogPost {
-  id: string;
-  title: string;
-  content: string;
-  slug: string;
-  created_at: string;
-  updated_at: string;
-}
+const postFiles = import.meta.glob("/src/posts/*.md", { as: "raw", eager: true });
 
-interface Comment {
-  id: string;
-  commenter_name: string;
-  content: string;
-  created_at: string;
-  post_id: string;
-}
+const parseFrontmatter = (content: string) => {
+  const match = content.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+  if (!match) return { meta: { title: "", date: "" }, body: content };
+
+  const raw = match[1];
+  const body = match[2];
+  const title = raw.match(/title:\s*"?([^"\n]+)"?/)?.[1] || "";
+  const date = raw.match(/date:\s*"?([^"\n]+)"?/)?.[1] || "";
+
+  return { meta: { title, date }, body };
+};
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
-  const [post, setPost] = useState<BlogPost | null>(null);
-  const [comments, setComments] = useState<Comment[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [commentForm, setCommentForm] = useState({
-    name: '',
-    email: '',
-    content: ''
-  });
-  const [submitting, setSubmitting] = useState(false);
   const { language } = useLanguage();
-  const { toast } = useToast();
+  const [title, setTitle] = useState("");
+  const [date, setDate] = useState("");
+  const [body, setBody] = useState("");
+  const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
-    if (slug) {
-      fetchPost();
-      fetchComments();
-    }
-  }, [slug]);
+    const key = `/src/posts/${slug}.md`;
+    const content = postFiles[key] as string;
 
-  const fetchPost = async () => {
-    try {
-      const { data, error } = await supabase
-        .from('blog_posts')
-        .select('*')
-        .eq('slug', slug)
-        .eq('published', true)
-        .maybeSingle();
-
-      if (error) throw error;
-      setPost(data);
-    } catch (error) {
-      console.error('Error fetching post:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const fetchComments = async () => {
-    if (!slug) return;
-    
-    try {
-      const { data: postData } = await supabase
-        .from('blog_posts')
-        .select('id')
-        .eq('slug', slug)
-        .eq('published', true)
-        .maybeSingle();
-
-      if (!postData) return;
-
-      const { data, error } = await supabase
-        .from('comments_public')
-        .select('*')
-        .eq('post_id', postData.id)
-        .order('created_at', { ascending: true });
-
-      if (error) throw error;
-      setComments(data || []);
-    } catch (error) {
-      console.error('Error fetching comments:', error);
-    }
-  };
-
-  const handleCommentSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!post || !commentForm.name.trim() || !commentForm.content.trim()) {
-      toast({
-        title: language === 'es' ? 'Error' : 'Error',
-        description: language === 'es' 
-          ? 'Por favor completa los campos requeridos'
-          : 'Please fill in the required fields',
-        variant: "destructive"
-      });
+    if (!content) {
+      setNotFound(true);
       return;
     }
 
-    setSubmitting(true);
-    try {
-      const { error } = await supabase
-        .from('comments')
-        .insert({
-          post_id: post.id,
-          commenter_name: commentForm.name.trim(),
-          commenter_email: commentForm.email.trim() || null,
-          content: commentForm.content.trim()
-        });
+    const { meta, body } = parseFrontmatter(content);
+    setTitle(meta.title);
+    setDate(meta.date);
+    setBody(body);
+  }, [slug]);
 
-      if (error) throw error;
-
-      toast({
-        title: language === 'es' ? 'Comentario enviado' : 'Comment submitted',
-        description: language === 'es' 
-          ? 'Tu comentario ha sido publicado exitosamente'
-          : 'Your comment has been posted successfully'
-      });
-
-      setCommentForm({ name: '', email: '', content: '' });
-      fetchComments();
-    } catch (error) {
-      console.error('Error submitting comment:', error);
-      toast({
-        title: language === 'es' ? 'Error' : 'Error',
-        description: language === 'es' 
-          ? 'Error al enviar el comentario'
-          : 'Error submitting comment',
-        variant: "destructive"
-      });
-    } finally {
-      setSubmitting(false);
-    }
-  };
-
-  const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit'
-    });
-  };
-
-  if (loading) {
+  if (notFound) {
     return (
-      <div className="min-h-screen bg-background">
-        <div className="container mx-auto px-4 py-8">
-          <div className="text-center">
-            {language === 'es' ? 'Cargando...' : 'Loading...'}
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (!post) {
-    return (
-      <div className="min-h-screen bg-background">
-        <div className="container mx-auto px-4 py-8">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold mb-4">
-              {language === 'es' ? 'Post no encontrado' : 'Post not found'}
-            </h1>
-            <Link to="/blog" className="text-primary hover:underline">
-              ← {language === 'es' ? 'Volver al blog' : 'Back to blog'}
-            </Link>
-          </div>
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-3xl font-bold mb-4">
+            {language === 'es' ? 'Post no encontrado' : 'Post not found'}
+          </h1>
+          <Link to="/blog" className="text-primary hover:underline">
+            ← {language === 'es' ? 'Volver al blog' : 'Back to blog'}
+          </Link>
         </div>
       </div>
     );
@@ -182,125 +61,68 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-8">
-        <div className="max-w-4xl mx-auto">
-          <article className="mb-12">
-            <header className="mb-8">
-              <Badge variant="secondary" className="mb-4">
-                {formatDate(post.created_at)}
-              </Badge>
-              <h1 className="text-4xl font-bold text-foreground mb-4">
-                {post.title}
-              </h1>
-            </header>
-            
-            <div className="prose prose-lg max-w-none text-foreground">
-              {post.content.split('\n').map((paragraph, index) => (
-                <p key={index} className="mb-4">
-                  {paragraph}
-                </p>
-              ))}
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border/20">
+        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+          <Link to="/">
+            <img src={logo} alt="The Agile Product" className="w-auto h-8 min-h-8 md:h-10 md:min-h-10 object-contain" />
+          </Link>
+          <div className="flex items-center gap-3">
+            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
+              <Link to="/blog"><ArrowLeft className="w-4 h-4 mr-1" />{language === 'es' ? 'Blog' : 'Blog'}</Link>
+            </Button>
+            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
+              <Link to="/cursos"><GraduationCap className="w-4 h-4 mr-1" />{language === 'es' ? 'Cursos' : 'Courses'}</Link>
+            </Button>
+            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
+              <Link to="/laboratorio"><FlaskConical className="w-4 h-4 mr-1" />{language === 'es' ? 'Laboratorio' : 'Lab'}</Link>
+            </Button>
+            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium" asChild>
+              <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
+                <Calendar className="w-4 h-4 mr-1" />{language === 'es' ? 'Mentoría' : 'Mentorship'}
+              </a>
+            </Button>
+            <LanguageSwitcher />
+          </div>
+        </div>
+      </header>
+
+      {/* Post */}
+      <section className="py-20 px-4 pt-32">
+        <div className="container mx-auto max-w-3xl">
+          {date && (
+            <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
+              <Calendar className="w-4 h-4" />
+              {date}
             </div>
-          </article>
+          )}
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-10">{title}</h1>
 
-          {/* Comments Section */}
-          <section className="border-t pt-8">
-            <h2 className="text-2xl font-bold mb-6">
-              {language === 'es' ? 'Comentarios' : 'Comments'} ({comments.length})
-            </h2>
+          <div className="prose prose-lg max-w-none text-foreground
+            prose-headings:text-foreground
+            prose-p:text-muted-foreground
+            prose-strong:text-foreground
+            prose-a:text-primary
+            prose-li:text-muted-foreground">
+            <ReactMarkdown>{body}</ReactMarkdown>
+          </div>
 
-            {/* Comment Form */}
-            <Card className="mb-8">
-              <CardHeader>
-                <CardTitle>
-                  {language === 'es' ? 'Deja un comentario' : 'Leave a comment'}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleCommentSubmit} className="space-y-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="name">
-                        {language === 'es' ? 'Nombre *' : 'Name *'}
-                      </Label>
-                      <Input
-                        id="name"
-                        type="text"
-                        value={commentForm.name}
-                        onChange={(e) => setCommentForm(prev => ({ ...prev, name: e.target.value }))}
-                        required
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="email">
-                        {language === 'es' ? 'Email (opcional)' : 'Email (optional)'}
-                      </Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        value={commentForm.email}
-                        onChange={(e) => setCommentForm(prev => ({ ...prev, email: e.target.value }))}
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <Label htmlFor="content">
-                      {language === 'es' ? 'Comentario *' : 'Comment *'}
-                    </Label>
-                    <Textarea
-                      id="content"
-                      rows={4}
-                      value={commentForm.content}
-                      onChange={(e) => setCommentForm(prev => ({ ...prev, content: e.target.value }))}
-                      required
-                    />
-                  </div>
-                  <Button type="submit" disabled={submitting}>
-                    {submitting 
-                      ? (language === 'es' ? 'Enviando...' : 'Submitting...')
-                      : (language === 'es' ? 'Enviar comentario' : 'Submit comment')
-                    }
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-
-            {/* Comments List */}
-            <div className="space-y-6">
-              {comments.map((comment) => (
-                <Card key={comment.id}>
-                  <CardContent className="pt-4">
-                    <div className="flex justify-between items-start mb-2">
-                      <h3 className="font-semibold">{comment.commenter_name}</h3>
-                      <span className="text-sm text-muted-foreground">
-                        {formatDate(comment.created_at)}
-                      </span>
-                    </div>
-                    <p className="text-foreground whitespace-pre-wrap">
-                      {comment.content}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-              
-              {comments.length === 0 && (
-                <div className="text-center py-8 text-muted-foreground">
-                  {language === 'es' 
-                    ? 'No hay comentarios aún. ¡Sé el primero en comentar!'
-                    : 'No comments yet. Be the first to comment!'
-                  }
-                </div>
-              )}
-            </div>
-          </section>
-
-          <div className="text-center mt-12">
-            <Link to="/blog" className="text-primary hover:underline">
+          <div className="mt-16 pt-8 border-t">
+            <Link to="/blog" className="text-primary hover:underline text-sm">
               ← {language === 'es' ? 'Volver al blog' : 'Back to blog'}
             </Link>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-secondary/10 py-8 px-4">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h3 className="text-lg font-semibold">The Agile Product · Eze Tuero</h3>
+          <p className="text-muted-foreground">{language === 'es' ? 'Consultor en Agilidad y Producto' : 'Agility and Product Consultant'}</p>
+          <p className="text-sm text-muted-foreground mt-2">© 2025</p>
+        </div>
+      </footer>
     </div>
   );
 };
