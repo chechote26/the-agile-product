@@ -1,6 +1,6 @@
 ---
 title: "Retrospectivas eficaces"
-date: "2026-03-30"
+date: "2025-11-11"
 ---
 
 Las retrospectivas son, en teoría, el espacio sagrado para mejorar. En la práctica, muchas veces se vuelven reuniones rutinarias donde se dicen siempre las mismas cosas y nada cambia. 

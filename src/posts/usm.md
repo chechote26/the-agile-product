@@ -1,6 +1,6 @@
 ---
 title: "User Story Mapping: darle estructura al backlog"
-date: "2026-03-30"
+date: "2025-12-15"
 ---
 
 El backlog de producto suele convertirse en una lista interminable de historias que nadie sabe muy bien cómo priorizar. Ahí es donde el **User Story Mapping** cambia todo. 
