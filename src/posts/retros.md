@@ -25,7 +25,6 @@ Es ahí donde un equipo empieza a crecer de verdad. Menos post-its por inercia y
 
 Si buscás transformar tus retrospectivas en verdaderos motores de cambio, hablemos:
 
-* **Email:** [tuero.ezequiel@gmail.com](mailto:tuero.ezequiel@gmail.com)
 * **Mentoría:** [Agendar 30 min en Calendly](https://calendly.com/eze-tuero/30min)
 
 #Agile #ProductManagement #Scrum #Retro #Retrospective #Aprendizaje

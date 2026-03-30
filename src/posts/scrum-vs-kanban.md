@@ -39,7 +39,6 @@ Muchos equipos no eligen uno solo, sino que optan por lo mejor de ambos mundos:
 
 Si buscás implementar el marco ideal para tu equipo de forma efectiva, hablemos:
 
-* **Email:** [tuero.ezequiel@gmail.com](mailto:tuero.ezequiel@gmail.com)
 * **Mentoría:** [Agendar 30 min en Calendly](https://calendly.com/eze-tuero/30min)
 
 #Agile #ProductManagement #Scrum #Kanban #Agilidad

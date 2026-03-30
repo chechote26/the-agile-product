@@ -24,7 +24,6 @@ La clave no está en “copiar” un marco de trabajo, sino en encontrar el equi
 
 Si buscás implementar estos procesos de forma pragmática y sin burocracia, hablemos:
 
-* **Email:** [tuero.ezequiel@gmail.com](mailto:tuero.ezequiel@gmail.com)
 * **Mentoría:** [Agendar 30 min en Calendly](https://calendly.com/eze-tuero/30min)
 
 #Agile #ProductManagement #Scrum #Lean #Agilidad

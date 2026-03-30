@@ -27,7 +27,6 @@ El valor está en que no pensás en tareas sueltas, sino en el "viaje" del usuar
 
 Si buscás darle estructura a tu backlog y priorizar con sentido, hablemos:
 
-* **Email:** [tuero.ezequiel@gmail.com](mailto:tuero.ezequiel@gmail.com)
 * **Mentoría:** [Agendar 30 min en Calendly](https://calendly.com/eze-tuero/30min)
 
 #Agile #ProductManagement #Scrum #Inception #Storymap #Agilidad
