@@ -1,6 +1,6 @@
 ---
 title: "Release Plan: prometer menos, entregar más"
-date: "2026-03-31"
+date: "2026-01-31"
 ---
 
 Hablar de un **release plan** suele generar tensión. Para negocio, es la promesa de cuándo estará listo lo que necesitan; para el equipo, muchas veces es una fecha que suena más a presión que a planificación. 

@@ -1,6 +1,6 @@
 ---
 title: "Definition of Ready y Definition of Done: los acuerdos que sostienen al equipo"
-date: "2026-03-30"
+date: "2026-02-25"
 ---
 
 Dos conceptos simples, pero que marcan la diferencia entre un backlog caótico y un flujo de trabajo saludable: **Definition of Ready (DoR)** y **Definition of Done (DoD)**. 

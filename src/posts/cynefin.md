@@ -1,6 +1,6 @@
 ---
 title: "Cynefin: elegir el marco correcto antes de correr"
-date: "2026-03-31"
+date: "2026-03-01"
 ---
 
 Hablar de marcos de trabajo suele llevarnos directo a una discusión de preferencias: Scrum vs. Kanban, Dual-track, etc. Pero esa conversación muchas veces empieza tarde. Antes de elegir cómo trabajar, conviene entender en qué tipo de problema estamos parados. Ahí es donde **Cynefin** aporta claridad.

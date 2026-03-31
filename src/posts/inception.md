@@ -1,6 +1,6 @@
 ---
 title: "El Inception Deck: empezar con el pie derecho"
-date: "2026-03-31"
+date: "2026-02-10"
 ---
 
 Antes de arrancar un producto o proyecto, lo más común es que cada uno tenga su propia película en la cabeza sobre qué vamos a hacer. El **Inception Deck**, creado por Jonathan Rasmusson, es justamente la herramienta para alinear esas películas y dejarlas en una sola versión compartida.
