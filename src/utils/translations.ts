@@ -3,7 +3,7 @@ export const translations = {
     hero: {
       title: "Tu equipo trabaja mucho, pero no avanza?",
       subtitle: "Ayudo a PMs, founders y equipos de Producto a dejar de correr en círculos: priorizar lo que importa, organizar cómo trabajan y entregar valor real con IA aplicada donde realmente acelera.",
-      cta: "Hablemos 30 minutos gratis, sin compromiso"
+      cta: "Dejame tu consulta"
     },
     painPoints: {
       title: "¿Te suena alguna de estas situaciones?",
@@ -126,7 +126,7 @@ export const translations = {
     hero: {
       title: "Your team works hard. Why isn't it moving forward?",
       subtitle: "I help PMs, founders, and Product teams stop running in circles: prioritize what matters, organize how they work, and deliver real value — with AI applied where it actually makes a difference.",
-      cta: "Let's talk for 30 minutes, free"
+      cta: "Contact me"
     },
     painPoints: {
       title: "Does any of this sound familiar?",
@@ -233,9 +233,9 @@ export const translations = {
       philosophy: "I don't sell methodologies or magic transformations. I help you build a way of working that fits you, your team, and your moment."
     },
     finalCta: {
-      title: "30 minutes can change how you work",
-      description: "A free session to understand your context, identify what's holding back your team or your career, and see if I can help.",
-      scheduleMentorship: "Schedule your free session",
+      title: "Getting in touch can change how you work",
+      description: "The goal: understand your context, identify what's holding back your team or your career, and see if I can help.",
+      scheduleMentorship: "Contact me",
       contactLinkedIn: "Message me on LinkedIn",
       writeEmail: "Send me an email",
       joinDiscord: "Join the Discord"
