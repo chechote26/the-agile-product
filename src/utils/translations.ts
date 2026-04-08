@@ -45,7 +45,7 @@ export const translations = {
         solution: "Formación práctica sobre discovery, backlog, Jira y roles, actualizada al contexto actual donde la IA redefine qué hace un PM y cómo trabaja el equipo."
       },
       mentorship: {
-        title: "Mentoría 1:1 para tu desafío concreto",
+        title: "consultame 1:1 para tu desafío concreto",
         problem: "Tenés un problema específico que necesita una cabeza externa: agilidad, delivery, liderazgo o cómo empezar a usar IA en tu día a día.",
         solution: "Sesiones personalizadas para resolver desafíos concretos. Sin fórmulas genéricas: vamos a tu contexto, tu equipo, tu momento."
       }

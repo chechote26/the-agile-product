@@ -8,7 +8,7 @@ import logo from "@/assets/The Agile Product (5).png";
 
 const translations = {
   es: {
-    nav: { blog: "Blog", cursos: "Cursos", mentoria: "Mentoría" },
+    nav: { blog: "Blog", cursos: "Cursos", mentoria: "consultame" },
     hero: {
       badge: "Laboratorio de Producto",
       title: "Productos reales, aprendizajes reales",
