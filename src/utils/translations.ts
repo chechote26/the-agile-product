@@ -70,7 +70,7 @@ export const translations = {
           description: "LinkedIn es parte del nuevo CV. Te ayudo a definir tu voz, qué contenido tiene sentido para tu perfil y cómo construir presencia en el ecosistema de Producto sin que se sienta forzado."
         }
       ],
-      cta: "Agendá una sesión de carrera"
+      cta: "Dejame tu consulta para una sesión de carrera"
     },
     cases: {
       title: "Resultados reales, no promesas",
@@ -100,7 +100,7 @@ export const translations = {
       diagnosis: "Diagnóstico directo de tu situación",
       recommendations: "Acciones concretas desde el día 1",
       guidance: "Un camino claro para seguir solo",
-      description: "No es una clase, es una conversación. En 30 minutos vamos al grano: entiendo tu contexto, identifico qué está trabando y te doy pasos concretos para desbloquearlo. Sin teoría innecesaria, sin vueltas."
+      description: "No es una clase, es una conversación. En 30/60 minutos vamos al grano: entiendo tu contexto, identifico qué está trabando y te doy pasos concretos para desbloquearlo. Sin teoría innecesaria, sin vueltas."
     },
     about: {
       title: "¿Quién está del otro lado?",
@@ -110,9 +110,9 @@ export const translations = {
       philosophy: "No vendo metodologías ni transformaciones mágicas. Te acompaño a construir una forma de trabajo que funcione para vos, tu equipo y tu momento."
     },
     finalCta: {
-      title: "30 minutos pueden cambiar cómo trabajás",
-      description: "Una sesión gratuita para entender tu contexto, identificar qué está frenando tu equipo o tu carrera, y ver si puedo ayudarte.",
-      scheduleMentorship: "Agendá tu sesión gratuita",
+      title: "Una simple consulta puede cambiar cómo trabajás",
+      description: "El objetivo: entender tu contexto, identificar qué está frenando tu equipo o tu carrera, y ver si puedo ayudarte.",
+      scheduleMentorship: "Consultame",
       contactLinkedIn: "Escribime en LinkedIn",
       writeEmail: "Mandame un email",
       joinDiscord: "Unite al Discord"
@@ -223,7 +223,7 @@ export const translations = {
       diagnosis: "Direct diagnosis of your situation",
       recommendations: "Concrete actions from day 1",
       guidance: "A clear path you can follow on your own",
-      description: "It's not a class, it's a conversation. In 30 minutes we get to the point: I understand your context, identify what's blocking you, and give you concrete steps to unblock it. No unnecessary theory, no fluff."
+      description: "It's not a class, it's a conversation. In 30/60 minutes we get to the point: I understand your context, identify what's blocking you, and give you concrete steps to unblock it. No unnecessary theory, no fluff."
     },
     about: {
       title: "Who's on the other side?",
