@@ -39,6 +39,6 @@ Muchos equipos no eligen uno solo, sino que optan por lo mejor de ambos mundos:
 
 Si buscás implementar el marco ideal para tu equipo de forma efectiva, hablemos:
 
-* **consultame:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
+* **Consultame:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Scrum #Kanban #Agilidad

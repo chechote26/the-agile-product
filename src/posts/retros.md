@@ -25,6 +25,6 @@ Es ahí donde un equipo empieza a crecer de verdad. Menos post-its por inercia y
 
 Si buscás transformar tus retrospectivas en verdaderos motores de cambio, hablemos:
 
-* **consultame:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
+* **Consultame:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Scrum #Retro #Retrospective #Aprendizaje

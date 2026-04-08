@@ -29,6 +29,6 @@ Esas son las que cuentan la historia completa. La velocity puede ser parte del c
 
 Si buscás medir lo que realmente importa en tu proceso de delivery, hablemos:
 
-* **consultame:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
+* **Consultame:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Scrum #Delivery #Impacto #Agilidad

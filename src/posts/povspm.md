@@ -29,6 +29,6 @@ Lo interesante es que no hay un único camino para entrar en Producto. Lo que im
 
 Si estás dando tus primeros pasos en Producto o buscás profesionalizar tu rol, agendemos una charla:
 
-* **consultame:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
+* **Consultame:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Product #ProductOwner #ProductManager #Aprendizaje
