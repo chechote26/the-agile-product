@@ -29,6 +29,6 @@ Todo esto para medir si realmente impacta en la conversión.
 
 Si buscás conectar tu visión de producto con una ejecución ágil y real, hablemos:
 
-* **Mentoría:** [Agendar 30 min en Calendly](https://calendly.com/eze-tuero/30min)
+* **Mentoría:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Scrum #Roadmap #Agilidad

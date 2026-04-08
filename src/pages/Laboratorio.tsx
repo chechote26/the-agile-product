@@ -173,7 +173,7 @@ const Laboratorio = () => {
               <Link to="/cursos"><GraduationCap className="w-4 h-4 mr-1" />{t.nav.cursos}</Link>
             </Button>
             <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium" data-id="cta-reunion-gratuita" asChild>
-              <a href="https://calendly.com/eze-tuero/30min" target="_blank" rel="noopener noreferrer">
+              <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
                 <Calendar className="w-4 h-4 mr-1" />{t.nav.mentoria}
               </a>
             </Button>

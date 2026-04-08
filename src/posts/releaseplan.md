@@ -34,6 +34,6 @@ Cuando lo tratamos como una herramienta de comunicación, los beneficios son cla
 
 Si buscás un plan de entregas que genere confianza en lugar de tensión, hablemos:
 
-* **Mentoría:** [Agendar 30 min en Calendly](https://calendly.com/eze-tuero/30min)
+* **Mentoría:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Delivery #ReleasePlan

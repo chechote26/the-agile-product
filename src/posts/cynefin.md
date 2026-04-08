@@ -35,6 +35,6 @@ En definitiva, Cynefin te obliga a hacer una pausa y preguntarte: **¿Qué tipo 
 
 Si buscás diagnosticar mejor tu contexto para elegir el marco de trabajo más efectivo, hablemos:
 
-* **Mentoría:** [Agendar 30 min en Calendly](https://calendly.com/eze-tuero/30min)
+* **Mentoría:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Cynefin #Strategy #Context #Agilidad

@@ -37,6 +37,6 @@ Lo importante es que todos sepan qué esperar antes de empezar y qué significa 
 
 Si buscás establecer acuerdos claros que den fluidez a tu equipo de producto, hablemos:
 
-* **Mentoría:** [Agendar 30 min en Calendly](https://calendly.com/eze-tuero/30min)
+* **Mentoría:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Scrum #Acuerdos #Equipo #Team
