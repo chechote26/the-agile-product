@@ -25,7 +25,6 @@ const Index = () => {
   const { language } = useLanguage();
   const t = translations[language];
 
-  // SENSOR DE TRACKING (React Standard)
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       const target = (e.target as HTMLElement).closest('[data-id]');
@@ -37,7 +36,6 @@ const Index = () => {
           window.gtag('event', 'button_interaction', {
             'button_name': id
           });
-          console.log('✅ Tracking enviado a GA4:', id);
         }
       }
     };
@@ -69,7 +67,6 @@ const Index = () => {
             </Button>
             <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium" data-id="cta-reunion-gratuita" asChild>
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
-                
                 {language === 'es' ? 'Consultame →' : 'Contact me →'}
               </a>
             </Button>
@@ -96,8 +93,7 @@ const Index = () => {
           <div className="flex justify-center">
             <Button size="lg" className="text-lg px-8 py-6" data-id="cta-reunion-gratuita" asChild>
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
-                <Calendar className="mr-2 h-5 w-5" />
-                {t.hero.cta}
+                {language === 'es' ? 'Consultame →' : 'Contact me →'}
               </a>
             </Button>
           </div>
@@ -117,13 +113,6 @@ const Index = () => {
                 <p className="text-base text-muted-foreground leading-relaxed">{item.text}</p>
               </div>
             ))}
-          </div>
-          <div className="flex justify-center">
-            <Button size="lg" variant="outline" className="text-base px-8" data-id="cta-reunion-gratuita" asChild>
-              <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
-                {t.painPoints.cta}
-              </a>
-            </Button>
           </div>
         </div>
       </section>
@@ -178,29 +167,29 @@ const Index = () => {
               <CardHeader>
                 <div className="flex items-center gap-3">
                   <Brain className="h-8 w-8 text-primary shrink-0" />
-                  <CardTitle className="text-xl">{t.solutions.Contact me →.title}</CardTitle>
+                  <CardTitle className="text-xl">{t.solutions.mentorship.title}</CardTitle>
                 </div>
-                <p className="text-sm text-muted-foreground italic mt-1">{t.solutions.Contact me →.problem}</p>
+                <p className="text-sm text-muted-foreground italic mt-1">{t.solutions.mentorship.problem}</p>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-base">{t.solutions.Contact me →.solution}</CardDescription>
+                <CardDescription className="text-base">{t.solutions.mentorship.solution}</CardDescription>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* 4. Career Contact me → Section */}
+      {/* 4. Career Section */}
       <section className="py-20 px-4 bg-primary/5">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            {t.careerContact me →.title}
+            {t.career.title}
           </h2>
           <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-            {t.careerContact me →.subtitle}
+            {t.career.subtitle}
           </p>
           <div className="grid md:grid-cols-3 gap-8 mb-10">
-            {t.careerContact me →.items.map((item, i) => (
+            {t.career.items.map((item, i) => (
               <Card key={i} className="h-full text-center">
                 <CardHeader>
                   <div className="flex justify-center mb-2">{careerIcons[item.icon]}</div>
@@ -215,36 +204,35 @@ const Index = () => {
           <div className="flex justify-center">
             <Button size="lg" className="text-base px-8" data-id="cta-reunion-gratuita" asChild>
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
-                <Calendar className="mr-2 h-5 w-5" />
-                {t.careerContact me →.cta}
+                {language === 'es' ? 'Consultame →' : 'Contact me →'}
               </a>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* 5. Contact me → Benefits */}
+      {/* 5. Mentorship Benefits */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            {t.Contact me →Benefits.title}
+            {t.mentorshipBenefits.title}
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="text-center">
               <Search className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">{t.Contact me →Benefits.diagnosis}</h3>
+              <h3 className="text-lg font-semibold mb-2">{t.mentorshipBenefits.diagnosis}</h3>
             </div>
             <div className="text-center">
               <Wrench className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">{t.Contact me →Benefits.recommendations}</h3>
+              <h3 className="text-lg font-semibold mb-2">{t.mentorshipBenefits.recommendations}</h3>
             </div>
             <div className="text-center">
               <Compass className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">{t.Contact me →Benefits.guidance}</h3>
+              <h3 className="text-lg font-semibold mb-2">{t.mentorshipBenefits.guidance}</h3>
             </div>
           </div>
           <p className="text-center text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t.Contact me →Benefits.description}
+            {t.mentorshipBenefits.description}
           </p>
         </div>
       </section>
@@ -258,7 +246,7 @@ const Index = () => {
           <div className="space-y-8">
             {[
               t.cases.healthtech,
-              t.cases.Contact me →Case,
+              t.cases.mentorshipCase,
               t.cases.aiStartup,
               t.cases.edtech,
             ].map((c, i) => (
@@ -309,8 +297,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="px-8" data-id="cta-reunion-gratuita" asChild>
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
-                <Calendar className="mr-2 h-5 w-5" />
-                {t.finalCta.scheduleContact me →}
+                {language === 'es' ? 'Consultame →' : 'Contact me →'}
               </a>
             </Button>
             <Button variant="outline" size="lg" className="px-8" data-id="cta-linkedin" asChild>
