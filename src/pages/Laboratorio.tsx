@@ -8,7 +8,7 @@ import logo from "@/assets/The Agile Product (5).png";
 
 const translations = {
   es: {
-    nav: { blog: "Blog", cursos: "Cursos", mentoria: "Consultame" },
+    nav: { blog: "Blog", cursos: "Cursos", mentoria: "Consultame →" },
     hero: {
       badge: "Laboratorio de Producto",
       title: "Productos reales, aprendizajes reales",
@@ -65,7 +65,7 @@ const translations = {
     },
   },
   en: {
-    nav: { blog: "Blog", cursos: "Courses", mentoria: "Mentorship" },
+    nav: { blog: "Blog", cursos: "Courses", mentoria: "Contact me →" },
     hero: {
       badge: "Product Lab",
       title: "Real products, real learnings",
@@ -174,7 +174,7 @@ const Laboratorio = () => {
             </Button>
             <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium" data-id="cta-reunion-gratuita" asChild>
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
-                <Calendar className="w-4 h-4 mr-1" />{t.nav.mentoria}
+                {t.nav.mentoria}
               </a>
             </Button>
             <LanguageSwitcher />

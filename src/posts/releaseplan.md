@@ -34,6 +34,6 @@ Cuando lo tratamos como una herramienta de comunicación, los beneficios son cla
 
 Si buscás un plan de entregas que genere confianza en lugar de tensión, hablemos:
 
-* **Consultame:** [Completar form](https://forms.gle/qAp7Xry7DFqTqDKo6)
+* **Consultame →:** [Completar form](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Delivery #ReleasePlan

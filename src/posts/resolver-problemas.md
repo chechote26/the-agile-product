@@ -24,6 +24,6 @@ La clave no está en “copiar” un marco de trabajo, sino en encontrar el equi
 
 Si buscás implementar estos procesos de forma pragmática y sin burocracia, hablemos:
 
-* **Consultame:** [Completar form](https://forms.gle/qAp7Xry7DFqTqDKo6)
+* **Consultame →:** [Completar form](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Scrum #Lean #Agilidad

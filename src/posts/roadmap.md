@@ -29,6 +29,6 @@ Todo esto para medir si realmente impacta en la conversión.
 
 Si buscás conectar tu visión de producto con una ejecución ágil y real, hablemos:
 
-* **Consultame:** [Completar form](https://forms.gle/qAp7Xry7DFqTqDKo6)
+* **Consultame →:** [Completar form](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Scrum #Roadmap #Agilidad

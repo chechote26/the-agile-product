@@ -69,8 +69,8 @@ const Index = () => {
             </Button>
             <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium" data-id="cta-reunion-gratuita" asChild>
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
-                <Calendar className="w-4 h-4 mr-1" />
-                {language === 'es' ? 'Consultame' : 'Mentorship'}
+                
+                {language === 'es' ? 'Consultame →' : 'Contact me →'}
               </a>
             </Button>
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
@@ -178,29 +178,29 @@ const Index = () => {
               <CardHeader>
                 <div className="flex items-center gap-3">
                   <Brain className="h-8 w-8 text-primary shrink-0" />
-                  <CardTitle className="text-xl">{t.solutions.mentorship.title}</CardTitle>
+                  <CardTitle className="text-xl">{t.solutions.Contact me →.title}</CardTitle>
                 </div>
-                <p className="text-sm text-muted-foreground italic mt-1">{t.solutions.mentorship.problem}</p>
+                <p className="text-sm text-muted-foreground italic mt-1">{t.solutions.Contact me →.problem}</p>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-base">{t.solutions.mentorship.solution}</CardDescription>
+                <CardDescription className="text-base">{t.solutions.Contact me →.solution}</CardDescription>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* 4. Career Mentorship Section */}
+      {/* 4. Career Contact me → Section */}
       <section className="py-20 px-4 bg-primary/5">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            {t.careerMentorship.title}
+            {t.careerContact me →.title}
           </h2>
           <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-            {t.careerMentorship.subtitle}
+            {t.careerContact me →.subtitle}
           </p>
           <div className="grid md:grid-cols-3 gap-8 mb-10">
-            {t.careerMentorship.items.map((item, i) => (
+            {t.careerContact me →.items.map((item, i) => (
               <Card key={i} className="h-full text-center">
                 <CardHeader>
                   <div className="flex justify-center mb-2">{careerIcons[item.icon]}</div>
@@ -216,35 +216,35 @@ const Index = () => {
             <Button size="lg" className="text-base px-8" data-id="cta-reunion-gratuita" asChild>
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
-                {t.careerMentorship.cta}
+                {t.careerContact me →.cta}
               </a>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* 5. Mentorship Benefits */}
+      {/* 5. Contact me → Benefits */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            {t.mentorshipBenefits.title}
+            {t.Contact me →Benefits.title}
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="text-center">
               <Search className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">{t.mentorshipBenefits.diagnosis}</h3>
+              <h3 className="text-lg font-semibold mb-2">{t.Contact me →Benefits.diagnosis}</h3>
             </div>
             <div className="text-center">
               <Wrench className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">{t.mentorshipBenefits.recommendations}</h3>
+              <h3 className="text-lg font-semibold mb-2">{t.Contact me →Benefits.recommendations}</h3>
             </div>
             <div className="text-center">
               <Compass className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">{t.mentorshipBenefits.guidance}</h3>
+              <h3 className="text-lg font-semibold mb-2">{t.Contact me →Benefits.guidance}</h3>
             </div>
           </div>
           <p className="text-center text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t.mentorshipBenefits.description}
+            {t.Contact me →Benefits.description}
           </p>
         </div>
       </section>
@@ -258,7 +258,7 @@ const Index = () => {
           <div className="space-y-8">
             {[
               t.cases.healthtech,
-              t.cases.mentorshipCase,
+              t.cases.Contact me →Case,
               t.cases.aiStartup,
               t.cases.edtech,
             ].map((c, i) => (
@@ -310,7 +310,7 @@ const Index = () => {
             <Button size="lg" className="px-8" data-id="cta-reunion-gratuita" asChild>
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
-                {t.finalCta.scheduleMentorship}
+                {t.finalCta.scheduleContact me →}
               </a>
             </Button>
             <Button variant="outline" size="lg" className="px-8" data-id="cta-linkedin" asChild>

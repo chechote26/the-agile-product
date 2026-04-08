@@ -45,8 +45,8 @@ const Cursos = () => {
               data-id="cta-reunion-gratuita"asChild
             >
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
-                <Calendar className="w-4 h-4 mr-1" />
-                {language === 'es' ? 'Consultame' : 'Mentorship'}
+                
+                {language === 'es' ? 'Consultame →' : 'Contact me →'}
               </a>
             </Button>
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>

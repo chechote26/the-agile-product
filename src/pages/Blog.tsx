@@ -64,7 +64,7 @@ const Blog = () => {
             </Button>
             <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium" asChild>
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
-                <Calendar className="w-4 h-4 mr-1" />{language === 'es' ? 'Consultame' : 'Mentorship'}
+                {language === 'es' ? 'Consultame →' : 'Contact me →'}
               </a>
             </Button>
             <LanguageSwitcher />
