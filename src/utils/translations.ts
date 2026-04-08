@@ -44,13 +44,13 @@ export const translations = {
         problem: "PMs, devs y stakeholders hablan idiomas distintos. Cada uno entiende 'prioridad' o 'listo' de forma diferente.",
         solution: "Formación práctica sobre discovery, backlog, Jira y roles, actualizada al contexto actual donde la IA redefine qué hace un PM y cómo trabaja el equipo."
       },
-      Contact me →: {
+      mentorship: {
         title: "Mentoría 1:1 para tu desafío concreto",
         problem: "Tenés un problema específico que necesita una cabeza externa: agilidad, delivery, liderazgo o cómo empezar a usar IA en tu día a día.",
         solution: "Sesiones personalizadas para resolver desafíos concretos. Sin fórmulas genéricas: vamos a tu contexto, tu equipo, tu momento."
       }
     },
-    careerContact me →: {
+    career: {
       title: "¿Querés crecer como PM o conseguir el rol que buscás?",
       subtitle: "El mercado de Producto cambió. Las entrevistas son más exigentes, los perfiles más híbridos y la IA redefinió qué se espera de un PM. Si estás buscando crecer, hacer una transición o construir tu marca profesional, te acompaño con foco y sin vueltas.",
       items: [
@@ -79,7 +79,7 @@ export const translations = {
         before: "El equipo crecía pero los procesos no escalaban. Sprints que se cortaban, backlog sin claridad, roles superpuestos.",
         after: "Implementamos Scrum + Kanban según el tipo de trabajo, unificamos el backlog en Jira y redefinimos roles. El equipo empezó a cerrar sprints y a tener visibilidad real del progreso."
       },
-      Contact me →Case: {
+      mentorshipCase: {
         title: "Scrum Master que quería pasarse a Producto",
         before: "Años de experiencia metodológica, cero claridad sobre cómo traducirla en un perfil de PM atractivo para el mercado.",
         after: "En pocas sesiones: CV reescrito, LinkedIn actualizado, pitch personal afinado. Preparación para entrevistas con foco en el perfil de PM que se busca hoy. Consiguió el rol."
@@ -95,7 +95,7 @@ export const translations = {
         after: "Diseñé un curso avanzado con desafíos reales, evaluaciones prácticas y un módulo entero sobre cómo la IA está cambiando el rol del PM."
       }
     },
-    Contact me →Benefits: {
+    mentorshipBenefits: {
       title: "¿Qué pasa en una sesión?",
       diagnosis: "Diagnóstico directo de tu situación",
       recommendations: "Acciones concretas desde el día 1",
@@ -112,7 +112,7 @@ export const translations = {
     finalCta: {
       title: "Una simple consulta puede cambiar cómo trabajás",
       description: "El objetivo: entender tu contexto, identificar qué está frenando tu equipo o tu carrera, y ver si puedo ayudarte.",
-      scheduleContact me →: "Consultame →",
+      scheduleMentorship: "Consultame →",
       contactLinkedIn: "Escribime en LinkedIn",
       writeEmail: "Mandame un email",
       joinDiscord: "Unite al Discord"
@@ -167,13 +167,13 @@ export const translations = {
         problem: "PMs, devs, and stakeholders speak different languages. Everyone has a different understanding of 'priority' or 'done'.",
         solution: "Practical training on discovery, backlog, Jira, and roles — updated to the current context where AI is redefining what a PM does and how teams work."
       },
-      Contact me →: {
-        title: "1:1 Contact me → for your specific challenge",
+      mentorship: {
+        title: "1:1 Mentorship for your specific challenge",
         problem: "You have a specific problem that needs an outside perspective: agility, delivery, leadership, or how to start using AI in your day-to-day.",
         solution: "Personalized sessions to solve concrete challenges. No generic formulas: we go to your context, your team, your moment."
       }
     },
-    careerContact me →: {
+    career: {
       title: "Want to grow as a PM or land the role you're looking for?",
       subtitle: "The Product market has changed. Interviews are more demanding, profiles more hybrid, and AI has redefined what's expected from a PM. If you're looking to grow, make a transition, or build your professional brand, I'll guide you with focus and no fluff.",
       items: [
@@ -202,7 +202,7 @@ export const translations = {
         before: "The team was growing but processes weren't scaling. Sprints getting cut short, no clarity in the backlog, overlapping roles.",
         after: "We implemented Scrum + Kanban based on work type, unified the backlog in Jira, and redefined roles. The team started closing sprints and having real visibility into progress."
       },
-      Contact me →Case: {
+      mentorshipCase: {
         title: "Dev who wanted to move into Product",
         before: "Years of technical experience, zero clarity on how to translate it into an attractive PM profile for the market.",
         after: "In a few sessions: rewritten CV, updated LinkedIn, refined personal pitch. Interview prep focused on the PM profile the market is looking for today. They got the role."
@@ -218,7 +218,7 @@ export const translations = {
         after: "I designed an advanced course with real challenges, practical assessments, and an entire module on how AI is changing the PM role."
       }
     },
-    Contact me →Benefits: {
+    mentorshipBenefits: {
       title: "What happens in a session?",
       diagnosis: "Direct diagnosis of your situation",
       recommendations: "Concrete actions from day 1",
@@ -235,7 +235,7 @@ export const translations = {
     finalCta: {
       title: "Getting in touch can change how you work",
       description: "The goal: understand your context, identify what's holding back your team or your career, and see if I can help.",
-      scheduleContact me →: "Contact me",
+      scheduleMentorship: "Contact me",
       contactLinkedIn: "Message me on LinkedIn",
       writeEmail: "Send me an email",
       joinDiscord: "Join the Discord"
