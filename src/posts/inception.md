@@ -29,6 +29,6 @@ El valor real está en que evita sorpresas costosas más adelante. Lo que no se 
 
 Si buscás alinear a tu equipo y empezar tus proyectos con una base sólida, hablemos:
 
-* **Consultame:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
+* **Consultame:** [Completar form](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Alignment #Delivery #Team #Inception

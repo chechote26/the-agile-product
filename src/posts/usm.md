@@ -27,6 +27,6 @@ El valor está en que no pensás en tareas sueltas, sino en el "viaje" del usuar
 
 Si buscás darle estructura a tu backlog y priorizar con sentido, hablemos:
 
-* **Consultame:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
+* **Consultame:** [Completar form](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Scrum #Inception #Storymap #Agilidad

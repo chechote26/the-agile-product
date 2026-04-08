@@ -34,6 +34,6 @@ Si querés empezar a aplicar Lean en serio, mirá tu agenda y tu backlog y pregu
 
 Si buscás limpiar tus procesos de desperdicios y enfocarte en el valor real, hablemos:
 
-* **Consultame:** [Agendar 30 min en Calendly](https://forms.gle/qAp7Xry7DFqTqDKo6)
+* **Consultame:** [Completar form](https://forms.gle/qAp7Xry7DFqTqDKo6)
 
 #Agile #ProductManagement #Lean #Delivery #Impacto #Agilidad
