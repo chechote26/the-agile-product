@@ -32,7 +32,7 @@ const Cursos = () => {
               variant="ghost"
               size="sm" 
               className="text-muted-foreground hover:text-foreground font-medium"
-              asChild
+              data-id="cta-blog" asChild
             >
               <Link to="/blog">
                 <FileText className="w-4 h-4 mr-1" />
@@ -40,14 +40,14 @@ const Cursos = () => {
               </Link>
             </Button>
             
-            {/* CTA Header: Consultame con la flecha → */}
+            {/* CTA Header: Flechita sumada */}
             <Button 
               size="sm" 
               className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
-              asChild
+              data-id="cta-reunion-gratuita" asChild
             >
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
-                {language === 'es' ? 'Consultame →' : 'Contact me →'}
+                {language === 'es' ? 'Consultame →' : 'Mentorship →'}
               </a>
             </Button>
 
@@ -122,7 +122,7 @@ const Cursos = () => {
           </div>
         </section>
 
-        {/* Courses: Contenido Completo Recuperado */}
+        {/* Courses */}
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
             <div className="flex items-center justify-center gap-3 mb-12">
@@ -136,7 +136,7 @@ const Cursos = () => {
               {/* Course 1 */}
               <div className="bg-card rounded-lg border p-6 h-full border-t-4 border-t-primary">
                 <h3 className="text-xl font-bold text-primary mb-4">
-                  {language === 'es' ? '1. Organización Táctica y Estructura' : '1. Operational Order and Structure'}
+                  {language === 'es' ? '1. Organización Táctica y Estructura del Equipo' : '1. Operational Order and Structure'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   {language === 'es' ? 'Eliminá la confusión: quién hace qué y cómo se mide el éxito.' : 'Eliminate confusion: who does what and how success is measured.'}
@@ -148,11 +148,19 @@ const Cursos = () => {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Definition of Ready y Done' : 'Definition of Ready and Done'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Frameworks que se adaptan a vos, no al revés' : 'Frameworks that adapt to you, not vice versa'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm font-medium text-primary/80 italic">{language === 'es' ? 'IA: Automatizá reportes en Jira/Sheets' : 'AI: Automate reports in Jira/Sheets'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Definition of Ready: Acuerdos para trabajar' : 'Definition of Ready: Agreements to work'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">{language === 'es' ? 'Definition of Done: Calidad sin excusas' : 'Definition of Done: No-excuse quality'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm font-medium text-primary/80 italic">{language === 'es' ? 'IA: Automatizá reportes para dejar de perder tiempo en Jira/Sheets' : 'AI: Automate reports to stop wasting time in Jira/Sheets'}</span>
                   </li>
                 </ul>
               </div>
@@ -160,7 +168,7 @@ const Cursos = () => {
               {/* Course 2 */}
               <div className="bg-card rounded-lg border p-6 h-full border-t-4 border-t-primary">
                 <h3 className="text-xl font-bold text-primary mb-4">
-                  {language === 'es' ? '2. Claridad de Producto' : '2. Product Clarity'}
+                  {language === 'es' ? '2. Claridad y Alineación de Producto' : '2. Product Clarity and Alignment'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   {language === 'es' ? 'Dejá de construir por intuición: definí qué construir y por qué.' : 'Stop building on intuition: define what to build and why.'}
@@ -168,15 +176,19 @@ const Cursos = () => {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Inception Deck y Alineación' : 'Inception Deck and Alignment'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Inception Deck: Alineación total de stakeholders' : 'Inception Deck: Total stakeholder alignment'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'User Story Mapping' : 'User Story Mapping'}</span>
+                    <span className="text-sm">{language === 'es' ? 'User Story Mapping para no perder el foco' : 'User Story Mapping to keep focus'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm font-medium text-primary/80 italic">{language === 'es' ? 'IA: Prototipado rápido y análisis masivo' : 'AI: Rapid prototyping and massive analysis'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Roadmaps realistas, no promesas vacías' : 'Realistic roadmaps, not empty promises'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm font-medium text-primary/80 italic">{language === 'es' ? 'IA: Prototipado rápido y análisis de feedback masivo en segundos' : 'AI: Rapid prototyping and massive feedback analysis in seconds'}</span>
                   </li>
                 </ul>
               </div>
@@ -184,7 +196,7 @@ const Cursos = () => {
               {/* Course 3 */}
               <div className="bg-card rounded-lg border p-6 h-full border-t-4 border-t-primary">
                 <h3 className="text-xl font-bold text-primary mb-4">
-                  {language === 'es' ? '3. Ritmo de Delivery' : '3. Delivery Pace'}
+                  {language === 'es' ? '3. Ritmo y Ejecución de Delivery' : '3. Delivery Pace and Execution'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   {language === 'es' ? 'Acelerá el ciclo: de la idea a producción sin fricciones.' : 'Accelerate the cycle: from idea to production with no friction.'}
@@ -192,15 +204,19 @@ const Cursos = () => {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Priorización por valor (RICE)' : 'Value-based prioritization (RICE)'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Priorización por valor (RICE, Esfuerzo-Impacto)' : 'Value-based prioritization (RICE, Effort-Impact)'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Métricas (Cycle & Lead Time)' : 'Metrics (Cycle & Lead Time)'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Métricas que importan (Throughput, Velocity, Cycle Time, Lead Time)' : 'Metrics that matter (Throughput, Velocity, Cycle Time, Lead Time)'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm font-medium text-primary/80 italic">{language === 'es' ? 'IA: Updates inteligentes de estatus' : 'AI: Smart status updates'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Gestión de dependencias y cuellos de botella' : 'Dependency and bottleneck management'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm font-medium text-primary/80 italic">{language === 'es' ? 'IA: Reducción drástica de reuniones de estatus con updates inteligentes' : 'AI: Drastic reduction of status meetings with smart updates'}</span>
                   </li>
                 </ul>
               </div>
@@ -229,13 +245,13 @@ const Cursos = () => {
               </div>
               <div className="text-center p-6 bg-card rounded-lg border">
                 <h3 className="font-semibold text-foreground mb-2">{language === 'es' ? 'Equipos de Desarrollo' : 'Development Teams'}</h3>
-                <p className="text-xs text-muted-foreground">{language === 'es' ? 'Cansados de la burocracia' : 'Tired of bureaucracy'}</p>
+                <p className="text-xs text-muted-foreground">{language === 'es' ? 'Cansados de los procesos burocráticos' : 'Tired of bureaucratic processes'}</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Waitlist CTA: Con el icono del gorrito GraduationCap */}
+        {/* Waitlist CTA: Sombrerito (GraduationCap) sumado */}
         <section className="py-20 px-4 bg-primary/5">
           <div className="container mx-auto max-w-4xl text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
@@ -253,7 +269,7 @@ const Cursos = () => {
             </p>
             
             <div className="flex justify-center">
-              <Button size="lg" className="text-lg px-8 py-6" asChild>
+              <Button size="lg" className="text-lg px-8 py-6" data-id="cta-inscripcion-cursos" asChild>
                 <a href="https://forms.gle/9RNDTanEZEMBxR2r9" target="_blank" rel="noopener noreferrer">
                   <GraduationCap className="mr-2 h-6 w-6" />
                   {language === 'es' ? 'Inscribirme ahora' : 'Join now'}
