@@ -32,22 +32,25 @@ const Cursos = () => {
               variant="ghost"
               size="sm" 
               className="text-muted-foreground hover:text-foreground font-medium"
-              data-id="cta-blog" asChild
+              asChild
             >
               <Link to="/blog">
                 <FileText className="w-4 h-4 mr-1" />
                 {language === 'es' ? 'Blog' : 'Blog'}
               </Link>
             </Button>
+            
+            {/* CTA Header: Consultame con la flecha → */}
             <Button 
               size="sm" 
               className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
-              data-id="cta-reunion-gratuita"asChild
+              asChild
             >
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
                 {language === 'es' ? 'Consultame →' : 'Contact me →'}
               </a>
             </Button>
+
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
               <Link to="/laboratorio">
                 <FlaskConical className="w-4 h-4 mr-1" />
@@ -70,7 +73,7 @@ const Cursos = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               {language === 'es'
                 ? 'De la ejecución reactiva a la creación de productos con propósito'
-                : 'From reactive execution to purpose-driven product creation'}
+                : 'Stop firefighting and start delivering real value'}
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               {language === 'es'
@@ -119,7 +122,7 @@ const Cursos = () => {
           </div>
         </section>
 
-        {/* Courses Steps */}
+        {/* Courses: Contenido Completo Recuperado */}
         <section className="py-16 px-4 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
             <div className="flex items-center justify-center gap-3 mb-12">
@@ -130,92 +133,74 @@ const Cursos = () => {
             </div>
             
             <div className="grid lg:grid-cols-3 gap-8">
-              {/* Step 1: Organización Táctica */}
+              {/* Course 1 */}
               <div className="bg-card rounded-lg border p-6 h-full border-t-4 border-t-primary">
-                <h3 className="text-xl font-bold text-primary mb-2">
-                  {language === 'es' ? '1. Organización Táctica' : '1. Tactical Organization'}
+                <h3 className="text-xl font-bold text-primary mb-4">
+                  {language === 'es' ? '1. Organización Táctica y Estructura' : '1. Operational Order and Structure'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   {language === 'es' ? 'Eliminá la confusión: quién hace qué y cómo se mide el éxito.' : 'Eliminate confusion: who does what and how success is measured.'}
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Definición de Dominios y Roles' : 'Domain and Role Definition'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Roles sin solapamientos (RACI dinámico)' : 'No-overlap roles (Dynamic RACI)'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Métricas de Éxito (KPIs vs OKRs)' : 'Success Metrics (KPIs vs OKRs)'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Definition of Ready y Done' : 'Definition of Ready and Done'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Dinámicas de Sincronización' : 'Sync Dynamics'}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm font-medium text-primary/80 italic">
-                      {language === 'es' ? 'IA: Automatizá reportes en Jira' : 'AI: Automate Jira reports'}
-                    </span>
+                    <span className="text-sm font-medium text-primary/80 italic">{language === 'es' ? 'IA: Automatizá reportes en Jira/Sheets' : 'AI: Automate reports in Jira/Sheets'}</span>
                   </li>
                 </ul>
               </div>
 
-              {/* Step 2: Claridad de Producto */}
+              {/* Course 2 */}
               <div className="bg-card rounded-lg border p-6 h-full border-t-4 border-t-primary">
-                <h3 className="text-xl font-bold text-primary mb-2">
+                <h3 className="text-xl font-bold text-primary mb-4">
                   {language === 'es' ? '2. Claridad de Producto' : '2. Product Clarity'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  {language === 'es' ? 'Definí qué construir y por qué.' : 'Define what to build and why.'}
+                  {language === 'es' ? 'Dejá de construir por intuición: definí qué construir y por qué.' : 'Stop building on intuition: define what to build and why.'}
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">{language === 'es' ? 'Inception Deck y Alineación' : 'Inception Deck and Alignment'}</span>
+                  </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">{language === 'es' ? 'User Story Mapping' : 'User Story Mapping'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Discovery y Validación' : 'Discovery and Validation'}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Priorización por Valor' : 'Value-based Prioritization'}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm font-medium text-primary/80 italic">
-                      {language === 'es' ? 'IA: Prototipado rápido' : 'AI: Rapid prototyping'}
-                    </span>
+                    <span className="text-sm font-medium text-primary/80 italic">{language === 'es' ? 'IA: Prototipado rápido y análisis masivo' : 'AI: Rapid prototyping and massive analysis'}</span>
                   </li>
                 </ul>
               </div>
 
-              {/* Step 3: Ritmo de Delivery */}
+              {/* Course 3 */}
               <div className="bg-card rounded-lg border p-6 h-full border-t-4 border-t-primary">
-                <h3 className="text-xl font-bold text-primary mb-2">
+                <h3 className="text-xl font-bold text-primary mb-4">
                   {language === 'es' ? '3. Ritmo de Delivery' : '3. Delivery Pace'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  {language === 'es' ? 'Acelerá el ciclo sin fricciones.' : 'Accelerate the cycle without friction.'}
+                  {language === 'es' ? 'Acelerá el ciclo: de la idea a producción sin fricciones.' : 'Accelerate the cycle: from idea to production with no friction.'}
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Gestión del Flow y Cuellos de Botella' : 'Flow Management and Bottlenecks'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Priorización por valor (RICE)' : 'Value-based prioritization (RICE)'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Métricas: Cycle & Lead Time' : 'Metrics: Cycle & Lead Time'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Métricas (Cycle & Lead Time)' : 'Metrics (Cycle & Lead Time)'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Retrospectivas Accionables' : 'Actionable Retrospectives'}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm font-medium text-primary/80 italic">
-                      {language === 'es' ? 'IA: Updates inteligentes' : 'AI: Smart updates'}
-                    </span>
+                    <span className="text-sm font-medium text-primary/80 italic">{language === 'es' ? 'IA: Updates inteligentes de estatus' : 'AI: Smart status updates'}</span>
                   </li>
                 </ul>
               </div>
@@ -236,27 +221,21 @@ const Cursos = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center p-6 bg-card rounded-lg border">
                 <h3 className="font-semibold text-foreground mb-2">PMs y POs</h3>
-                <p className="text-xs text-muted-foreground italic">
-                  {language === 'es' ? 'Que buscan priorizar con impacto' : 'Looking for high-impact prioritization'}
-                </p>
+                <p className="text-xs text-muted-foreground">{language === 'es' ? 'Que buscan liderar con evidencia' : 'Looking to lead with evidence'}</p>
               </div>
               <div className="text-center p-6 bg-card rounded-lg border">
-                <h3 className="font-semibold text-foreground mb-2">Líderes y Tech Leads</h3>
-                <p className="text-xs text-muted-foreground italic">
-                  {language === 'es' ? 'Que necesitan fluidez operativa' : 'Needing operational fluency'}
-                </p>
+                <h3 className="font-semibold text-foreground mb-2">{language === 'es' ? 'Líderes y Tech Leads' : 'Leaders and Tech Leads'}</h3>
+                <p className="text-xs text-muted-foreground">{language === 'es' ? 'Que necesitan previsibilidad' : 'Who need predictability'}</p>
               </div>
               <div className="text-center p-6 bg-card rounded-lg border">
-                <h3 className="font-semibold text-foreground mb-2">Equipos de Desarrollo</h3>
-                <p className="text-xs text-muted-foreground italic">
-                  {language === 'es' ? 'Cansados de la burocracia ágil' : 'Tired of agile bureaucracy'}
-                </p>
+                <h3 className="font-semibold text-foreground mb-2">{language === 'es' ? 'Equipos de Desarrollo' : 'Development Teams'}</h3>
+                <p className="text-xs text-muted-foreground">{language === 'es' ? 'Cansados de la burocracia' : 'Tired of bureaucracy'}</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Waitlist CTA */}
+        {/* Waitlist CTA: Con el icono del gorrito GraduationCap */}
         <section className="py-20 px-4 bg-primary/5">
           <div className="container mx-auto max-w-4xl text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
@@ -274,7 +253,7 @@ const Cursos = () => {
             </p>
             
             <div className="flex justify-center">
-              <Button size="lg" className="text-lg px-8 py-6" data-id="cta-inscripcion-cursos" asChild>
+              <Button size="lg" className="text-lg px-8 py-6" asChild>
                 <a href="https://forms.gle/9RNDTanEZEMBxR2r9" target="_blank" rel="noopener noreferrer">
                   <GraduationCap className="mr-2 h-6 w-6" />
                   {language === 'es' ? 'Inscribirme ahora' : 'Join now'}
