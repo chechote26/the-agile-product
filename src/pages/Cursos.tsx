@@ -70,7 +70,7 @@ const Cursos = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               {language === 'es'
                 ? 'De la ejecución reactiva a la creación de productos con propósito'
-                : 'Stop firefighting and start delivering real value'}
+                : 'From reactive execution to purpose-driven product creation'}
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               {language === 'es'
@@ -130,62 +130,92 @@ const Cursos = () => {
             </div>
             
             <div className="grid lg:grid-cols-3 gap-8">
-              {/* Step 1 */}
+              {/* Step 1: Organización Táctica */}
               <div className="bg-card rounded-lg border p-6 h-full border-t-4 border-t-primary">
-                <h3 className="text-xl font-bold text-primary mb-4">
-                  {language === 'es' ? '1. Organización Táctica' : '1. Operational Order'}
+                <h3 className="text-xl font-bold text-primary mb-2">
+                  {language === 'es' ? '1. Organización Táctica' : '1. Tactical Organization'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  {language === 'es' ? 'Eliminá la confusión: quién hace qué y cómo se mide el éxito.' : 'Eliminate confusion.'}
+                  {language === 'es' ? 'Eliminá la confusión: quién hace qué y cómo se mide el éxito.' : 'Eliminate confusion: who does what and how success is measured.'}
                 </p>
-                <ul className="space-y-2">
+                <ul className="space-y-3">
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Roles sin solapamientos' : 'No-overlap roles'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Definición de Dominios y Roles' : 'Domain and Role Definition'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm font-medium text-primary/80 italic">{language === 'es' ? 'IA: Automatizá reportes en Jira' : 'AI: Automate Jira reports'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Métricas de Éxito (KPIs vs OKRs)' : 'Success Metrics (KPIs vs OKRs)'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">{language === 'es' ? 'Dinámicas de Sincronización' : 'Sync Dynamics'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm font-medium text-primary/80 italic">
+                      {language === 'es' ? 'IA: Automatizá reportes en Jira' : 'AI: Automate Jira reports'}
+                    </span>
                   </li>
                 </ul>
               </div>
 
-              {/* Step 2 */}
+              {/* Step 2: Claridad de Producto */}
               <div className="bg-card rounded-lg border p-6 h-full border-t-4 border-t-primary">
-                <h3 className="text-xl font-bold text-primary mb-4">
+                <h3 className="text-xl font-bold text-primary mb-2">
                   {language === 'es' ? '2. Claridad de Producto' : '2. Product Clarity'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   {language === 'es' ? 'Definí qué construir y por qué.' : 'Define what to build and why.'}
                 </p>
-                <ul className="space-y-2">
+                <ul className="space-y-3">
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-sm">{language === 'es' ? 'User Story Mapping' : 'User Story Mapping'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm font-medium text-primary/80 italic">{language === 'es' ? 'IA: Prototipado rápido' : 'AI: Rapid prototyping'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Discovery y Validación' : 'Discovery and Validation'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">{language === 'es' ? 'Priorización por Valor' : 'Value-based Prioritization'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm font-medium text-primary/80 italic">
+                      {language === 'es' ? 'IA: Prototipado rápido' : 'AI: Rapid prototyping'}
+                    </span>
                   </li>
                 </ul>
               </div>
 
-              {/* Step 3 */}
+              {/* Step 3: Ritmo de Delivery */}
               <div className="bg-card rounded-lg border p-6 h-full border-t-4 border-t-primary">
-                <h3 className="text-xl font-bold text-primary mb-4">
+                <h3 className="text-xl font-bold text-primary mb-2">
                   {language === 'es' ? '3. Ritmo de Delivery' : '3. Delivery Pace'}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  {language === 'es' ? 'Acelerá el ciclo sin fricciones.' : 'Accelerate the cycle.'}
+                  {language === 'es' ? 'Acelerá el ciclo sin fricciones.' : 'Accelerate the cycle without friction.'}
                 </p>
-                <ul className="space-y-2">
+                <ul className="space-y-3">
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{language === 'es' ? 'Métricas que importan' : 'Metrics that matter'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Gestión del Flow y Cuellos de Botella' : 'Flow Management and Bottlenecks'}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm font-medium text-primary/80 italic">{language === 'es' ? 'IA: Updates inteligentes' : 'AI: Smart updates'}</span>
+                    <span className="text-sm">{language === 'es' ? 'Métricas: Cycle & Lead Time' : 'Metrics: Cycle & Lead Time'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">{language === 'es' ? 'Retrospectivas Accionables' : 'Actionable Retrospectives'}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm font-medium text-primary/80 italic">
+                      {language === 'es' ? 'IA: Updates inteligentes' : 'AI: Smart updates'}
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -206,18 +236,27 @@ const Cursos = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center p-6 bg-card rounded-lg border">
                 <h3 className="font-semibold text-foreground mb-2">PMs y POs</h3>
+                <p className="text-xs text-muted-foreground italic">
+                  {language === 'es' ? 'Que buscan priorizar con impacto' : 'Looking for high-impact prioritization'}
+                </p>
               </div>
               <div className="text-center p-6 bg-card rounded-lg border">
                 <h3 className="font-semibold text-foreground mb-2">Líderes y Tech Leads</h3>
+                <p className="text-xs text-muted-foreground italic">
+                  {language === 'es' ? 'Que necesitan fluidez operativa' : 'Needing operational fluency'}
+                </p>
               </div>
               <div className="text-center p-6 bg-card rounded-lg border">
                 <h3 className="font-semibold text-foreground mb-2">Equipos de Desarrollo</h3>
+                <p className="text-xs text-muted-foreground italic">
+                  {language === 'es' ? 'Cansados de la burocracia ágil' : 'Tired of agile bureaucracy'}
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Waitlist CTA - CORREGIDO CON GRADUATION CAP */}
+        {/* Waitlist CTA */}
         <section className="py-20 px-4 bg-primary/5">
           <div className="container mx-auto max-w-4xl text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
@@ -237,7 +276,6 @@ const Cursos = () => {
             <div className="flex justify-center">
               <Button size="lg" className="text-lg px-8 py-6" data-id="cta-inscripcion-cursos" asChild>
                 <a href="https://forms.gle/9RNDTanEZEMBxR2r9" target="_blank" rel="noopener noreferrer">
-                  {/* AQUÍ EL CAMBIO: GraduationCap en lugar de Calendar */}
                   <GraduationCap className="mr-2 h-6 w-6" />
                   {language === 'es' ? 'Inscribirme ahora' : 'Join now'}
                 </a>
