@@ -61,7 +61,7 @@ const translations = {
     ],
     footer: {
       title: "The Agile Product · Eze Tuero",
-      subtitle: "Consultor en Agilidad y Producto",
+      subtitle: "Product Management & Agile Advisory",
     },
   },
   en: {
@@ -118,7 +118,7 @@ const translations = {
     ],
     footer: {
       title: "The Agile Product · Eze Tuero",
-      subtitle: "Agility & Product Consultant",
+      subtitle: "Product Management & Agile Advisory",
     },
   },
 };

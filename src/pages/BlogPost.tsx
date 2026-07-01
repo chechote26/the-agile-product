@@ -72,7 +72,7 @@ const BlogPost = () => {
               <Link to="/blog"><ArrowLeft className="w-4 h-4 mr-1" />{language === 'es' ? 'Blog' : 'Blog'}</Link>
             </Button>
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
-              <Link to="/cursos"><GraduationCap className="w-4 h-4 mr-1" />{language === 'es' ? 'Cursos' : 'Courses'}</Link>
+              <Link to="/laboratorio"><FlaskConical className="w-4 h-4 mr-1" />{language === 'es' ? 'Laboratorio' : 'Lab'}</Link>
             </Button>
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
               <Link to="/laboratorio"><FlaskConical className="w-4 h-4 mr-1" />{language === 'es' ? 'Laboratorio' : 'Lab'}</Link>

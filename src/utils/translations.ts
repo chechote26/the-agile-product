@@ -1,16 +1,16 @@
 export const translations = {
   es: {
     hero: {
-      title: "Tu equipo trabaja mucho, pero no avanza?",
-      subtitle: "Ayudo a PMs, founders y equipos de Producto a dejar de correr en círculos: priorizar lo que importa, organizar cómo trabajan y entregar valor real con IA aplicada donde realmente acelera.",
-      cta: "Dejame tu consulta"
+      title: "Producto es negocio, usuarios y mercado — no solo sprints.",
+      subtitle: "Ayudo a equipos que empiezan a construir producto digital y a profesionales que quieren crecer o hacer la transición hacia Producto.",
+      cta: "Consultame"
     },
     painPoints: {
       title: "¿Te suena alguna de estas situaciones?",
       items: [
         {
           icon: "chaos",
-          text: "El equipo tiene sprints llenos pero los releases nunca llegan a tiempo o llegan, pero nadie sabe bien qué se entregó ni por qué."
+          text: "Tu equipo tiene sprints llenos pero los releases nunca llegan a tiempo — o llegan, pero nadie sabe bien qué se entregó ni por qué."
         },
         {
           icon: "priority",
@@ -18,11 +18,11 @@ export const translations = {
         },
         {
           icon: "effort",
-          text: "Se trabaja mucho, se hace mucho, pero el producto no avanza. La tracción no llega y el equipo empieza a perder el foco."
+          text: "Querés hacer la transición a Producto — desde otra área o desde otra industria — pero no sabés cómo contar tu historia ni qué busca el mercado hoy."
         },
         {
           icon: "career",
-          text: "Querés crecer como PM, conseguir un mejor rol o construir tu perfil, pero no sabés cómo diferenciarte ni qué mueve el amperímetro en el mercado actual."
+          text: "Sos PM o PO y sentís que tu trabajo se está volviendo administrar proceso. Querés volver a pensar en negocio, usuarios y estrategia."
         }
       ],
       cta: "Sí, me pasa esto →"
@@ -30,29 +30,29 @@ export const translations = {
     solutions: {
       title: "Cómo puedo ayudarte",
       agile: {
-        title: "Tu equipo no entrega con foco",
-        problem: "Sprints caóticos, backlog sin dueño, reuniones que no resuelven nada.",
-        solution: "Diseño un sistema de trabajo adaptado a tu contexto: Scrum, Kanban o híbrido. Con IA donde reduce fricción real: reportes automáticos, métricas sin burocracia, backlog que se gestiona solo."
+        title: "Equipos y startups que empiezan con producto digital",
+        problem: "Tenés visión pero no sabés cómo organizarte, qué construir primero ni cómo hacer que el equipo entregue con foco.",
+        solution: "Diseño el sistema de trabajo adaptado a tu momento: roles, backlog, ciclo discovery-delivery y Product Ops con IA donde realmente reduce fricción. Casos reales: HealthTech en expansión, startup de IA en etapa inicial."
       },
       delivery: {
-        title: "Construís, pero no validás",
-        problem: "Se lanza, pero no se sabe si funcionó. El ciclo discovery-delivery está roto o directamente no existe.",
-        solution: "Acompaño el ciclo completo: desde priorizar qué construir hasta medir si funcionó. Integrando herramientas de IA para capturar feedback más rápido y tomar decisiones con más contexto y menos reuniones."
+        title: "Profesionales en transición hacia Producto",
+        problem: "Venís de otra área (desarrollo, Scrum Master, proyecto) o de otra industria y no sabés cómo traducir tu experiencia en un perfil de PM atractivo.",
+        solution: "Trabajamos tu historia, tu CV, tu LinkedIn y cómo prepararte para el rol que buscás. Con foco en lo que el mercado pide hoy: criterio de negocio, usuarios, métricas y cómo trabajás con IA."
       },
       training: {
-        title: "El equipo no tiene lenguaje común",
-        problem: "PMs, devs y stakeholders hablan idiomas distintos. Cada uno entiende 'prioridad' o 'listo' de forma diferente.",
-        solution: "Formación práctica sobre discovery, backlog, Jira y roles, actualizada al contexto actual donde la IA redefine qué hace un PM y cómo trabaja el equipo."
+        title: "De productos físicos a producto digital",
+        problem: "Tenés experiencia en bienes de consumo, retail o industria y querés entender cómo se piensa producto en el mundo digital.",
+        solution: "Entiendo los dos mundos: gestioné portfolios y P&L en Philips, Panasonic y Colgate antes de pasarme a tech. Te ayudo a hacer ese puente sin perder lo que ya sabés."
       },
       mentorship: {
         title: "Mentoría 1:1 para tu desafío concreto",
-        problem: "Tenés un problema específico que necesita una cabeza externa: agilidad, delivery, liderazgo o cómo empezar a usar IA en tu día a día.",
-        solution: "Sesiones personalizadas para resolver desafíos concretos. Sin fórmulas genéricas: vamos a tu contexto, tu equipo, tu momento."
+        problem: "Tenés un problema específico — agilidad, delivery, carrera, IA — que necesita una cabeza externa con experiencia real.",
+        solution: "Sesiones personalizadas para resolver desafíos concretos. Sin fórmulas genéricas: vamos a tu contexto, tu momento, tu próximo paso."
       }
     },
     career: {
       title: "¿Querés crecer como PM o conseguir el rol que buscás?",
-      subtitle: "El mercado de Producto cambió. Las entrevistas son más exigentes, los perfiles más híbridos y la IA redefinió qué se espera de un PM. Si estás buscando crecer, hacer una transición o construir tu marca profesional, te acompaño con foco y sin vueltas.",
+      subtitle: "El mercado de Producto cambió. La IA está absorbiendo la parte operativa del trabajo — backlog, reportes, ceremonias. Lo que diferencia a un PM hoy es el criterio de negocio, la lectura del usuario y la visión de mercado. Si querés llegar ahí, te acompaño.",
       items: [
         {
           icon: "job",
@@ -66,11 +66,11 @@ export const translations = {
         },
         {
           icon: "brand",
-          title: "Construir tu marca personal como PM",
-          description: "LinkedIn es parte del nuevo CV. Te ayudo a definir tu voz, qué contenido tiene sentido para tu perfil y cómo construir presencia en el ecosistema de Producto sin que se sienta forzado."
+          title: "Hacer la transición hacia Producto",
+          description: "Venís de otra área o de otra industria y querés entrar al mundo del Product Management. Traducimos tu experiencia previa en un perfil sólido y un discurso que conecta con lo que busca el mercado hoy."
         }
       ],
-      cta: "Dejame tu consulta para una sesión de carrera"
+      cta: "Consultame →"
     },
     cases: {
       title: "Resultados reales, no promesas",
@@ -104,14 +104,14 @@ export const translations = {
     },
     about: {
       title: "¿Quién está del otro lado?",
-      intro: "Soy Eze Tuero. Llevo más de 15 años en gestión de producto — 7 en el mundo tech — trabajando con startups y scaleups en Latam.",
-      experience: "Combiné agilidad práctica con gestión de productos reales integrando herramientas, acelerando el prototipado, capturando feedback a escala y redefiniendo del ciclo de discovery y delivery.",
-      approach: "Trabajo con PMs, POs, founders y líderes de equipo que necesitan claridad para organizarse mejor, priorizar con criterio y entregar valor de forma continua, en un contexto donde los roles y los procesos cambian todo el tiempo.",
-      philosophy: "No vendo metodologías ni transformaciones mágicas. Te acompaño a construir una forma de trabajo que funcione para vos, tu equipo y tu momento."
+      intro: "Soy Eze Tuero. Llevo más de 15 años en gestión de producto — empecé en consumo masivo y después me moví a tech.",
+      experience: "Gestioné portfolios y P&L en Philips, Panasonic y Colgate antes de pasarme al mundo digital. Ese recorrido — de productos físicos a producto digital y luego a Product Operations — es lo que me permite conectar pensamiento de negocio con ejecución ágil real.",
+      approach: "Hoy trabajo como Agile Project Lead en proyectos internacionales, doy clases de Product Management y Scrum en EducaciónIT, y a través de The Agile Product acompaño a equipos que empiezan a construir producto digital y a profesionales que quieren crecer o hacer la transición hacia Producto.",
+      philosophy: "No vendo metodologías ni transformaciones mágicas. Construyo, con vos, una forma de trabajo que funcione para tu contexto y tu momento."
     },
     finalCta: {
-      title: "Una simple consulta puede cambiar cómo trabajás",
-      description: "El objetivo: entender tu contexto, identificar qué está frenando tu equipo o tu carrera, y ver si puedo ayudarte.",
+      title: "Una consulta puede cambiar cómo trabajás o cómo te ven",
+      description: "Contame tu contexto — si puedo ayudarte, vemos cómo. Si no, te digo a quién buscar.",
       scheduleMentorship: "Consultame →",
       contactLinkedIn: "Escribime en LinkedIn",
       writeEmail: "Mandame un email",
@@ -119,13 +119,13 @@ export const translations = {
     },
     footer: {
       title: "The Agile Product · Eze Tuero",
-      subtitle: "Consultoría en Producto y Agilidad"
+      subtitle: "Product Management & Agile Advisory"
     }
   },
   en: {
     hero: {
-      title: "Your team works hard. Why isn't it moving forward?",
-      subtitle: "I help PMs, founders, and Product teams stop running in circles: prioritize what matters, organize how they work, and deliver real value — with AI applied where it actually makes a difference.",
+      title: "Product is business, users and market — not just sprints.",
+      subtitle: "I help early-stage teams building their first digital product, and professionals looking to grow or transition into Product.",
       cta: "Contact me"
     },
     painPoints: {
@@ -133,7 +133,7 @@ export const translations = {
       items: [
         {
           icon: "chaos",
-          text: "The team has packed sprints but releases never arrive on time — or they do, but nobody really knows what was shipped or why."
+          text: "Your team has packed sprints but releases never arrive on time — or they do, but nobody really knows what was shipped or why."
         },
         {
           icon: "priority",
@@ -141,11 +141,11 @@ export const translations = {
         },
         {
           icon: "effort",
-          text: "Everyone's working hard, shipping a lot, but the product isn't moving. Traction isn't coming and the team is starting to lose the thread."
+          text: "You want to transition into Product — from another discipline or another industry — but you're not sure how to tell your story or what the market is actually looking for."
         },
         {
           icon: "career",
-          text: "You want to grow as a PM, land a better role, or build your professional profile — but you don't know how to stand out or what actually moves the needle in today's market."
+          text: "You're a PM or PO and your work is starting to feel like process administration. You want to get back to thinking about business, users and strategy."
         }
       ],
       cta: "Yes, this is me →"
@@ -153,29 +153,29 @@ export const translations = {
     solutions: {
       title: "How I can help",
       agile: {
-        title: "Your team doesn't deliver with focus",
-        problem: "Chaotic sprints, ownerless backlog, meetings that solve nothing.",
-        solution: "I design a working system tailored to your context: Scrum, Kanban, or hybrid. With AI where it reduces real friction: automated reports, metrics without bureaucracy, a backlog that practically manages itself."
+        title: "Teams and startups building their first digital product",
+        problem: "You have vision but don't know how to organize, what to build first, or how to get the team to deliver with focus.",
+        solution: "I design the working system for your stage: roles, backlog, discovery-delivery cycle and Product Ops with AI where it actually reduces friction. Real cases: expanding HealthTech, early-stage AI startup."
       },
       delivery: {
-        title: "You're building, but not validating",
-        problem: "Things get shipped but nobody knows if they worked. The discovery-delivery cycle is broken — or simply doesn't exist.",
-        solution: "I accompany the full cycle: from deciding what to build to measuring if it worked. Integrating AI tools to capture feedback faster and make decisions with more context and fewer meetings."
+        title: "Professionals transitioning into Product",
+        problem: "You come from another discipline (dev, Scrum Master, project management) or another industry and don't know how to translate your experience into an attractive PM profile.",
+        solution: "We work on your story, CV, LinkedIn and how to prepare for the role you're after. Focused on what the market wants today: business judgment, user thinking, metrics and how you work with AI."
       },
       training: {
-        title: "Your team doesn't share a common language",
-        problem: "PMs, devs, and stakeholders speak different languages. Everyone has a different understanding of 'priority' or 'done'.",
-        solution: "Practical training on discovery, backlog, Jira, and roles — updated to the current context where AI is redefining what a PM does and how teams work."
+        title: "From physical products to digital product",
+        problem: "You have experience in consumer goods, retail or industry and want to understand how product thinking works in the digital world.",
+        solution: "I understand both worlds: I managed portfolios and P&L at Philips, Panasonic and Colgate before moving into tech. I help you make that bridge without losing what you already know."
       },
       mentorship: {
         title: "1:1 Mentorship for your specific challenge",
-        problem: "You have a specific problem that needs an outside perspective: agility, delivery, leadership, or how to start using AI in your day-to-day.",
-        solution: "Personalized sessions to solve concrete challenges. No generic formulas: we go to your context, your team, your moment."
+        problem: "You have a specific problem — agility, delivery, career, AI — that needs an outside perspective with real experience.",
+        solution: "Personalized sessions to solve concrete challenges. No generic formulas: we go to your context, your moment, your next step."
       }
     },
     career: {
       title: "Want to grow as a PM or land the role you're looking for?",
-      subtitle: "The Product market has changed. Interviews are more demanding, profiles more hybrid, and AI has redefined what's expected from a PM. If you're looking to grow, make a transition, or build your professional brand, I'll guide you with focus and no fluff.",
+      subtitle: "The Product market has changed. AI is absorbing the operational side of the work — backlog, reports, ceremonies. What differentiates a PM today is business judgment, user understanding and market vision. If that's where you want to go, I'll help you get there.",
       items: [
         {
           icon: "job",
@@ -189,11 +189,11 @@ export const translations = {
         },
         {
           icon: "brand",
-          title: "Build your personal brand as a PM",
-          description: "LinkedIn is the new CV. I help you define your voice, what content makes sense for your profile, and how to build presence in the Product ecosystem without it feeling forced."
+          title: "Transition into Product",
+          description: "You come from another discipline or another industry and want to enter the world of Product Management. We translate your prior experience into a solid profile and a narrative that connects with what the market is looking for today."
         }
       ],
-      cta: "Schedule a career session"
+      cta: "Contact me →"
     },
     cases: {
       title: "Real results, not promises",
@@ -203,8 +203,8 @@ export const translations = {
         after: "We implemented Scrum + Kanban based on work type, unified the backlog in Jira, and redefined roles. The team started closing sprints and having real visibility into progress."
       },
       mentorshipCase: {
-        title: "Dev who wanted to move into Product",
-        before: "Years of technical experience, zero clarity on how to translate it into an attractive PM profile for the market.",
+        title: "Scrum Master who wanted to move into Product",
+        before: "Years of methodological experience, zero clarity on how to translate it into an attractive PM profile for the market.",
         after: "In a few sessions: rewritten CV, updated LinkedIn, refined personal pitch. Interview prep focused on the PM profile the market is looking for today. They got the role."
       },
       aiStartup: {
@@ -214,7 +214,7 @@ export const translations = {
       },
       edtech: {
         title: "Regional EdTech",
-        before: "They needed to train their team in product management, but available courses didn't reflect how teams actually work today.",
+        before: "They needed to train their students in product management, but available courses didn't reflect how teams actually work today.",
         after: "I designed an advanced course with real challenges, practical assessments, and an entire module on how AI is changing the PM role."
       }
     },
@@ -227,22 +227,22 @@ export const translations = {
     },
     about: {
       title: "Who's on the other side?",
-      intro: "I'm Eze Tuero. I've spent over 15 years in product management — 7 in the tech world — working with startups and scaleups across Latin America and Europe.",
-      experience: "I combined practical agility with real AI usage before it was trendy: tool integration, rapid prototyping, feedback capture at scale, and rethinking how discovery and delivery cycles actually work.",
-      approach: "I work with PMs, founders, and team leaders who need clarity to organize better, prioritize with judgment, and deliver value continuously — in a context where roles and processes are always shifting.",
-      philosophy: "I don't sell methodologies or magic transformations. I help you build a way of working that fits you, your team, and your moment."
+      intro: "I'm Eze Tuero. 15 years in product management — starting in consumer goods, then moving into tech.",
+      experience: "I managed portfolios and P&L at Philips, Panasonic and Colgate before moving into the digital world. That arc — from physical products to digital product and then Product Operations — is what lets me connect real business thinking with agile execution.",
+      approach: "Today I work as Agile Project Lead on international projects, teach Product Management and Scrum at EducaciónIT, and through The Agile Product I work with teams building their first digital product and professionals looking to grow or transition into Product.",
+      philosophy: "I don't sell methodologies or magic transformations. I help you build a way of working that fits your context and your moment."
     },
     finalCta: {
-      title: "Getting in touch can change how you work",
-      description: "The goal: understand your context, identify what's holding back your team or your career, and see if I can help.",
-      scheduleMentorship: "Contact me",
+      title: "A conversation can change how you work — or how you're seen",
+      description: "Tell me your context — if I can help, we'll figure out how. If not, I'll point you in the right direction.",
+      scheduleMentorship: "Contact me →",
       contactLinkedIn: "Message me on LinkedIn",
       writeEmail: "Send me an email",
       joinDiscord: "Join the Discord"
     },
     footer: {
       title: "The Agile Product · Eze Tuero",
-      subtitle: "Product & Agility Consulting"
+      subtitle: "Product Management & Agile Advisory"
     }
   }
 };

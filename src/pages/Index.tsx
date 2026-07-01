@@ -59,12 +59,6 @@ const Index = () => {
                 {language === 'es' ? 'Blog' : 'Blog'}
               </Link>
             </Button>
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" data-id="cta-cursos" asChild>
-              <Link to="/cursos">
-                <GraduationCap className="w-4 h-4 mr-1" />
-                {language === 'es' ? 'Cursos' : 'Courses'}
-              </Link>
-            </Button>
             <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium" data-id="cta-reunion-gratuita" asChild>
               <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
                 {language === 'es' ? 'Consultame →' : 'Contact me →'}

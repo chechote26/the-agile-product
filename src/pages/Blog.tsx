@@ -57,7 +57,7 @@ const Blog = () => {
               <Link to="/"><ArrowLeft className="w-4 h-4 mr-1" />{language === 'es' ? 'Inicio' : 'Home'}</Link>
             </Button>
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
-              <Link to="/cursos"><GraduationCap className="w-4 h-4 mr-1" />{language === 'es' ? 'Cursos' : 'Courses'}</Link>
+              <Link to="/laboratorio"><FlaskConical className="w-4 h-4 mr-1" />{language === 'es' ? 'Laboratorio' : 'Lab'}</Link>
             </Button>
             <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground font-medium" asChild>
               <Link to="/laboratorio"><FlaskConical className="w-4 h-4 mr-1" />{language === 'es' ? 'Laboratorio' : 'Lab'}</Link>
@@ -133,7 +133,7 @@ const Blog = () => {
       <footer className="bg-secondary/10 py-8 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h3 className="text-lg font-semibold">The Agile Product · Eze Tuero</h3>
-          <p className="text-muted-foreground">{language === 'es' ? 'Consultor en Agilidad y Producto' : 'Agility and Product Consultant'}</p>
+          <p className="text-muted-foreground">{language === 'es' ? 'Product Management & Agile Advisory' : 'Product Management & Agile Advisory'}</p>
           <p className="text-sm text-muted-foreground mt-2">© 2025</p>
         </div>
       </footer>
