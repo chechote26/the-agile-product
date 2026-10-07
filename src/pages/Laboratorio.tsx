@@ -38,7 +38,7 @@ const translations = {
         status: "wip",
         statusLabel: "Próximamente",
         tagline: "Comprá un auto usado con los ojos abiertos",
-        problem: "Comprar un auto usado es una caja negra: specs dispersas en 10 sitios, costos invisibles (patente, service, neumáticos) y opiniones poco confiables. AutoGuía centraliza todo — specs técnicas, costos reales de mantenimiento y opiniones de dueños y talleristas verificados.",
+        problem: "Comprar un auto usado es una caja negra: specs dispersas en 10 sitios, costos invisibles (patente, service, neumáticos) y opiniones poco confiables. AutoGuía centraliza todo, specs técnicas, costos reales de mantenimiento y opiniones de dueños y talleristas verificados.",
         hypothesis: "Hipótesis: los compradores de autos usados toman mejores decisiones cuando tienen acceso a información verificada de pares, no solo del vendedor.",
         learning: "Estado: construyendo la base de datos y validando la demanda con lista de espera. 1.7M autos usados se venden por año en Argentina.",
         url: "https://autoguia-landing.vercel.app/",
@@ -69,11 +69,11 @@ const translations = {
     hero: {
       badge: "Product Lab",
       title: "Real products, real learnings",
-      subtitle: "I don't just talk about product and agility — I practice them. Here you'll find the projects I'm building and iterating, using the same approach I apply with my clients.",
+      subtitle: "I don't just talk about product and agility, I practice them. Here you'll find the projects I'm building and iterating, using the same approach I apply with my clients.",
     },
     intro: {
       title: "Why a lab?",
-      body: "The best way to understand product is by building product. Each project here is a real experiment: it has a hypothesis, a problem to solve, and ongoing learnings. These aren't demos — they're works in progress.",
+      body: "The best way to understand product is by building product. Each project here is a real experiment: it has a hypothesis, a problem to solve, and ongoing learnings. These aren't demos, they're works in progress.",
     },
     projects: [
       {
@@ -82,9 +82,9 @@ const translations = {
         status: "productivo",
         statusLabel: "In production",
         tagline: "Daily Meta Ads tracking without opening Ads Manager",
-        problem: "Managing Meta campaigns means opening Ads Manager every day, interpreting scattered metrics and making decisions without accumulated context. I built a tracker that generates automatic daily reports using Claude via MCP, published on GitHub Pages — with key metrics, trends over time and signals to optimize both campaigns and the product funnel.",
+        problem: "Managing Meta campaigns means opening Ads Manager every day, interpreting scattered metrics and making decisions without accumulated context. I built a tracker that generates automatic daily reports using Claude via MCP, published on GitHub Pages, with key metrics, trends over time and signals to optimize both campaigns and the product funnel.",
         hypothesis: "Hypothesis: having a structured, cumulative daily report leads to better optimization decisions than reviewing the native dashboard, because it forces you to read trends instead of isolated numbers.",
-        learning: "Ongoing learning: the value isn't just in automating the report, but in the format — how you present a metric determines what decision you make. Next step: week-over-week comparisons and alerts for significant variations.",
+        learning: "Ongoing learning: the value isn't just in automating the report, but in the format, how you present a metric determines what decision you make. Next step: week-over-week comparisons and alerts for significant variations.",
         url: null,
         cta: "Demo on request",
         ctaDemo: true,
@@ -95,7 +95,7 @@ const translations = {
         status: "wip",
         statusLabel: "Coming soon",
         tagline: "Buy a used car with your eyes open",
-        problem: "Buying a used car is a black box: specs scattered across 10 sites, invisible costs (taxes, maintenance, tires) and unreliable opinions. AutoGuía centralizes everything — technical specs, real maintenance costs and reviews from verified owners and mechanics.",
+        problem: "Buying a used car is a black box: specs scattered across 10 sites, invisible costs (taxes, maintenance, tires) and unreliable opinions. AutoGuía centralizes everything, technical specs, real maintenance costs and reviews from verified owners and mechanics.",
         hypothesis: "Hypothesis: used car buyers make better decisions when they have access to verified peer information, not just the seller's pitch.",
         learning: "Status: building the database and validating demand with a waitlist. 1.7M used cars are sold per year in Argentina.",
         url: "https://autoguia-landing.vercel.app/",

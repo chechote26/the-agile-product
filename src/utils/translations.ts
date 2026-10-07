@@ -1,7 +1,7 @@
 export const translations = {
   es: {
     hero: {
-      title: "Producto es negocio, usuarios y mercado — no solo sprints.",
+      title: "Producto es negocio, usuarios y mercado, no solo sprints.",
       subtitle: "Ayudo a equipos que empiezan a construir producto digital y a profesionales que quieren crecer o hacer la transición hacia Producto.",
       cta: "Consultame"
     },
@@ -10,7 +10,7 @@ export const translations = {
       items: [
         {
           icon: "chaos",
-          text: "Tu equipo tiene sprints llenos pero los releases nunca llegan a tiempo — o llegan, pero nadie sabe bien qué se entregó ni por qué."
+          text: "Tu equipo tiene sprints llenos pero los releases nunca llegan a tiempo, o llegan, pero nadie sabe bien qué se entregó ni por qué."
         },
         {
           icon: "priority",
@@ -18,7 +18,7 @@ export const translations = {
         },
         {
           icon: "effort",
-          text: "Querés hacer la transición a Producto — desde otra área o desde otra industria — pero no sabés cómo contar tu historia ni qué busca el mercado hoy."
+          text: "Querés hacer la transición a Producto, desde otra área o desde otra industria, pero no sabés cómo contar tu historia ni qué busca el mercado hoy."
         },
         {
           icon: "career",
@@ -46,13 +46,13 @@ export const translations = {
       },
       mentorship: {
         title: "Mentoría 1:1 para tu desafío concreto",
-        problem: "Tenés un problema específico — agilidad, delivery, carrera, IA — que necesita una cabeza externa con experiencia real.",
+        problem: "Tenés un problema específico, agilidad, delivery, carrera, IA, que necesita una cabeza externa con experiencia real.",
         solution: "Sesiones personalizadas para resolver desafíos concretos. Sin fórmulas genéricas: vamos a tu contexto, tu momento, tu próximo paso."
       }
     },
     career: {
       title: "¿Querés crecer como PM o conseguir el rol que buscás?",
-      subtitle: "El mercado de Producto cambió. La IA está absorbiendo la parte operativa del trabajo — backlog, reportes, ceremonias. Lo que diferencia a un PM hoy es el criterio de negocio, la lectura del usuario y la visión de mercado. Si querés llegar ahí, te acompaño.",
+      subtitle: "El mercado de Producto cambió. La IA está absorbiendo la parte operativa del trabajo, backlog, reportes, ceremonias. Lo que diferencia a un PM hoy es el criterio de negocio, la lectura del usuario y la visión de mercado. Si querés llegar ahí, te acompaño.",
       items: [
         {
           icon: "job",
@@ -104,14 +104,14 @@ export const translations = {
     },
     about: {
       title: "¿Quién está del otro lado?",
-      intro: "Soy Eze Tuero. Llevo más de 15 años en gestión de producto — empecé en consumo masivo y después me moví a tech.",
-      experience: "Gestioné portfolios y P&L en Philips, Panasonic y Colgate antes de pasarme al mundo digital. Ese recorrido — de productos físicos a producto digital y luego a Product Operations — es lo que me permite conectar pensamiento de negocio con ejecución ágil real.",
+      intro: "Soy Eze Tuero. Llevo más de 15 años en gestión de producto, empecé en consumo masivo y después me moví a tech.",
+      experience: "Gestioné portfolios y P&L en Philips, Panasonic y Colgate antes de pasarme al mundo digital. Ese recorrido, de productos físicos a producto digital y luego a Product Operations, es lo que me permite conectar pensamiento de negocio con ejecución ágil real.",
       approach: "Hoy trabajo como Agile Project Lead en proyectos internacionales, doy clases de Product Management y Scrum en EducaciónIT, y a través de The Agile Product acompaño a equipos que empiezan a construir producto digital y a profesionales que quieren crecer o hacer la transición hacia Producto.",
       philosophy: "No vendo metodologías ni transformaciones mágicas. Construyo, con vos, una forma de trabajo que funcione para tu contexto y tu momento."
     },
     finalCta: {
       title: "Una consulta puede cambiar cómo trabajás o cómo te ven",
-      description: "Contame tu contexto — si puedo ayudarte, vemos cómo. Si no, te digo a quién buscar.",
+      description: "Contame tu contexto, si puedo ayudarte, vemos cómo. Si no, te digo a quién buscar.",
       scheduleMentorship: "Consultame →",
       contactLinkedIn: "Escribime en LinkedIn",
       writeEmail: "Mandame un email",
@@ -124,7 +124,7 @@ export const translations = {
   },
   en: {
     hero: {
-      title: "Product is business, users and market — not just sprints.",
+      title: "Product is business, users and market, not just sprints.",
       subtitle: "I help early-stage teams building their first digital product, and professionals looking to grow or transition into Product.",
       cta: "Contact me"
     },
@@ -133,7 +133,7 @@ export const translations = {
       items: [
         {
           icon: "chaos",
-          text: "Your team has packed sprints but releases never arrive on time — or they do, but nobody really knows what was shipped or why."
+          text: "Your team has packed sprints but releases never arrive on time, or they do, but nobody really knows what was shipped or why."
         },
         {
           icon: "priority",
@@ -141,7 +141,7 @@ export const translations = {
         },
         {
           icon: "effort",
-          text: "You want to transition into Product — from another discipline or another industry — but you're not sure how to tell your story or what the market is actually looking for."
+          text: "You want to transition into Product, from another discipline or another industry, but you're not sure how to tell your story or what the market is actually looking for."
         },
         {
           icon: "career",
@@ -169,13 +169,13 @@ export const translations = {
       },
       mentorship: {
         title: "1:1 Mentorship for your specific challenge",
-        problem: "You have a specific problem — agility, delivery, career, AI — that needs an outside perspective with real experience.",
+        problem: "You have a specific problem, agility, delivery, career, AI, that needs an outside perspective with real experience.",
         solution: "Personalized sessions to solve concrete challenges. No generic formulas: we go to your context, your moment, your next step."
       }
     },
     career: {
       title: "Want to grow as a PM or land the role you're looking for?",
-      subtitle: "The Product market has changed. AI is absorbing the operational side of the work — backlog, reports, ceremonies. What differentiates a PM today is business judgment, user understanding and market vision. If that's where you want to go, I'll help you get there.",
+      subtitle: "The Product market has changed. AI is absorbing the operational side of the work, backlog, reports, ceremonies. What differentiates a PM today is business judgment, user understanding and market vision. If that's where you want to go, I'll help you get there.",
       items: [
         {
           icon: "job",
@@ -227,14 +227,14 @@ export const translations = {
     },
     about: {
       title: "Who's on the other side?",
-      intro: "I'm Eze Tuero. 15 years in product management — starting in consumer goods, then moving into tech.",
-      experience: "I managed portfolios and P&L at Philips, Panasonic and Colgate before moving into the digital world. That arc — from physical products to digital product and then Product Operations — is what lets me connect real business thinking with agile execution.",
+      intro: "I'm Eze Tuero. 15 years in product management, starting in consumer goods, then moving into tech.",
+      experience: "I managed portfolios and P&L at Philips, Panasonic and Colgate before moving into the digital world. That arc, from physical products to digital product and then Product Operations, is what lets me connect real business thinking with agile execution.",
       approach: "Today I work as Agile Project Lead on international projects, teach Product Management and Scrum at EducaciónIT, and through The Agile Product I work with teams building their first digital product and professionals looking to grow or transition into Product.",
       philosophy: "I don't sell methodologies or magic transformations. I help you build a way of working that fits your context and your moment."
     },
     finalCta: {
-      title: "A conversation can change how you work — or how you're seen",
-      description: "Tell me your context — if I can help, we'll figure out how. If not, I'll point you in the right direction.",
+      title: "A conversation can change how you work, or how you're seen",
+      description: "Tell me your context, if I can help, we'll figure out how. If not, I'll point you in the right direction.",
       scheduleMentorship: "Contact me →",
       contactLinkedIn: "Message me on LinkedIn",
       writeEmail: "Send me an email",
