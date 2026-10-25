@@ -33,8 +33,8 @@ Para evaluar la transición, miraría tres cosas:
 
 ### 📩 Hablemos
 
-Si venís de producto físico y querés trabajar tu transición a producto digital, hablemos:
+¿Venís de producto físico y estás evaluando dar el paso a digital? Podemos revisar qué experiencia podés trasladar y qué necesitás aprender.
 
-* **Consultame →:** [Completar form](https://forms.gle/qAp7Xry7DFqTqDKo6)
+**[Consultame →](https://forms.gle/qAp7Xry7DFqTqDKo6)**
 
 #ProductManagement #ProductoDigital #IA #Carrera #Negocio #Aprendizaje
