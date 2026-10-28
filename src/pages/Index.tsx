@@ -101,7 +101,10 @@ const Index = () => {
             {t.painPoints.items.map((item, i) => (
               <div key={i} className="flex items-start gap-4 p-5 rounded-xl border border-border/40 bg-muted/30">
                 <div className="mt-0.5 shrink-0">{painIcons[item.icon]}</div>
-                <p className="text-base text-muted-foreground leading-relaxed">{item.text}</p>
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                  <p className="text-base text-muted-foreground leading-relaxed">{item.text}</p>
+                </div>
               </div>
             ))}
           </div>

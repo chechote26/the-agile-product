@@ -1,7 +1,7 @@
 export const translations = {
   "es": {
     "hero": {
-      "title": "Producto es negocio, usuarios y mercado, no solo sprints.",
+      "title": "Producto es conectar negocio, usuarios y mercado para decidir cómo avanzar.",
       "subtitle": "Acompaño a equipos y founders a definir prioridades, validar qué construir y organizar la entrega. Y a profesionales a desarrollar criterio, crecer o hacer la transición hacia Producto.",
       "cta": "Consultame",
       "teamCta": "Para mi equipo o proyecto",
@@ -11,20 +11,24 @@ export const translations = {
       "title": "¿Te suena alguna de estas situaciones?",
       "items": [
         {
-          "icon": "chaos",
-          "text": "Tu equipo tiene sprints llenos pero los releases nunca llegan a tiempo, o llegan, pero nadie sabe bien qué se entregó ni por qué."
+          "icon": "priority",
+          "title": "Todo parece prioritario.",
+          "text": "Tu equipo recibe pedidos de todos lados y cuesta decidir qué hacer primero, qué dejar para después y por qué."
         },
         {
-          "icon": "priority",
-          "text": "Hay 47 cosas en el backlog, todas urgentes según alguien. No sabés qué construir primero y cada semana cambia la prioridad."
+          "icon": "chaos",
+          "title": "Hay una idea, pero falta definir el próximo paso.",
+          "text": "Querés desarrollar un producto o mejorar uno existente y necesitás aclarar qué problema resolver, para quién y qué conviene validar antes de invertir más."
         },
         {
           "icon": "effort",
-          "text": "Querés hacer la transición a Producto, desde otra área o desde otra industria, pero no sabés cómo contar tu historia ni qué busca el mercado hoy."
+          "title": "Querés dar el paso hacia Producto.",
+          "text": "Venís de otro rol o industria y necesitás entender qué experiencia podés aprovechar, qué capacidades desarrollar y cómo presentar tu aporte."
         },
         {
           "icon": "career",
-          "text": "Sos PM o PO y sentís que tu trabajo se está volviendo administrar proceso. Querés volver a pensar en negocio, usuarios y estrategia."
+          "title": "Querés crecer y aportar más en tu rol.",
+          "text": "Tu día se va en coordinar pedidos y resolver urgencias. Te cuesta encontrar espacio para entender a los usuarios, evaluar resultados e influir en las decisiones."
         }
       ],
       "cta": "Sí, me pasa esto →"
@@ -140,7 +144,7 @@ export const translations = {
   },
   "en": {
     "hero": {
-      "title": "Product is business, users and market, not just sprints.",
+      "title": "Product is connecting business, users and market to decide how to move forward.",
       "subtitle": "I help teams and founders set priorities, validate what to build and organize delivery. And I help professionals develop their judgment, grow or transition into Product.",
       "cta": "Contact me",
       "teamCta": "For my team or project",
@@ -150,20 +154,24 @@ export const translations = {
       "title": "Does any of this sound familiar?",
       "items": [
         {
-          "icon": "chaos",
-          "text": "Your team has packed sprints but releases never arrive on time, or they do, but nobody really knows what was shipped or why."
+          "icon": "priority",
+          "title": "Everything seems to be a priority.",
+          "text": "Your team receives requests from all sides, and it is hard to decide what to do first, what to leave for later and why."
         },
         {
-          "icon": "priority",
-          "text": "There are 47 things in the backlog, all urgent according to someone. You don't know what to build first and priorities shift every week."
+          "icon": "chaos",
+          "title": "You have an idea, but the next step is unclear.",
+          "text": "You want to develop a product or improve an existing one and need to clarify which problem to solve, for whom and what to validate before investing more."
         },
         {
           "icon": "effort",
-          "text": "You want to transition into Product, from another discipline or another industry, but you're not sure how to tell your story or what the market is actually looking for."
+          "title": "You want to move into Product.",
+          "text": "You come from another role or industry and need to understand which experience you can build on, which skills to develop and how to present your contribution."
         },
         {
           "icon": "career",
-          "text": "You're a PM or PO and your work is starting to feel like process administration. You want to get back to thinking about business, users and strategy."
+          "title": "You want to grow and contribute more in your role.",
+          "text": "Your day goes into coordinating requests and handling urgent issues. You struggle to find space to understand users, evaluate results and influence decisions."
         }
       ],
       "cta": "Yes, this is me →"
