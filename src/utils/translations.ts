@@ -136,10 +136,6 @@ export const translations = {
         }
       ],
       "description": "Antes de empezar, acordamos qué vamos a trabajar y qué te llevás. Según el formato, puede ser una síntesis de decisiones, prioridades o un plan de acción."
-    },
-    "background": {
-      "title": "Negocio y ejecución, con experiencia en ambos mundos.",
-      "description": "Soy Eze Tuero. Mi recorrido combina gestión de portfolios y P&L en consumo masivo, trabajo en tecnología y formación de profesionales. Esa experiencia me permite conectar decisiones de negocio con la realidad de quienes construyen y entregan."
     }
   },
   "en": {
@@ -279,10 +275,6 @@ export const translations = {
         }
       ],
       "description": "Before starting, we agree on what we will work on and what you will take away. Depending on the format, this may be a summary of decisions, priorities or an action plan."
-    },
-    "background": {
-      "title": "Business and execution, with experience in both worlds.",
-      "description": "I’m Eze Tuero. My background combines portfolio and P&L management in consumer goods, technology and professional education. This experience helps me connect business decisions with the reality of the people building and delivering."
     }
   }
 };

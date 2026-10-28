@@ -72,7 +72,7 @@ const Index = () => {
       </header>
 
       {/* 1. Hero Section */}
-      <section className="bg-gradient-to-br from-primary/5 to-secondary/10 py-20 px-4 pt-32">
+      <section className="bg-muted/30 py-20 px-4 pt-32">
         <div className="container mx-auto max-w-4xl text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
             {t.hero.title}
@@ -99,7 +99,7 @@ const Index = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-6 mb-10">
             {t.painPoints.items.map((item, i) => (
-              <div key={i} className="flex items-start gap-4 p-5 rounded-xl border border-border/40 bg-secondary/5">
+              <div key={i} className="flex items-start gap-4 p-5 rounded-xl border border-border/40 bg-muted/30">
                 <div className="mt-0.5 shrink-0">{painIcons[item.icon]}</div>
                 <p className="text-base text-muted-foreground leading-relaxed">{item.text}</p>
               </div>
@@ -109,7 +109,7 @@ const Index = () => {
       </section>
 
       {/* Two equally weighted service paths */}
-      <section className="py-20 px-4 bg-secondary/5">
+      <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t.solutions.title}</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -160,15 +160,8 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-primary/5">
-        <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">{t.background.title}</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">{t.background.description}</p>
-        </div>
-      </section>
-
       {/* 6. Cases Section */}
-      <section className="py-20 px-4 bg-secondary/5">
+      <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             {t.cases.title}
@@ -225,7 +218,7 @@ const Index = () => {
       </section>
 
       {/* 8. Final CTA */}
-      <section className="py-20 px-4 bg-primary/5">
+      <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             {t.finalCta.title}
@@ -262,7 +255,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-secondary/10 py-8 px-4">
+      <footer className="bg-muted/30 py-8 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="mb-4">
             <h3 className="text-lg font-semibold">{t.footer.title}</h3>
