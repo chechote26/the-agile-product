@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Rocket, Package, GraduationCap, Brain, Search, Wrench, Compass, ExternalLink, Calendar, Linkedin, Mail, Hash, FileText, FlaskConical, AlertCircle, TrendingUp, Briefcase, User, ArrowRight, Zap, Target, Users } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Rocket, GraduationCap, Search, Wrench, Compass, Linkedin, Mail, Hash, FileText, FlaskConical, TrendingUp, User, Zap, Target } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { translations } from "@/utils/translations";
@@ -15,15 +15,11 @@ const painIcons: Record<string, React.ReactNode> = {
   career: <User className="h-6 w-6 text-primary" />,
 };
 
-const careerIcons: Record<string, React.ReactNode> = {
-  job: <Briefcase className="h-8 w-8 text-primary" />,
-  grow: <TrendingUp className="h-8 w-8 text-primary" />,
-  brand: <Users className="h-8 w-8 text-primary" />,
-};
-
 const Index = () => {
   const { language } = useLanguage();
   const t = translations[language];
+
+  const contactUrl = "https://forms.gle/qAp7Xry7DFqTqDKo6";
 
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
@@ -84,11 +80,12 @@ const Index = () => {
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             {t.hero.subtitle}
           </p>
-          <div className="flex justify-center">
-            <Button size="lg" className="text-lg px-8 py-6" data-id="cta-reunion-gratuita" asChild>
-              <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
-                {language === 'es' ? 'Consultame →' : 'Contact me →'}
-              </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center">
+            <Button size="lg" className="h-auto whitespace-normal text-base px-6 py-4" data-id="cta-hero-teams" asChild>
+              <a href="#equipos">{t.hero.teamCta}</a>
+            </Button>
+            <Button size="lg" className="h-auto whitespace-normal text-base px-6 py-4" data-id="cta-hero-professionals" asChild>
+              <a href="#profesionales">{t.hero.professionalCta}</a>
             </Button>
           </div>
         </div>
@@ -111,123 +108,62 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 3. Solutions Section */}
+      {/* Two equally weighted service paths */}
       <section className="py-20 px-4 bg-secondary/5">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            {t.solutions.title}
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t.solutions.title}</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="h-full">
-              <CardHeader>
-                <div className="flex items-center gap-3">
-                  <Rocket className="h-8 w-8 text-primary shrink-0" />
-                  <CardTitle className="text-xl">{t.solutions.agile.title}</CardTitle>
-                </div>
-                <p className="text-sm text-muted-foreground italic mt-1">{t.solutions.agile.problem}</p>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base">{t.solutions.agile.solution}</CardDescription>
-              </CardContent>
-            </Card>
-
-            <Card className="h-full">
-              <CardHeader>
-                <div className="flex items-center gap-3">
-                  <Package className="h-8 w-8 text-primary shrink-0" />
-                  <CardTitle className="text-xl">{t.solutions.delivery.title}</CardTitle>
-                </div>
-                <p className="text-sm text-muted-foreground italic mt-1">{t.solutions.delivery.problem}</p>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base">{t.solutions.delivery.solution}</CardDescription>
-              </CardContent>
-            </Card>
-
-            <Card className="h-full">
-              <CardHeader>
-                <div className="flex items-center gap-3">
-                  <GraduationCap className="h-8 w-8 text-primary shrink-0" />
-                  <CardTitle className="text-xl">{t.solutions.training.title}</CardTitle>
-                </div>
-                <p className="text-sm text-muted-foreground italic mt-1">{t.solutions.training.problem}</p>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base">{t.solutions.training.solution}</CardDescription>
-              </CardContent>
-            </Card>
-
-            <Card className="h-full">
-              <CardHeader>
-                <div className="flex items-center gap-3">
-                  <Brain className="h-8 w-8 text-primary shrink-0" />
-                  <CardTitle className="text-xl">{t.solutions.mentorship.title}</CardTitle>
-                </div>
-                <p className="text-sm text-muted-foreground italic mt-1">{t.solutions.mentorship.problem}</p>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base">{t.solutions.mentorship.solution}</CardDescription>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. Career Section */}
-      <section className="py-20 px-4 bg-primary/5">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            {t.career.title}
-          </h2>
-          <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-            {t.career.subtitle}
-          </p>
-          <div className="grid md:grid-cols-3 gap-8 mb-10">
-            {t.career.items.map((item, i) => (
-              <Card key={i} className="h-full text-center">
+            {[
+              { id: "equipos", content: t.solutions.teams, icon: <Rocket className="h-8 w-8 text-primary shrink-0" /> },
+              { id: "profesionales", content: t.solutions.professionals, icon: <GraduationCap className="h-8 w-8 text-primary shrink-0" /> },
+            ].map(({ id, content, icon }) => (
+              <Card key={id} id={id} className="h-full flex flex-col scroll-mt-24">
                 <CardHeader>
-                  <div className="flex justify-center mb-2">{careerIcons[item.icon]}</div>
-                  <CardTitle className="text-lg">{item.title}</CardTitle>
+                  <div className="flex items-center gap-3">
+                    {icon}
+                    <CardTitle className="text-2xl">{content.title}</CardTitle>
+                  </div>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base">{item.description}</CardDescription>
+                <CardContent className="flex flex-col flex-1 gap-8">
+                  <div className="space-y-6 flex-1">
+                    {content.items.map((item) => (
+                      <div key={item.title}>
+                        <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
+                        <p className="text-base text-muted-foreground leading-relaxed">{item.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                  <Button size="lg" className="h-auto whitespace-normal py-3 text-center" data-id={`cta-${id}`} asChild>
+                    <a href={contactUrl} target="_blank" rel="noopener noreferrer">{content.cta}</a>
+                  </Button>
                 </CardContent>
               </Card>
             ))}
           </div>
-          <div className="flex justify-center">
-            <Button size="lg" className="text-base px-8" data-id="cta-reunion-gratuita" asChild>
-              <a href="https://forms.gle/qAp7Xry7DFqTqDKo6" target="_blank" rel="noopener noreferrer">
-                {language === 'es' ? 'Consultame →' : 'Contact me →'}
-              </a>
-            </Button>
-          </div>
+          <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mt-10 leading-relaxed">{t.solutions.aiPerspective}</p>
         </div>
       </section>
 
-      {/* 5. Mentorship Benefits */}
       <section className="py-20 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            {t.mentorshipBenefits.title}
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div className="text-center">
-              <Search className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">{t.mentorshipBenefits.diagnosis}</h3>
-            </div>
-            <div className="text-center">
-              <Wrench className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">{t.mentorshipBenefits.recommendations}</h3>
-            </div>
-            <div className="text-center">
-              <Compass className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">{t.mentorshipBenefits.guidance}</h3>
-            </div>
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t.workingTogether.title}</h2>
+          <div className="grid md:grid-cols-3 gap-8 mb-10">
+            {t.workingTogether.items.map((item, i) => (
+              <div key={item.title}>
+                {[<Search className="h-10 w-10 text-primary mb-4" />, <Wrench className="h-10 w-10 text-primary mb-4" />, <Compass className="h-10 w-10 text-primary mb-4" />][i]}
+                <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+              </div>
+            ))}
           </div>
-          <p className="text-center text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t.mentorshipBenefits.description}
-          </p>
+          <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto">{t.workingTogether.description}</p>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 bg-primary/5">
+        <div className="container mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">{t.background.title}</h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">{t.background.description}</p>
         </div>
       </section>
 
@@ -237,26 +173,35 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             {t.cases.title}
           </h2>
-          <div className="space-y-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {[
-              t.cases.healthtech,
-              t.cases.mentorshipCase,
-              t.cases.aiStartup,
-              t.cases.edtech,
-            ].map((c, i) => (
-              <div key={i} className="rounded-xl border border-border/40 overflow-hidden">
-                <div className="px-6 py-4 bg-background">
-                  <h3 className="text-xl font-semibold mb-4">{c.title}</h3>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="flex items-start gap-3">
-                      <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground bg-secondary/40 rounded px-2 py-1 mt-0.5 shrink-0">Antes</span>
-                      <p className="text-muted-foreground text-sm leading-relaxed">{c.before}</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <span className="text-xs font-bold uppercase tracking-wider text-green-700 bg-green-100 dark:bg-green-900/30 rounded px-2 py-1 mt-0.5 shrink-0">Después</span>
-                      <p className="text-sm leading-relaxed">{c.after}</p>
-                    </div>
-                  </div>
+              { title: t.solutions.teams.title, items: [t.cases.healthtech, t.cases.aiStartup, t.cases.edtech] },
+              { title: t.solutions.professionals.title, items: [t.cases.mentorshipCase] },
+            ].map((group) => (
+              <div key={group.title}>
+                <h3 className="text-2xl font-semibold mb-6">{group.title}</h3>
+                <div className="space-y-6">
+                  {group.items.map((c) => (
+                    <article key={c.title} className="rounded-xl border border-border/40 bg-background p-6">
+                      <h4 className="text-xl font-semibold mb-5">{c.title}</h4>
+                      <dl className="space-y-4">
+                        <div>
+                          <dt className="text-sm font-semibold mb-1">{t.cases.labels.problem}</dt>
+                          <dd className="text-sm text-muted-foreground leading-relaxed">{c.before}</dd>
+                        </div>
+                        <div>
+                          <dt className="text-sm font-semibold mb-1">{t.cases.labels.work}</dt>
+                          <dd className="text-sm text-muted-foreground leading-relaxed">{c.work}</dd>
+                        </div>
+                        {"outcome" in c && (
+                          <div>
+                            <dt className="text-sm font-semibold mb-1">{t.cases.labels.outcome}</dt>
+                            <dd className="text-sm leading-relaxed">{c.outcome}</dd>
+                          </div>
+                        )}
+                      </dl>
+                    </article>
+                  ))}
                 </div>
               </div>
             ))}
