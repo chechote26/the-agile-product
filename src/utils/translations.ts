@@ -104,9 +104,9 @@ export const translations = {
         "outcome": "Qué cambió"
       },
       "functionalAnalyst": {
-        "title": "De analista funcional a Product Owner",
+        "title": "De Analista Funcional a Product Owner",
         "before": "Quería pasar a Producto, pero no sabía cómo. Su perfil estaba centrado en la escritura de requerimientos y le costaba mostrar su conexión con el negocio.",
-        "work": "Reorientamos su perfil para conectar su experiencia en análisis funcional con el negocio y la estrategia de producto, ampliando el foco más allá de documentar requerimientos.",
+        "work": "Reorientamos su perfil para conectar su experiencia como Analista Funcional con el negocio y la estrategia de producto, ampliando el foco más allá de documentar requerimientos.",
         "outcome": "Con ese enfoque, se postuló a una oportunidad interna y fue seleccionada como Product Owner en su empresa."
       }
     },
