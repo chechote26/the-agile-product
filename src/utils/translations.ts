@@ -85,7 +85,7 @@ export const translations = {
         "title": "Scrum Master que quería pasarse a Producto",
         "before": "Años de experiencia metodológica, cero claridad sobre cómo traducirla en un perfil de PM atractivo para el mercado.",
         "work": "Revisamos el CV, LinkedIn y el pitch personal, y preparamos entrevistas con foco en el rol de PM.",
-        "outcome": "Clarificó cómo presentar su experiencia y consiguió el rol."
+        "outcome": "Empezó a recibir muchas más entrevistas para roles de Producto y consiguió el rol en una startup de la misma industria de la que venía."
       },
       "aiStartup": {
         "title": "Startup de IA en etapa inicial",
@@ -234,7 +234,7 @@ export const translations = {
         "title": "Scrum Master who wanted to move into Product",
         "before": "Years of methodological experience, zero clarity on how to translate it into an attractive PM profile for the market.",
         "work": "We reviewed their CV, LinkedIn and personal pitch, and prepared for interviews focused on the PM role.",
-        "outcome": "They clarified how to present their experience and got the role."
+        "outcome": "They started getting many more interviews for Product roles and landed a role at a startup in the same industry they came from."
       },
       "aiStartup": {
         "title": "Early-stage AI Startup",
