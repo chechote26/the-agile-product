@@ -102,6 +102,12 @@ export const translations = {
         "problem": "Qué problema había",
         "work": "Qué trabajamos",
         "outcome": "Qué cambió"
+      },
+      "functionalAnalyst": {
+        "title": "De analista funcional a Product Owner",
+        "before": "Quería pasar a Producto, pero no sabía cómo. Su perfil estaba centrado en la escritura de requerimientos y le costaba mostrar su conexión con el negocio.",
+        "work": "Reorientamos su perfil para conectar su experiencia en análisis funcional con el negocio y la estrategia de producto, ampliando el foco más allá de documentar requerimientos.",
+        "outcome": "Con ese enfoque, se postuló a una oportunidad interna y fue seleccionada como Product Owner en su empresa."
       }
     },
     "about": {
@@ -245,6 +251,12 @@ export const translations = {
         "problem": "The problem",
         "work": "What we worked on",
         "outcome": "What changed"
+      },
+      "functionalAnalyst": {
+        "title": "From Functional Analyst to Product Owner",
+        "before": "She wanted to move into Product but did not know how. Her profile focused on writing requirements, and she struggled to show her connection to the business.",
+        "work": "We repositioned her profile to connect her functional analysis experience with business and product strategy, broadening the focus beyond documenting requirements.",
+        "outcome": "With that focus, she applied for an internal opportunity and was selected as a Product Owner at her company."
       }
     },
     "about": {

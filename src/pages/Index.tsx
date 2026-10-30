@@ -172,7 +172,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               { title: t.solutions.teams.title, items: [t.cases.healthtech, t.cases.aiStartup, t.cases.edtech] },
-              { title: t.solutions.professionals.title, items: [t.cases.mentorshipCase] },
+              { title: t.solutions.professionals.title, items: [t.cases.mentorshipCase, t.cases.functionalAnalyst] },
             ].map((group) => (
               <div key={group.title}>
                 <h3 className="text-2xl font-semibold mb-6">{group.title}</h3>
