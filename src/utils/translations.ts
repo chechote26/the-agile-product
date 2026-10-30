@@ -114,7 +114,7 @@ export const translations = {
       "title": "¿Quién está del otro lado?",
       "intro": "Soy Eze Tuero. Llevo más de 15 años en gestión de producto, empecé en consumo masivo y después me moví a tech.",
       "experience": "Gestioné portfolios y P&L en Philips, Panasonic y Colgate antes de pasarme al mundo digital y a Product Operations.",
-      "approach": "Hoy trabajo como Agile Project Lead en proyectos internacionales y doy clases de Product Management y Scrum en EducaciónIT. A través de TAP acompaño a equipos, founders y profesionales en sus decisiones de producto y desarrollo profesional.",
+      "approach": "Hoy trabajo como Product Delivery Manager en proyectos internacionales y doy clases de Product Management, Agilidad e IA en EducaciónIT. A través de TAP acompaño a equipos, founders y profesionales en sus decisiones de producto y desarrollo profesional.",
       "philosophy": "No vendo metodologías ni transformaciones mágicas. Construyo, con vos, una forma de trabajo que funcione para tu contexto y tu momento."
     },
     "finalCta": {
@@ -263,7 +263,7 @@ export const translations = {
       "title": "Who's on the other side?",
       "intro": "I'm Eze Tuero. 15 years in product management, starting in consumer goods, then moving into tech.",
       "experience": "I managed portfolios and P&L at Philips, Panasonic and Colgate before moving into digital products and Product Operations.",
-      "approach": "Today I work as Agile Project Lead on international projects and teach Product Management and Scrum at EducaciónIT. Through TAP, I support teams, founders and professionals with product decisions and professional development.",
+      "approach": "Today I work as Product Delivery Manager on international projects and teach Product Management, Agility and AI at EducaciónIT. Through TAP, I support teams, founders and professionals with product decisions and professional development.",
       "philosophy": "I don't sell methodologies or magic transformations. I help you build a way of working that fits your context and your moment."
     },
     "finalCta": {
