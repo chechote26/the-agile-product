@@ -5,7 +5,7 @@ date: "2026-11-01"
 
 Si trabajás como Analista Funcional o Business Analyst, probablemente investigues necesidades, analices procesos y conectes negocio con tecnología. Esa experiencia puede ser una buena base para pasar a Producto.
 
-Con la IA aparece otra pregunta: ¿qué necesitás desarrollar cuando parte del análisis y la documentación puede hacerse con su ayuda?
+Con la IA aparece otra pregunta: qué necesitás desarrollar cuando parte del análisis y la documentación puede hacerse con su ayuda?
 
 **El punto de partida es reconocer qué decisiones ya tomás y qué responsabilidades querés asumir.** Los títulos varían entre empresas, así que conviene mirar el trabajo concreto.
 
