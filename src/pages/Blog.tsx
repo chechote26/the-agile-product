@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Calendar, ArrowLeft, FileText, FlaskConical, GraduationCap } from "lucide-react";
+import { Calendar, ArrowLeft, FileText, FlaskConical, Search } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import logo from "@/assets/The Agile Product (5).png";
@@ -12,14 +13,18 @@ interface PostMeta {
   title: string;
   date: string;
   description: string;
+  searchText: string;
 }
+
+const normalizeSearch = (value: string) =>
+  value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
 // Importamos todos los archivos .md de src/posts
 const postFiles = import.meta.glob("/src/posts/*.md", { as: "raw", eager: true });
 
 const parseFrontmatter = (content: string, filename: string): PostMeta => {
   const match = content.match(/^---\n([\s\S]*?)\n---/);
-  if (!match) return { slug: filename, title: filename, date: "", description: "" };
+  if (!match) return { slug: filename.replace("/src/posts/", "").replace(".md", ""), title: filename, date: "", description: "", searchText: normalizeSearch(content) };
 
   const raw = match[1];
   const title = raw.match(/title:\s*"?([^"\n]+)"?/)?.[1] || filename;
@@ -27,7 +32,10 @@ const parseFrontmatter = (content: string, filename: string): PostMeta => {
   const description = raw.match(/description:\s*"?([^"\n]+)"?/)?.[1] || "";
   const slug = filename.replace("/src/posts/", "").replace(".md", "");
 
-  return { slug, title, date, description };
+  const body = content.slice(match[0].length).replace(/\[([^\]]+)\]\([^)]*\)/g, "$1");
+  const searchText = normalizeSearch([title, description, body].join(" "));
+
+  return { slug, title, date, description, searchText };
 };
 
 const getPosts = (): PostMeta[] => {
@@ -38,11 +46,12 @@ const getPosts = (): PostMeta[] => {
 
 const Blog = () => {
   const { language } = useLanguage();
-  const [posts, setPosts] = useState<PostMeta[]>([]);
-
-  useEffect(() => {
-    setPosts(getPosts());
-  }, []);
+  const [posts] = useState<PostMeta[]>(getPosts);
+  const [query, setQuery] = useState("");
+  const terms = normalizeSearch(query).trim().split(/\s+/).filter(Boolean);
+  const visiblePosts = posts.filter((post) =>
+    terms.every((term) => post.searchText.includes(term))
+  );
 
   return (
     <div className="min-h-screen bg-background">
@@ -93,13 +102,50 @@ const Blog = () => {
       {/* Posts */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
+          <div role="search" className="mb-8">
+            <label htmlFor="blog-search" className="block text-sm font-medium mb-2">
+              {language === 'es' ? 'Buscar artículos' : 'Search articles'}
+            </label>
+            <div className="flex items-center gap-2">
+              <div className="relative flex-1">
+                <Search aria-hidden="true" className="absolute left-3 top-3 h-4 w-4 text-muted-foreground pointer-events-none" />
+                <Input
+                  id="blog-search"
+                  type="search"
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  placeholder={language === 'es' ? 'Buscá por título o contenido…' : 'Search by title or content…'}
+                  className="pl-10"
+                  aria-controls="blog-results"
+                  autoComplete="off"
+                />
+              </div>
+              {query && (
+                <Button variant="ghost" onClick={() => setQuery("")}>
+                  {language === 'es' ? 'Limpiar' : 'Clear'}
+                </Button>
+              )}
+            </div>
+            <p role="status" aria-atomic="true" className="mt-3 text-sm text-muted-foreground">
+              {language === 'es'
+                ? `${visiblePosts.length} ${visiblePosts.length === 1 ? 'artículo' : 'artículos'}`
+                : `${visiblePosts.length} ${visiblePosts.length === 1 ? 'article' : 'articles'}`}
+            </p>
+          </div>
+          <div id="blog-results">
           {posts.length === 0 ? (
             <p className="text-center text-muted-foreground">
               {language === 'es' ? 'No hay posts todavía.' : 'No posts yet.'}
             </p>
+          ) : visiblePosts.length === 0 ? (
+            <p className="py-8 text-center text-muted-foreground">
+              {language === 'es'
+                ? 'No encontramos artículos con esa búsqueda. Probá con otras palabras.'
+                : 'No articles match your search. Try different words.'}
+            </p>
           ) : (
             <div className="space-y-6">
-              {posts.map((post) => (
+              {visiblePosts.map((post) => (
                 <Card key={post.slug} className="hover:shadow-md transition-shadow">
                   <CardHeader>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
@@ -126,6 +172,7 @@ const Blog = () => {
               ))}
             </div>
           )}
+          </div>
         </div>
       </section>
 
